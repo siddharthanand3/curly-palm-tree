@@ -5,4 +5,4 @@ This GitHub repository is created as part of attending the VLSI Hardware Develop
  **Progress Status**
  | Day # | Topic(s) Covered | Status |
  |---|---|---|
- |[Day 0](/docs/Day0.md) | GitHub repo creation, System/ Tools Setup | ![](https://progress-bar.dev/100/?title=done) |
+ |[Day 0](/docs/Day0.md) | GitHub repo creation, System/ Tools Setup | ![](https://progress-bar.dev/0/?title=pending) |

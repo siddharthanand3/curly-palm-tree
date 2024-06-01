@@ -1,5 +1,5 @@
 # VSD-HDP summer program
-This GitHub repository is created as part of attending the VLSI Hardware Development Program ([VSD-HDP](https://www.vlsisystemdesign.com/hdp/), 10 weeks from June.
+This GitHub repository is created as part of attending the VLSI Hardware Development Program ([VSD-HDP](https://www.vlsisystemdesign.com/hdp/)), 10 weeks from June.
 <br />
 <br />
  **Progress Status**

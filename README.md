@@ -1,6 +1,2 @@
 # VSD-HDP C12
-
-GTK wave
-1) sudo apt-get update
-2) sudo apt install gtkwave
-
+This GitHub repository is with reference to the VSD Hardware Development Program held from 30th May to 8th August 2024

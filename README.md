@@ -28,5 +28,30 @@ GTK Wave
 2)   sudo apt install gtkwave
 ![Screenshot 2024-06-04 173133](https://github.com/siddharthanand3/vsdhdp/assets/171400217/fe3a3ab1-4a81-4a36-a04c-decf631f9ade)
 
+Day 1
+
+Viewing the output after simulation in GTKWave:
 
 
+1) Open iVerilog
+![ss for opening iverilog](https://github.com/siddharthanand3/vsdhdp/assets/171400217/bbd88023-3ee5-4547-af92-191251f8c92a)
+
+2) Create a VCD file:
+   Steps:
+   i) iverilog good_mux.v tb_good_mux.v
+   ii) ./a.out
+![ss for opening gtkwave after loading the files into iverilog](https://github.com/siddharthanand3/vsdhdp/assets/171400217/9c023f1a-c651-4cfa-bcf2-e514f69397a1)
+
+3) Open the file in GTKWave to observe output:
+   Steps:
+   i) gtkwave tb_good_mux.vcd
+
+OUTPUT:
+
+![Screenshot 2024-06-11 003114](https://github.com/siddharthanand3/vsdhdp/assets/171400217/6bbf9384-86a3-4b88-8fc3-092955a237b0)
+
+Viewing the verilog code for both the testbench and the file:
+
+![iverilog testbench and file](https://github.com/siddharthanand3/vsdhdp/assets/171400217/717bfe71-c7a4-4564-86d4-fcebb9355613)
+
+   

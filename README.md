@@ -87,3 +87,6 @@ Writing the verilog netlist file:
 ![netlist representation](https://github.com/siddharthanand3/vsdhdp/assets/171400217/d73a9989-b0a8-40e5-8da8-13f942f19803)
 
 
+Day 2
+
+

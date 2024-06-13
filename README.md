@@ -37,12 +37,14 @@ Viewing the output after simulation in GTKWave:
 ![ss for opening iverilog](https://github.com/siddharthanand3/vsdhdp/assets/171400217/bbd88023-3ee5-4547-af92-191251f8c92a)
 
 2) Create a VCD file:
+
    Steps:
    i) iverilog good_mux.v tb_good_mux.v
    ii) ./a.out
 ![ss for opening gtkwave after loading the files into iverilog](https://github.com/siddharthanand3/vsdhdp/assets/171400217/9c023f1a-c651-4cfa-bcf2-e514f69397a1)
 
-3) Open the file in GTKWave to observe output:
+4) Open the file in GTKWave to observe output:
+
    Steps:
    i) gtkwave tb_good_mux.vcd
 
@@ -63,6 +65,7 @@ Read liberty command to read both the .lib file and verilog code file:
 
 
 Synthesis design:
+
 ![synthesisdesign](https://github.com/siddharthanand3/vsdhdp/assets/171400217/4d2b9b0b-49b3-4724-b2da-8b40f6db723c)
 
 

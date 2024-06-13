@@ -69,4 +69,21 @@ Synthesis design:
 ![synthesisdesign](https://github.com/siddharthanand3/vsdhdp/assets/171400217/4d2b9b0b-49b3-4724-b2da-8b40f6db723c)
 
 
-   
+Realise the exact .lib file and obtain parameters for verification:
+
+![realisesky130_cd](https://github.com/siddharthanand3/vsdhdp/assets/171400217/3b53b11f-aed1-4861-9bda-9d96e9c0c53c)
+
+
+Netlist viewing:
+1) show
+
+![netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/b55cb99e-59a1-4503-ab0e-295d2aa938a9) 
+
+Writing the verilog netlist file:
+
+1) write_verilog good_mux_netlist.v
+2) !gvim good_mux_netlist.v
+
+![netlist representation](https://github.com/siddharthanand3/vsdhdp/assets/171400217/d73a9989-b0a8-40e5-8da8-13f942f19803)
+
+

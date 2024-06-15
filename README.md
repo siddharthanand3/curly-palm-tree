@@ -39,14 +39,14 @@ Viewing the output after simulation in GTKWave:
 2) Create a VCD file:
 
    Steps:
-   i) iverilog good_mux.v tb_good_mux.v
+   i) iverilog (name of the verilog file).v (tb_(name of verilog file)).v
    ii) ./a.out
 ![ss for opening gtkwave after loading the files into iverilog](https://github.com/siddharthanand3/vsdhdp/assets/171400217/9c023f1a-c651-4cfa-bcf2-e514f69397a1)
 
 4) Open the file in GTKWave to observe output:
 
    Steps:
-   i) gtkwave tb_good_mux.vcd
+   i) gtkwave (tb_(name of the verilog file)).vcd
 
 OUTPUT:
 
@@ -65,6 +65,15 @@ Read liberty command to read both the .lib file and verilog code file:
 
 
 Synthesis design:
+
+Yosys is the synthesizer used to convert the RTL Design into a netlist for viewing purposes.
+
+Code:
+
+1) read_liberty -lib (.lib file location)
+2) read_verilog (name of the verilog file).v
+3) synth -top (module name in the verilog file)
+4) abc -liberty (.lib file location)
 
 ![synthesisdesign](https://github.com/siddharthanand3/vsdhdp/assets/171400217/4d2b9b0b-49b3-4724-b2da-8b40f6db723c)
 

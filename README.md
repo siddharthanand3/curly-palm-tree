@@ -176,8 +176,26 @@ Code:
 
 To view in GTKWave:
 
-1) iverilog
+1) iverilog (name of the verilog file).v tb_(name of the verilog file).v
+2) gtkwave tb_(name of the verilog file).v
 
+For viewing netlist in Yosys:
+
+1) yosys
+2) read_liberty -lib (path to the .lib file)
+3) read_verilog (name of the verilog file).v
+
+Since we are using a D flip flop, we use a keyword called 'dfflibmap':
+
+4) dfflibmap -liberty (path to the .lib file)
+
+This allows us to access only the dff files in the library.
+
+5) abc -liberty (path to the .lib file)
+
+6) show
+
+   
 Asynchronous reset: 
 
 ![asyncres](https://github.com/siddharthanand3/vsdhdp/assets/171400217/87a3f977-9398-4950-a24b-ef3cf3877201)

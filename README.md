@@ -122,9 +122,13 @@ When a single module is used multiple times in a file, it is created only once a
 Code:
 
 read_liberty -lib (path to the .lib file)
+
 read_verilog (name of the Verilog file)
+
 synth_top (name of the module)
+
 abc -liberty (path to the .lib file)
+
 show
 
 ![multi code](https://github.com/siddharthanand3/vsdhdp/assets/171400217/18d34fc2-97a0-4bf9-86ac-a7eb8815d4c8)
@@ -140,6 +144,7 @@ Design output for each submodule:
 Hierarchical design:
 
 The design is constituted of many submodules, and it is preserved.
+
 ![hierarchical design](https://github.com/siddharthanand3/vsdhdp/assets/171400217/418c90a1-3456-4ae4-ab94-c1ea064635ed)
 
 ![hierarchy is preserved](https://github.com/siddharthanand3/vsdhdp/assets/171400217/1ab9c081-60cc-4645-ad25-dc90a65bcc7c)
@@ -167,6 +172,11 @@ Netlist of submodule1:
 
 Flop synthesis simulations:
 
+Code:
+
+To view in GTKWave:
+
+1) iverilog
 
 Asynchronous reset: 
 

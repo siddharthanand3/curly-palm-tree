@@ -39,14 +39,18 @@ Viewing the output after simulation in GTKWave:
 2) Create a VCD file:
 
    Steps:
+   
    i) iverilog (name of the verilog file).v (tb_(name of verilog file)).v
+   
    ii) ./a.out
+   
 ![ss for opening gtkwave after loading the files into iverilog](https://github.com/siddharthanand3/vsdhdp/assets/171400217/9c023f1a-c651-4cfa-bcf2-e514f69397a1)
 
-4) Open the file in GTKWave to observe output:
+3) Open the file in GTKWave to observe output:
 
    Steps:
-   i) gtkwave (tb_(name of the verilog file)).vcd
+   
+   gtkwave (tb_(name of the verilog file)).vcd
 
 OUTPUT:
 
@@ -111,7 +115,17 @@ Different AND gates have different sizes and power consumed. For example, in the
 
 ![andgatesdifferent flavors](https://github.com/siddharthanand3/vsdhdp/assets/171400217/ad8e0ced-1908-4de6-9611-ede56eaa930f)
 
-Multiple modules:
+Synthesis of Multiple modules:
+
+When a single module is used multiple times in a file, it is created only once and replicated to fit the requirement. This saves time and power.
+
+Code:
+
+read_liberty -lib (path to the .lib file)
+read_verilog (name of the Verilog file)
+synth_top (name of the module)
+abc -liberty (path to the .lib file)
+show
 
 ![multi code](https://github.com/siddharthanand3/vsdhdp/assets/171400217/18d34fc2-97a0-4bf9-86ac-a7eb8815d4c8)
 
@@ -125,6 +139,7 @@ Design output for each submodule:
 
 Hierarchical design:
 
+The design is constituted of many submodules, and it is preserved.
 ![hierarchical design](https://github.com/siddharthanand3/vsdhdp/assets/171400217/418c90a1-3456-4ae4-ab94-c1ea064635ed)
 
 ![hierarchy is preserved](https://github.com/siddharthanand3/vsdhdp/assets/171400217/1ab9c081-60cc-4645-ad25-dc90a65bcc7c)

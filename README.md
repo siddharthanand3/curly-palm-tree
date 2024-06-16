@@ -214,6 +214,13 @@ Synchronous set:
 
 ![syncres](https://github.com/siddharthanand3/vsdhdp/assets/171400217/41b5ed2f-f264-4e66-9ad8-81f489941bf2)
 
+
+
+Day 3
+
+Logic Optimizations
+
+
 ![syncres netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/304ea5a9-6cc9-4ef2-b263-fb7dc11a191f)
 
 

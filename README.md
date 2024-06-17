@@ -236,8 +236,19 @@ Steps:
 6) abc -liberty (path to the .lib file)
 7) show
 
+
+Opt_check file:
+
+![Screenshot 2024-06-17 153750](https://github.com/siddharthanand3/vsdhdp/assets/171400217/ed137704-a63e-427a-ab6d-01b974ac73f9)
+
 ![Screenshot 2024-06-17 134451](https://github.com/siddharthanand3/vsdhdp/assets/171400217/157083a9-8d98-4263-b849-bb45faca0a36)
 
+
+Opt_check2 file:
+
+![optcheck2file](https://github.com/siddharthanand3/vsdhdp/assets/171400217/ea231afd-bd5e-4fa4-ad05-bf6e7aac3892)
+
+![optcheck2](https://github.com/siddharthanand3/vsdhdp/assets/171400217/32b06234-f2a1-4261-b4a3-386bc211c161)
 
 
 

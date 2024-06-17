@@ -214,15 +214,29 @@ Synchronous set:
 
 ![syncres](https://github.com/siddharthanand3/vsdhdp/assets/171400217/41b5ed2f-f264-4e66-9ad8-81f489941bf2)
 
+![syncres netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/304ea5a9-6cc9-4ef2-b263-fb7dc11a191f)
 
 
 Day 3
 
-Logic Optimizations
+Logic Optimization:
+
+Logic optimization is a process of finding an equivalent representation of the specified logic circuit under one or more specified constraints. This process is a part of a logic synthesis applied in digital electronics and integrated circuit design.
 
 
-![syncres netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/304ea5a9-6cc9-4ef2-b263-fb7dc11a191f)
+Combinational logic optimizaation:
 
+Steps:
+
+1) In the verilog files folder, open yosys.
+2) read_liberty -lib (path to the .lib file)
+3) read_verilog opt_check.v
+4) synth -top opt_check
+5) opt_clean -purge
+6) abc -liberty (path to the .lib file)
+7) show
+
+![Screenshot 2024-06-17 134451](https://github.com/siddharthanand3/vsdhdp/assets/171400217/157083a9-8d98-4263-b849-bb45faca0a36)
 
 
 

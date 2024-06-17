@@ -145,14 +145,39 @@ Hierarchical design:
 
 The design is constituted of many submodules, and it is preserved.
 
+Code:
+
+read_liberty -lib <path to the .lib file>
+
+read_verilog (name of the Verilog file)
+
+synth_top (name)
+
+abc -liberty (path to the .lib file)
+
+show (name given)
+
+
 ![hierarchical design](https://github.com/siddharthanand3/vsdhdp/assets/171400217/418c90a1-3456-4ae4-ab94-c1ea064635ed)
 
 ![hierarchy is preserved](https://github.com/siddharthanand3/vsdhdp/assets/171400217/1ab9c081-60cc-4645-ad25-dc90a65bcc7c)
 
+write_verilog -noattr (name)
+
+!gvim (name)
 
 Flattened file:
 
 On using the 'flatten' command in yosys you can breakdown the sub modules.
+
+Code:
+
+flatten
+
+write_verilog (name of the module)_flat
+
+!gvim (name of the module)_flat
+
 
 ![flatten comparision](https://github.com/siddharthanand3/vsdhdp/assets/171400217/1e0cf6cb-1774-4803-822e-6bebfa6ac6f9)
 

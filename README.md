@@ -251,4 +251,15 @@ Opt_check2 file:
 ![optcheck2](https://github.com/siddharthanand3/vsdhdp/assets/171400217/32b06234-f2a1-4261-b4a3-386bc211c161)
 
 
+Opt_check3 file:
 
+![optcheck3file](https://github.com/siddharthanand3/vsdhdp/assets/171400217/e82c3999-5ce4-4c5c-a248-1896cf69f660)
+
+![opt_check3 netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/60dc3739-13e7-4a87-9115-b58b6bdf2a65)
+
+
+Opt_check4 file:
+
+![opt_check4file](https://github.com/siddharthanand3/vsdhdp/assets/171400217/b73f7e05-67bc-4a09-aafa-15fe2b0083c8)
+
+![opt_check4 netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/f4da383e-fc5f-44cb-b11c-4ed2ac2a95b6)

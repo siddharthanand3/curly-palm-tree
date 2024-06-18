@@ -308,3 +308,5 @@ Code:
 
 ![Screenshot 2024-06-18 013149](https://github.com/siddharthanand3/vsdhdp/assets/171400217/3bdf4c45-dea8-4d45-93e6-ed12643c19b0)
 
+![multiplemoduleopt netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/ccd102a8-d963-49f2-b793-457ccff2aa98)
+

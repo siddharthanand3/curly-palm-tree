@@ -202,7 +202,8 @@ Code:
 To view in GTKWave:
 
 1) iverilog (name of the verilog file).v tb_(name of the verilog file).v
-2) gtkwave tb_(name of the verilog file).v
+2) ./a.out
+3) gtkwave tb_(name of the verilog file).v
 
 For viewing netlist in Yosys:
 
@@ -306,9 +307,39 @@ Code:
 8) abc -liberty (path to the .lib file)
 9) show
 
-![Screenshot 2024-06-18 013149](https://github.com/siddharthanand3/vsdhdp/assets/171400217/3bdf4c45-dea8-4d45-93e6-ed12643c19b0)
+![multiplemoduleopt file](https://github.com/siddharthanand3/vsdhdp/assets/171400217/1bc28c90-2bd4-4997-ba8b-002571f07fbd)
 
-![multiplemoduleopt netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/ccd102a8-d963-49f2-b793-457ccff2aa98)
+![multiplemoduleopt](https://github.com/siddharthanand3/vsdhdp/assets/171400217/5ac68ad1-f45f-4abd-b7d3-b55247224f37)
+
+
+
+Sequential logic optimization:
+
+Steps:
+
+GTKWave:
+
+1) Open the verilog files folder.
+2) iverilog (name of the verilog file).v tb_(name of the verilog file).v
+3) ./a.out
+4) gtkwave tb_(name of the verilog file).v
+
+Yosys netlist:
+
+1) yosys
+2) read_liberty -lib (path to the .lib file)
+3) read_verilog (name of the verilog file).v
+
+Since we are using a D flip flop, we use a keyword called 'dfflibmap':
+
+4) dfflibmap -liberty (path to the .lib file)
+
+This allows us to access only the dff files in the library.
+
+5) abc -liberty (path to the .lib file)
+6) show
+
+Dff_const1.v:
 
 ![dff_const1 file](https://github.com/siddharthanand3/vsdhdp/assets/171400217/d3ba78a9-f06c-4e63-ae34-1f8861d23912)
 
@@ -316,11 +347,15 @@ Code:
 
 ![dffconst1 netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/31547a10-e59a-4112-ae4b-d0680373dd8a)
 
+Dff_const2.v:
+
 ![dff_const2 file](https://github.com/siddharthanand3/vsdhdp/assets/171400217/549e0cae-bdc7-4788-befe-0c28ae431e0d)
 
 ![tb_const2 gtk](https://github.com/siddharthanand3/vsdhdp/assets/171400217/47e1d220-fa27-4e11-b911-4969644b2f6a)
 
 ![dff_const2 netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/19621b92-7790-4195-bbb9-e98b4f58e7aa)
+
+Dff_const3.v:
 
 ![dff_const3 file](https://github.com/siddharthanand3/vsdhdp/assets/171400217/37c15e31-f4bf-42f8-8878-bbce8382933e)
 
@@ -328,11 +363,15 @@ Code:
 
 ![const3 netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/7593754d-f778-4ebc-8b8f-cf1433e12449)
 
+Dff_const4.v:
+
 ![dff_const4 file](https://github.com/siddharthanand3/vsdhdp/assets/171400217/7f49bdec-cd01-4fe6-8da3-52bcb511ef6b)
 
 ![gtkwave const4](https://github.com/siddharthanand3/vsdhdp/assets/171400217/029d50b0-1a2f-4a64-ac15-29d43f53cd32)
 
 ![const4 netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/51796e6a-0c52-4ec8-b664-b63fdd8c5230)
+
+Dff_const5.v:
 
 ![dff_const5 file](https://github.com/siddharthanand3/vsdhdp/assets/171400217/97c85158-cb06-4fad-be5b-89260485def1)
 

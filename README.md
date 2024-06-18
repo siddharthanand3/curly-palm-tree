@@ -288,3 +288,23 @@ Opt_check4 file:
 ![opt_check4file](https://github.com/siddharthanand3/vsdhdp/assets/171400217/b73f7e05-67bc-4a09-aafa-15fe2b0083c8)
 
 ![opt_check4 netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/f4da383e-fc5f-44cb-b11c-4ed2ac2a95b6)
+
+
+Optimization of multiple modules:
+
+In order to optimize multiple modules at once, we need to flatten it first.
+
+Code:
+
+1) yosys
+2) read_liberty -lib (path to .lib file)
+3) read_verilog (name of the file).v
+4) synth -top (name of the module)
+5) flatten
+6) write_verilog (name of the file)_flat.v
+7) opt_clean -purge
+8) abc -liberty (path to the .lib file)
+9) show
+
+![Screenshot 2024-06-18 013149](https://github.com/siddharthanand3/vsdhdp/assets/171400217/3bdf4c45-dea8-4d45-93e6-ed12643c19b0)
+

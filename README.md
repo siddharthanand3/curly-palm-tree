@@ -390,7 +390,68 @@ Dff_const5.v:
 
 
 
+Day 4
 
+
+Gate level simulation (GLS)
+
+
+Synthesis simulation mismatch:
+
+
+Steps:
+
+1) GTKWave simulation
+2) Yosys synthesis of netlist
+3) Gate level simulation to compare the two simulations and confirm
+
+Code:
+
+GTKWave simulation:
+
+1) iverilog (name of the verilog file).v tb_(name of the verilog file).v
+2) ./a.out
+3) gtkwave tb_(name of the verilog file).v
+
+
+Yosys synthesis of netlist:
+
+1) read_liberty -lib (path to the .lib file)
+2) read_verilog (name of the verilog file).v
+3) synth -top (name of the module)
+4) abc -liberty (path to the .lib file)
+5) write_verilog (name of the verilog file)_net.v
+6) show
+
+
+Gate level simulation:
+
+1) iverilog (path to the primitives.v file) (path to the sky130_fd_sc_hd.v file) (name of the verilog file)_net.v (testbench of the verilog file)
+2) ./a.out
+3) gtkwave (testbench of the verilog file).vcd
+
+
+Ternary_mux_operator.v:
+
+
+File:
+
+![ternarymuxfile](https://github.com/siddharthanand3/vsdhdp/assets/171400217/e3a704ac-9b72-47c8-89b0-be29492823c5)
+
+
+GTKWave simulation:
+
+![gtkwave ternary mux](https://github.com/siddharthanand3/vsdhdp/assets/171400217/22b26915-2e98-4f00-8707-5bb375750505)
+
+
+Netlist:
+
+![netlistternarymux](https://github.com/siddharthanand3/vsdhdp/assets/171400217/882805fb-8763-49a5-91fe-dba2548dd597)
+
+
+Confirmed GLS output:
+
+![gls output ternary mux](https://github.com/siddharthanand3/vsdhdp/assets/171400217/7e832ae8-a720-4181-80dc-3aa6d88677f3)
 
 
 

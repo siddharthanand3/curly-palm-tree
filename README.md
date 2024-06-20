@@ -431,6 +431,7 @@ Gate level simulation:
 3) gtkwave (testbench of the verilog file).vcd
 
 
+
 Ternary_mux_operator.v:
 
 
@@ -454,8 +455,31 @@ Confirmed GLS output:
 ![gls output ternary mux](https://github.com/siddharthanand3/vsdhdp/assets/171400217/7e832ae8-a720-4181-80dc-3aa6d88677f3)
 
 
+Since the GLS output is matching the initial GTKWave simulation the gate level simulation is complete.
 
 
 
+Bad_mux.v:
 
 
+File:
+
+![badmuxfile](https://github.com/siddharthanand3/vsdhdp/assets/171400217/11de45ac-99d6-4798-9e68-0e2cd1d7ad3a)
+
+
+GTKWave simulation:
+
+![badmux gtkwave](https://github.com/siddharthanand3/vsdhdp/assets/171400217/4a4116cf-b540-4800-90b6-4798d8b56096)
+
+
+Netlist:
+
+![badmux netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/f59a16cf-5fd8-45ad-a280-67ff30b1071d)
+
+
+Confirmed GLS output:
+
+![badmux gls](https://github.com/siddharthanand3/vsdhdp/assets/171400217/1d1a7da5-ac43-4a1a-8460-c3a05080d0df)
+
+
+Here, we see that the GLS output does not match the initial GTKWave simulation. This is a prime example of synthesis simulation mismatch. The cause of this is missing sensitivity list. As we see in the verilog code, the 'if' loop is dependent solely on the changing nature of the 'sel' input. This doesn't take into account the changes occuring in 'i0' and 'i1' inputs. 

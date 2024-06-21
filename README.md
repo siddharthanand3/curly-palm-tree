@@ -483,3 +483,30 @@ Confirmed GLS output:
 
 
 Here, we see that the GLS output does not match the initial GTKWave simulation. This is a prime example of synthesis simulation mismatch. The cause of this is missing sensitivity list. As we see in the verilog code, the 'if' loop is dependent solely on the changing nature of the 'sel' input. This doesn't take into account the changes occuring in 'i0' and 'i1' inputs. 
+
+
+Blocking_caveat.v:
+
+
+
+File:
+
+![blockingcaveatfile](https://github.com/siddharthanand3/vsdhdp/assets/171400217/59ce738b-d7ef-4cbf-ad11-920aafc23f49)
+
+
+GTKWave simulatiom:
+
+![blockingcaveat gtk](https://github.com/siddharthanand3/vsdhdp/assets/171400217/25cf96a8-6956-48c6-93b9-bcd72315d68e)
+
+
+Netlist:
+
+![blocking caveat netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/362f6518-6409-41b2-bf9a-834f71717220)
+
+
+Confirmed GLS output:
+
+![gls output blocking caveat](https://github.com/siddharthanand3/vsdhdp/assets/171400217/14045d2f-88ae-4cf4-970d-18ec67712e25)
+
+
+In the above example, the Gate Level Simulation failed. This is due to a synthesis simulation mismatch caused by a blocking statement. Hence, it is important to note that we need to avoid using blocking statements as much as possible. And when we do use them, we need to have the utmost clarity so as to prevent such errors.

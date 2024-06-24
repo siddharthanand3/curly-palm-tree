@@ -28,6 +28,9 @@ GTK Wave
 2)   sudo apt install gtkwave
 ![Screenshot 2024-06-04 173133](https://github.com/siddharthanand3/vsdhdp/assets/171400217/fe3a3ab1-4a81-4a36-a04c-decf631f9ade)
 
+
+Week 1
+
 Day 1
 
 Viewing the output after simulation in GTKWave:
@@ -242,6 +245,8 @@ Synchronous set:
 
 ![syncres netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/304ea5a9-6cc9-4ef2-b263-fb7dc11a191f)
 
+
+Week 2
 
 Day 3
 
@@ -510,3 +515,7 @@ Confirmed GLS output:
 
 
 In the above example, the Gate Level Simulation failed. This is due to a synthesis simulation mismatch caused by a blocking statement. Hence, it is important to note that we need to avoid using blocking statements as much as possible. And when we do use them, we need to have the utmost clarity so as to prevent such errors.
+
+
+Week 3
+

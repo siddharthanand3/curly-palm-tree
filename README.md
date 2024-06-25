@@ -421,12 +421,14 @@ GTKWave simulation:
 
 Yosys synthesis of netlist:
 
-1) read_liberty -lib (path to the .lib file)
-2) read_verilog (name of the verilog file).v
-3) synth -top (name of the module)
-4) abc -liberty (path to the .lib file)
-5) write_verilog (name of the verilog file)_net.v
-6) show
+---
+ read_liberty -lib (path to the .lib file)
+ read_verilog (name of the verilog file).v
+ synth -top (name of the module)
+ abc -liberty (path to the .lib file)
+ write_verilog (name of the verilog file)_net.v
+ show
+---
 
 
 Gate level simulation:
@@ -573,4 +575,7 @@ In order to view the Assembly level breakdown:
 4) riscv64-unknown-elf-objdump -d (name of the C file).o
 5) riscv64-unknown-elf-objdump -d (name of the C file).o | less
 6) /main
-7) 
+
+![main objdump](https://github.com/siddharthanand3/vsdhdp/assets/171400217/ad410aa2-850e-4c78-997a-11e44f521456)
+
+

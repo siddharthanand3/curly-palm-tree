@@ -252,21 +252,25 @@ Logic optimization is a process of finding an equivalent representation of the s
 6. `show`
 
 **Opt_check file:**
+
 ![Opt_check Screenshot](https://github.com/siddharthanand3/vsdhdp/assets/171400217/ed137704-a63e-427a-ab6d-01b974ac73f9)
 
 ![Opt_check Verilog Code](https://github.com/siddharthanand3/vsdhdp/assets/171400217/157083a9-8d98-4263-b849-bb45faca0a36)
 
 **Opt_check2 file:**
+
 ![Opt_check2 Screenshot](https://github.com/siddharthanand3/vsdhdp/assets/171400217/ea231afd-bd5e-4fa4-ad05-bf6e7aac3892)
 
 ![Opt_check2 Verilog Code](https://github.com/siddharthanand3/vsdhdp/assets/171400217/32b06234-f2a1-4261-b4a3-386bc211c161)
 
 **Opt_check3 file:**
+
 ![Opt_check3 Screenshot](https://github.com/siddharthanand3/vsdhdp/assets/171400217/e82c3999-5ce4-4c5c-a248-1896cf69f660)
 
 ![Opt_check3 Netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/60dc3739-13e7-4a87-9115-b58b6bdf2a65)
 
 **Opt_check4 file:**
+
 ![Opt_check4 Screenshot](https://github.com/siddharthanand3/vsdhdp/assets/171400217/b73f7e05-67bc-4a09-aafa-15fe2b0083c8)
 
 ![Opt_check4 Netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/f4da383e-fc5f-44cb-b11c-4ed2ac2a95b6)
@@ -285,6 +289,7 @@ Logic optimization is a process of finding an equivalent representation of the s
 9. `show`
 
 **Multiple_module_opt.v:**
+
 ![Multiple Module Opt Screenshot](https://github.com/siddharthanand3/vsdhdp/assets/171400217/1bc28c90-2bd4-4997-ba8b-002571f07fbd)
 
 ![Multiple Module Opt Netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/5ac68ad1-f45f-4abd-b7d3-b55247224f37)
@@ -306,6 +311,7 @@ Logic optimization is a process of finding an equivalent representation of the s
 6. `show`
 
 **Dff_const1.v:**
+
 ![Dff_const1 Screenshot](https://github.com/siddharthanand3/vsdhdp/assets/171400217/d3ba78a9-f06c-4e63-ae34-1f8861d23912)
 
 ![Dff_const1 GTKWave](https://github.com/siddharthanand3/vsdhdp/assets/171400217/547008c0-eba6-4650-9858-b6e269184e98)
@@ -313,6 +319,7 @@ Logic optimization is a process of finding an equivalent representation of the s
 ![Dff_const1 Netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/31547a10-e59a-4112-ae4b-d0680373dd8a)
 
 **Dff_const2.v:**
+
 ![Dff_const2 Screenshot](https://github.com/siddharthanand3/vsdhdp/assets/171400217/549e0cae-bdc7-4788-befe-0c28ae431e0d)
 
 ![Dff_const2 GTKWave](https://github.com/siddharthanand3/vsdhdp/assets/171400217/47e1d220-fa27-4e11-b911-4969644b2f6a)
@@ -320,6 +327,7 @@ Logic optimization is a process of finding an equivalent representation of the s
 ![Dff_const2 Netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/19621b92-7790-4195-bbb9-e98b4f58e7aa)
 
 **Dff_const3.v:**
+
 ![Dff_const3 Screenshot](https://github.com/siddharthanand3/vsdhdp/assets/171400217/37c15e31-f4bf-42f8-8878-bbce8382933e)
 
 ![Dff_const3 GTKWave](https://github.com/siddharthanand3/vsdhdp/assets/171400217/575ac287-7b79-42ae-82cf-9f29eccb8a71)
@@ -327,6 +335,7 @@ Logic optimization is a process of finding an equivalent representation of the s
 ![Dff_const3 Netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/7593754d-f778-4ebc-8b8f-cf1433e12449)
 
 **Dff_const4.v:**
+
 ![Dff_const4 Screenshot](https://github.com/siddharthanand3/vsdhdp/assets/171400217/7f49bdec-cd01-4fe6-8da3-52bcb511ef6b)
 
 ![Dff_const4 GTKWave](https://github.com/siddharthanand3/vsdhdp/assets/171400217/029d50b0-1a2f-4a64-ac15-29d43f53cd32)
@@ -334,6 +343,7 @@ Logic optimization is a process of finding an equivalent representation of the s
 ![Dff_const4 Netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/51796e6a-0c52-4ec8-b664-b63fdd8c5230)
 
 **Dff_const5.v:**
+
 ![Dff_const5 Screenshot](https://github.com/siddharthanand3/vsdhdp/assets/171400217/97c85158-cb06-4fad-be5b-89260485def1)
 
 ![Dff_const5 GTKWave](https://github.com/siddharthanand3/vsdhdp/assets/171400217/3955d1cc-3d1f-4ec1-a085-8274cf9aa10f)
@@ -377,43 +387,55 @@ Logic optimization is a process of finding an equivalent representation of the s
 **Ternary_mux_operator.v:**
 
 **File:**
+
 ![Ternary_mux File](https://github.com/siddharthanand3/vsdhdp/assets/171400217/e3a704ac-9b72-47c8-89b0-be29492823c5)
 
 **GTKWave simulation:**
+
 ![Ternary_mux GTKWave](https://github.com/siddharthanand3/vsdhdp/assets/171400217/22b26915-2e98-4f00-8707-5bb375750505)
 
 **Netlist:**
+
 ![Ternary_mux Netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/882805fb-8763-49a5-91fe-dba2548dd597)
 
 **Confirmed GLS output:**
+
 ![Ternary_mux GLS Output](https://github.com/siddharthanand3/vsdhdp/assets/171400217/7e832ae8-a720-4181-80dc-3aa6d88677f3)
 
 **Bad_mux.v:**
 
 **File:**
+
 ![Bad_mux File](https://github.com/siddharthanand3/vsdhdp/assets/171400217/11de45ac-99d6-4798-9e68-0e2cd1d7ad3a)
 
 **GTKWave simulation:**
+
 ![Bad_mux GTKWave](https://github.com/siddharthanand3/vsdhdp/assets/171400217/4a4116cf-b540-4800-90b6-4798d8b56096)
 
 **Netlist:**
+
 ![Bad_mux Netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/f59a16cf-5fd8-45ad-a280-67ff30b1071d)
 
 **Confirmed GLS output:**
+
 ![Bad_mux GLS Output](https://github.com/siddharthanand3/vsdhdp/assets/171400217/1d1a7da5-ac43-4a1a-8460-c3a05080d0df)
 
 **Blocking_caveat.v:**
 
 **File:**
+
 ![Blocking_caveat File](https://github.com/siddharthanand3/vsdhdp/assets/171400217/59ce738b-d7ef-4cbf-ad11-920aafc23f49)
 
 **GTKWave simulation:**
+
 ![Blocking_caveat GTKWave](https://github.com/siddharthanand3/vsdhdp/assets/171400217/25cf96a8-6956-48c6-93b9-bcd72315d68e)
 
 **Netlist:**
+
 ![Blocking_caveat Netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/362f6518-6409-41b2-bf9a-834f71717220)
 
 **Confirmed GLS output:**
+
 ![Blocking_caveat GLS Output](https://github.com/siddharthanand3/vsdhdp/assets/171400217/14045d2f-88ae-4cf4-970d-18ec67712e25)
 
 In the above example, the Gate Level Simulation failed. This is due to a synthesis simulation mismatch caused by a blocking statement. Hence, it is important to note that we need to avoid using blocking statements as much as possible. And when we do use them, we need to have the utmost clarity so as to prevent such errors.

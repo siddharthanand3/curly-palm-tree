@@ -441,63 +441,76 @@ Logic optimization is a process of finding an equivalent representation of the s
 In the above example, the Gate Level Simulation failed. This is due to a synthesis simulation mismatch caused by a blocking statement. Hence, it is important to note that we need to avoid using blocking statements as much as possible. And when we do use them, we need to have the utmost clarity so as to prevent such errors.
  </details>
 </details>
-Week 3
 
+<details>
+  <summary>Week 3</summary>
+ 
+  <details>
+    <summary>Compilation of the C Code</summary>
 
-Compilation of the C code:
+#### Installation of the leafpad editor:
 
-Installation of the leafpad editor:
-
+```bash
 sudo apt install leafpad
+```
 
+#### Open the leafpad editor:
 
-Open the leafpad editor:
+```bash
+leafpad (name of the file).c
+```
 
-1) leafpad (name of the file).c
-
-
-C code:
+#### C code:
 
 ![sum1ton c ss](https://github.com/siddharthanand3/vsdhdp/assets/171400217/30c5058a-cf2c-456a-8fab-f3f53502b2a2)
 
+#### Output of the code:
 
-Output of the code:
-
-2) gcc (name of the file).c
-3) ls -ltr
-4) ./a.out
+```bash
+gcc (name of the file).c
+ls -ltr
+./a.out
+```
 
 ![Screenshot 2024-06-25 180104](https://github.com/siddharthanand3/vsdhdp/assets/171400217/1296a5cf-bf2f-4662-8d56-9af62cb1de26)
 
+ </details>
+  <details>
+    <summary>RISC-V Based Lab</summary>
 
 
-RISC - V based lab:
+#### Code:
 
+#### Display the C code on terminal:
 
-Code:
+```bash
+cat (name of the file).c
+```
 
-Display the C code on terminal:
+![cat c code](https://github.com/siddharthanand3/vsdhdp/assets/171400217/77a956b2-28ec-437f-85cb-821a7be989d6)
 
-1) cat (name of the file).c![cat c code](https://github.com/siddharthanand3/vsdhdp/assets/171400217/77a956b2-28ec-437f-85cb-821a7be989d6)
+#### Utilizing the RISC-V compiler:
 
+```bash
+riscv64-unknown-elf-gcc -o1 -mabi=lp64 -march=rv64i -o (name of the file).o (name of the file).c
+```
 
-Utilising the RISC V compiler:
+#### Check if the file has been created:
 
-2) riscv64-unknown-elf-gcc -o1 -mabi=lp64 -march=rv64i -o (name of the file).o (name of the file).c
+```bash
+ls -ltr (name of the file).o
+```
 
-Check if the file has been created:
-
-3) ls -ltr (name of the file).o
-   
 ![Screenshot 2024-06-25 185502](https://github.com/siddharthanand3/vsdhdp/assets/171400217/7fc1a23f-a8fa-47a2-9d5a-60415d9b0f85)
 
+#### In order to view the Assembly level breakdown:
 
-In order to view the Assembly level breakdown:
-
-4) riscv64-unknown-elf-objdump -d (name of the C file).o
-5) riscv64-unknown-elf-objdump -d (name of the C file).o | less
-6) /main
+```bash
+riscv64-unknown-elf-objdump -d (name of the file).o
+riscv64-unknown-elf-objdump -d (name of the file).o | less
+/main
+```
 
 ![main objdump](https://github.com/siddharthanand3/vsdhdp/assets/171400217/ad410aa2-850e-4c78-997a-11e44f521456)
-
-
+ </details>
+</details>

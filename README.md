@@ -519,3 +519,58 @@ In the above example, the Gate Level Simulation failed. This is due to a synthes
 
 Week 3
 
+
+Compilation of the C code:
+
+Installation of the leafpad editor:
+
+sudo apt install leafpad
+
+
+Open the leafpad editor:
+
+1) leafpad (name of the file).c
+
+
+C code:
+
+![sum1ton c ss](https://github.com/siddharthanand3/vsdhdp/assets/171400217/30c5058a-cf2c-456a-8fab-f3f53502b2a2)
+
+
+Output of the code:
+
+2) gcc (name of the file).c
+3) ls -ltr
+4) ./a.out
+
+![Screenshot 2024-06-25 180104](https://github.com/siddharthanand3/vsdhdp/assets/171400217/1296a5cf-bf2f-4662-8d56-9af62cb1de26)
+
+
+
+RISC - V based lab:
+
+
+Code:
+
+Display the C code on terminal:
+
+1) cat (name of the file).c![cat c code](https://github.com/siddharthanand3/vsdhdp/assets/171400217/77a956b2-28ec-437f-85cb-821a7be989d6)
+
+
+Utilising the RISC V compiler:
+
+2) riscv64-unknown-elf-gcc -o1 -mabi=lp64 -march=rv64i -o (name of the file).o (name of the file).c
+
+Check if the file has been created:
+
+3) ls -ltr (name of the file).o
+   
+![Screenshot 2024-06-25 185502](https://github.com/siddharthanand3/vsdhdp/assets/171400217/7fc1a23f-a8fa-47a2-9d5a-60415d9b0f85)
+
+
+In order to view the Assembly level breakdown:
+
+4) riscv64-unknown-elf-objdump -d (name of the C file).o
+5) riscv64-unknown-elf-objdump -d (name of the C file).o | less
+6) /main
+7) 

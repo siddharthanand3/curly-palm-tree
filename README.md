@@ -1,6 +1,9 @@
-# VSD Hardware Development Program (May 30 - August 8, 2024)
+# VSDHDP
 
-This repository contains setup instructions for the VSD Hardware Development Program.
+## Table of Contents
+- [Week 0](#week-0)
+- [Week 1](#week-1)
+- [Week 2](#week-2)
 
 <details>
   <summary>Week 0</summary>
@@ -49,7 +52,8 @@ This repository contains setup instructions for the VSD Hardware Development Pro
 <details>
   <summary>Week 1</summary>
 
-### Day 1
+<details>
+  <summary>Day 1</summary>
 
 #### Viewing the Output After Simulation in GTKWave
 
@@ -114,7 +118,10 @@ This repository contains setup instructions for the VSD Hardware Development Pro
     ```
 - ![netlist representation](https://github.com/siddharthanand3/vsdhdp/assets/171400217/d73a9989-b0a8-40e5-8da8-13f942f19803)
 
-### Day 2
+</details>
+
+<details>
+  <summary>Day 2</summary>
 
 #### Accessing the .lib File
 
@@ -217,6 +224,8 @@ This repository contains setup instructions for the VSD Hardware Development Pro
 
 - ![syncres](https://github.com/siddharthanand3/vsdhdp/assets/171400217/41b5ed2f-f264-4e66-9ad8-81f489941bf2)
 - ![syncres netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/304ea5a9-6cc9-4ef2-b263-fb7dc11a191f)
+
+</details>
 
 </details>
 

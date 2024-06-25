@@ -1,32 +1,54 @@
-# VSD-HDP C12
-This GitHub repository is with reference to the VSD Hardware Development Program held from 30th May to 8th August 2024
+# VSD Hardware Development Program (May 30 - August 8, 2024)
 
-Yosys
+This repository contains setup instructions for the VSD Hardware Development Program.
 
-1)	$ sudo apt-get update
-2)	$ git clone https://github.com/YosysHQ/yosys.git
-3)	$ cd yosys
-4)	$ sudo apt install make
-5)	$ sudo apt-get install build-essential clang bison flex \
-    libreadline-dev gawk tcl-dev libffi-dev git \
-   graphviz xdot pkg-config python3 libboost-system-dev \
-    libboost-python-dev libboost-filesystem-dev zlib1g-dev
-6)	$ make config-gcc
-7)	$ make
-8)	$ sudo make install
-![Screenshot 2024-06-02 164007](https://github.com/siddharthanand3/vsdhdp/assets/171400217/38640060-1f57-4b90-85ce-02d3d8da50b6)
+<details>
+  <summary>Week 0</summary>
 
-iVerilog
+  ## Yosys Installation
 
-1)   sudo apt-get update
-2)   sudo apt-get install iverilog 
-![Screenshot 2024-06-04 173325](https://github.com/siddharthanand3/vsdhdp/assets/171400217/0a4109eb-273c-4712-936b-3f2052e3cfb1)
+  1. Update package list and install dependencies:
+      ```sh
+      sudo apt-get update
+      sudo apt-get install build-essential clang bison flex libreadline-dev gawk tcl-dev libffi-dev git graphviz xdot pkg-config python3 libboost-system-dev libboost-python-dev libboost-filesystem-dev zlib1g-dev make
+      ```
 
-GTK Wave
+  2. Clone the Yosys repository and install:
+      ```sh
+      git clone https://github.com/YosysHQ/yosys.git
+      cd yosys
+      make config-gcc
+      make
+      sudo make install
+      ```
 
-1)   sudo apt-get update
-2)   sudo apt install gtkwave
-![Screenshot 2024-06-04 173133](https://github.com/siddharthanand3/vsdhdp/assets/171400217/fe3a3ab1-4a81-4a36-a04c-decf631f9ade)
+  ![Yosys Installation Screenshot](https://github.com/siddharthanand3/vsdhdp/assets/171400217/38640060-1f57-4b90-85ce-02d3d8da50b6)
+
+  ## iVerilog Installation
+
+  1. Update package list and install iVerilog:
+      ```sh
+      sudo apt-get update
+      sudo apt-get install iverilog
+      ```
+
+  ![iVerilog Installation Screenshot](https://github.com/siddharthanand3/vsdhdp/assets/171400217/0a4109eb-273c-4712-936b-3f2052e3cfb1)
+
+  ## GTK Wave Installation
+
+  1. Update package list and install GTK Wave:
+      ```sh
+      sudo apt-get update
+      sudo apt install gtkwave
+      ```
+
+  ![GTK Wave Installation Screenshot](https://github.com/siddharthanand3/vsdhdp/assets/171400217/fe3a3ab1-4a81-4a36-a04c-decf631f9ade)
+
+</details>
+
+## Conclusion
+
+These steps will install Yosys, iVerilog, and GTK Wave on your system, essential tools for the VSD Hardware Development Program. For further assistance, refer to the respective documentation or the program community.
 
 
 Week 1

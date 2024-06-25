@@ -230,277 +230,194 @@
 </details>
 
 
-Week 2
+<details>
+  <summary>Week 2</summary>
+  <details>
+    <summary>Day 3: Logic Optimization</summary>
+    
+#### Logic Optimization
 
-Day 3
+Logic optimization is a process of finding an equivalent representation of the specified logic circuit under one or more specified constraints. This process is a part of logic synthesis applied in digital electronics and integrated circuit design.
 
-Logic Optimization:
+#### Combinational Logic Optimization
 
-Logic optimization is a process of finding an equivalent representation of the specified logic circuit under one or more specified constraints. This process is a part of a logic synthesis applied in digital electronics and integrated circuit design.
+**Steps:**
+ In the Verilog files folder, open Yosys.
+1. `read_liberty -lib (path to the .lib file)`
+2. `read_verilog opt_check.v`
+3. `synth -top opt_check`
+4. `opt_clean -purge`
+5. `abc -liberty (path to the .lib file)`
+6. `show`
 
+**Opt_check file:**
+![Opt_check Screenshot](https://github.com/siddharthanand3/vsdhdp/assets/171400217/ed137704-a63e-427a-ab6d-01b974ac73f9)
 
-Combinational logic optimizaation:
+![Opt_check Verilog Code](https://github.com/siddharthanand3/vsdhdp/assets/171400217/157083a9-8d98-4263-b849-bb45faca0a36)
 
-Steps:
+**Opt_check2 file:**
+![Opt_check2 Screenshot](https://github.com/siddharthanand3/vsdhdp/assets/171400217/ea231afd-bd5e-4fa4-ad05-bf6e7aac3892)
 
-1) In the verilog files folder, open yosys.
-2) read_liberty -lib (path to the .lib file)
-3) read_verilog opt_check.v
-4) synth -top opt_check
-5) opt_clean -purge
-6) abc -liberty (path to the .lib file)
-7) show
+![Opt_check2 Verilog Code](https://github.com/siddharthanand3/vsdhdp/assets/171400217/32b06234-f2a1-4261-b4a3-386bc211c161)
 
+**Opt_check3 file:**
+![Opt_check3 Screenshot](https://github.com/siddharthanand3/vsdhdp/assets/171400217/e82c3999-5ce4-4c5c-a248-1896cf69f660)
 
-Opt_check file:
+![Opt_check3 Netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/60dc3739-13e7-4a87-9115-b58b6bdf2a65)
 
-![Screenshot 2024-06-17 153750](https://github.com/siddharthanand3/vsdhdp/assets/171400217/ed137704-a63e-427a-ab6d-01b974ac73f9)
+**Opt_check4 file:**
+![Opt_check4 Screenshot](https://github.com/siddharthanand3/vsdhdp/assets/171400217/b73f7e05-67bc-4a09-aafa-15fe2b0083c8)
 
-![Screenshot 2024-06-17 134451](https://github.com/siddharthanand3/vsdhdp/assets/171400217/157083a9-8d98-4263-b849-bb45faca0a36)
+![Opt_check4 Netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/f4da383e-fc5f-44cb-b11c-4ed2ac2a95b6)
 
+#### Optimization of Multiple Modules
 
-Opt_check2 file:
+**Steps:**
+1. `yosys`
+2. `read_liberty -lib (path to .lib file)`
+3. `read_verilog (name of the file).v`
+4. `synth -top (name of the module)`
+5. `flatten`
+6. `write_verilog (name of the file)_flat.v`
+7. `opt_clean -purge`
+8. `abc -liberty (path to the .lib file)`
+9. `show`
 
-![optcheck2file](https://github.com/siddharthanand3/vsdhdp/assets/171400217/ea231afd-bd5e-4fa4-ad05-bf6e7aac3892)
+**Multiple_module_opt.v:**
+![Multiple Module Opt Screenshot](https://github.com/siddharthanand3/vsdhdp/assets/171400217/1bc28c90-2bd4-4997-ba8b-002571f07fbd)
 
-![optcheck2](https://github.com/siddharthanand3/vsdhdp/assets/171400217/32b06234-f2a1-4261-b4a3-386bc211c161)
+![Multiple Module Opt Netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/5ac68ad1-f45f-4abd-b7d3-b55247224f37)
 
+#### Sequential Logic Optimization
 
-Opt_check3 file:
+**GTKWave:**
+1. Open the Verilog files folder.
+2. `iverilog (name of the verilog file).v tb_(name of the verilog file).v`
+3. `./a.out`
+4. `gtkwave tb_(name of the verilog file).v`
 
-![optcheck3file](https://github.com/siddharthanand3/vsdhdp/assets/171400217/e82c3999-5ce4-4c5c-a248-1896cf69f660)
+**Yosys netlist:**
+1. `yosys`
+2. `read_liberty -lib (path to the .lib file)`
+3. `read_verilog (name of the verilog file).v`
+4. `dfflibmap -liberty (path to the .lib file)`  # Since using a D flip flop
+5. `abc -liberty (path to the .lib file)`
+6. `show`
 
-![opt_check3 netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/60dc3739-13e7-4a87-9115-b58b6bdf2a65)
+**Dff_const1.v:**
+![Dff_const1 Screenshot](https://github.com/siddharthanand3/vsdhdp/assets/171400217/d3ba78a9-f06c-4e63-ae34-1f8861d23912)
 
+![Dff_const1 GTKWave](https://github.com/siddharthanand3/vsdhdp/assets/171400217/547008c0-eba6-4650-9858-b6e269184e98)
 
-Opt_check4 file:
+![Dff_const1 Netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/31547a10-e59a-4112-ae4b-d0680373dd8a)
 
-![opt_check4file](https://github.com/siddharthanand3/vsdhdp/assets/171400217/b73f7e05-67bc-4a09-aafa-15fe2b0083c8)
+**Dff_const2.v:**
+![Dff_const2 Screenshot](https://github.com/siddharthanand3/vsdhdp/assets/171400217/549e0cae-bdc7-4788-befe-0c28ae431e0d)
 
-![opt_check4 netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/f4da383e-fc5f-44cb-b11c-4ed2ac2a95b6)
+![Dff_const2 GTKWave](https://github.com/siddharthanand3/vsdhdp/assets/171400217/47e1d220-fa27-4e11-b911-4969644b2f6a)
 
+![Dff_const2 Netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/19621b92-7790-4195-bbb9-e98b4f58e7aa)
 
-Optimization of multiple modules:
+**Dff_const3.v:**
+![Dff_const3 Screenshot](https://github.com/siddharthanand3/vsdhdp/assets/171400217/37c15e31-f4bf-42f8-8878-bbce8382933e)
 
-In order to optimize multiple modules at once, we need to flatten it first.
+![Dff_const3 GTKWave](https://github.com/siddharthanand3/vsdhdp/assets/171400217/575ac287-7b79-42ae-82cf-9f29eccb8a71)
 
-Code:
+![Dff_const3 Netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/7593754d-f778-4ebc-8b8f-cf1433e12449)
 
-1) yosys
-2) read_liberty -lib (path to .lib file)
-3) read_verilog (name of the file).v
-4) synth -top (name of the module)
-5) flatten
-6) write_verilog (name of the file)_flat.v
-7) opt_clean -purge
-8) abc -liberty (path to the .lib file)
-9) show
+**Dff_const4.v:**
+![Dff_const4 Screenshot](https://github.com/siddharthanand3/vsdhdp/assets/171400217/7f49bdec-cd01-4fe6-8da3-52bcb511ef6b)
 
+![Dff_const4 GTKWave](https://github.com/siddharthanand3/vsdhdp/assets/171400217/029d50b0-1a2f-4a64-ac15-29d43f53cd32)
 
-Multiple_module_opt.v:
+![Dff_const4 Netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/51796e6a-0c52-4ec8-b664-b63fdd8c5230)
 
-![multiplemoduleopt file](https://github.com/siddharthanand3/vsdhdp/assets/171400217/1bc28c90-2bd4-4997-ba8b-002571f07fbd)
+**Dff_const5.v:**
+![Dff_const5 Screenshot](https://github.com/siddharthanand3/vsdhdp/assets/171400217/97c85158-cb06-4fad-be5b-89260485def1)
 
-![multiplemoduleopt](https://github.com/siddharthanand3/vsdhdp/assets/171400217/5ac68ad1-f45f-4abd-b7d3-b55247224f37)
+![Dff_const5 GTKWave](https://github.com/siddharthanand3/vsdhdp/assets/171400217/3955d1cc-3d1f-4ec1-a085-8274cf9aa10f)
 
+![Dff_const5 Netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/fa6d846c-8a42-4a08-b011-e2ad86870dfe)
 
+ </details>
 
+ <details>
+    <summary>Day 4: Gate Level Simulation (GLS)</summary>
 
-Sequential logic optimization:
+#### Gate Level Simulation (GLS)
 
-Steps:
+**Synthesis Simulation Mismatch:**
 
-GTKWave:
+**Steps:**
+1. GTKWave simulation
+2. Yosys synthesis of netlist
+3. Gate level simulation to compare the two simulations and confirm
 
-1) Open the verilog files folder.
-2) iverilog (name of the verilog file).v tb_(name of the verilog file).v
-3) ./a.out
-4) gtkwave tb_(name of the verilog file).v
+**Code:**
 
-Yosys netlist:
+**GTKWave simulation:**
+1. `iverilog (name of the verilog file).v tb_(name of the verilog file).v`
+2. `./a.out`
+3. `gtkwave tb_(name of the verilog file).v`
 
-1) yosys
-2) read_liberty -lib (path to the .lib file)
-3) read_verilog (name of the verilog file).v
+**Yosys synthesis of netlist:**
+1. `read_liberty -lib (path to the .lib file)`
+2. `read_verilog (name of the verilog file).v`
+3. `synth -top (name of the module)`
+4. `abc -liberty (path to the .lib file)`
+5. `write_verilog (name of the verilog file)_net.v`
+6. `show`
 
-Since we are using a D flip flop, we use a keyword called 'dfflibmap':
+**Gate level simulation:**
+1. `iverilog (path to the primitives.v file) (path to the sky130_fd_sc_hd.v file) (name of the verilog file)_net.v (testbench of the verilog file)`
+2. `./a.out`
+3. `gtkwave (testbench of the verilog file).vcd`
 
-4) dfflibmap -liberty (path to the .lib file)
+**Ternary_mux_operator.v:**
 
-This allows us to access only the dff files in the library.
+**File:**
+![Ternary_mux File](https://github.com/siddharthanand3/vsdhdp/assets/171400217/e3a704ac-9b72-47c8-89b0-be29492823c5)
 
-5) abc -liberty (path to the .lib file)
-6) show
+**GTKWave simulation:**
+![Ternary_mux GTKWave](https://github.com/siddharthanand3/vsdhdp/assets/171400217/22b26915-2e98-4f00-8707-5bb375750505)
 
+**Netlist:**
+![Ternary_mux Netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/882805fb-8763-49a5-91fe-dba2548dd597)
 
-Dff_const1.v:
+**Confirmed GLS output:**
+![Ternary_mux GLS Output](https://github.com/siddharthanand3/vsdhdp/assets/171400217/7e832ae8-a720-4181-80dc-3aa6d88677f3)
 
-![dff_const1 file](https://github.com/siddharthanand3/vsdhdp/assets/171400217/d3ba78a9-f06c-4e63-ae34-1f8861d23912)
+**Bad_mux.v:**
 
-![tb_const1 gtk](https://github.com/siddharthanand3/vsdhdp/assets/171400217/547008c0-eba6-4650-9858-b6e269184e98)
+**File:**
+![Bad_mux File](https://github.com/siddharthanand3/vsdhdp/assets/171400217/11de45ac-99d6-4798-9e68-0e2cd1d7ad3a)
 
-![dffconst1 netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/31547a10-e59a-4112-ae4b-d0680373dd8a)
+**GTKWave simulation:**
+![Bad_mux GTKWave](https://github.com/siddharthanand3/vsdhdp/assets/171400217/4a4116cf-b540-4800-90b6-4798d8b56096)
 
+**Netlist:**
+![Bad_mux Netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/f59a16cf-5fd8-45ad-a280-67ff30b1071d)
 
-Dff_const2.v:
+**Confirmed GLS output:**
+![Bad_mux GLS Output](https://github.com/siddharthanand3/vsdhdp/assets/171400217/1d1a7da5-ac43-4a1a-8460-c3a05080d0df)
 
-![dff_const2 file](https://github.com/siddharthanand3/vsdhdp/assets/171400217/549e0cae-bdc7-4788-befe-0c28ae431e0d)
+**Blocking_caveat.v:**
 
-![tb_const2 gtk](https://github.com/siddharthanand3/vsdhdp/assets/171400217/47e1d220-fa27-4e11-b911-4969644b2f6a)
+**File:**
+![Blocking_caveat File](https://github.com/siddharthanand3/vsdhdp/assets/171400217/59ce738b-d7ef-4cbf-ad11-920aafc23f49)
 
-![dff_const2 netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/19621b92-7790-4195-bbb9-e98b4f58e7aa)
+**GTKWave simulation:**
+![Blocking_caveat GTKWave](https://github.com/siddharthanand3/vsdhdp/assets/171400217/25cf96a8-6956-48c6-93b9-bcd72315d68e)
 
+**Netlist:**
+![Blocking_caveat Netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/362f6518-6409-41b2-bf9a-834f71717220)
 
-Dff_const3.v:
-
-![dff_const3 file](https://github.com/siddharthanand3/vsdhdp/assets/171400217/37c15e31-f4bf-42f8-8878-bbce8382933e)
-
-![gtkwave const3](https://github.com/siddharthanand3/vsdhdp/assets/171400217/575ac287-7b79-42ae-82cf-9f29eccb8a71)
-
-![const3 netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/7593754d-f778-4ebc-8b8f-cf1433e12449)
-
-
-Dff_const4.v:
-
-![dff_const4 file](https://github.com/siddharthanand3/vsdhdp/assets/171400217/7f49bdec-cd01-4fe6-8da3-52bcb511ef6b)
-
-![gtkwave const4](https://github.com/siddharthanand3/vsdhdp/assets/171400217/029d50b0-1a2f-4a64-ac15-29d43f53cd32)
-
-![const4 netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/51796e6a-0c52-4ec8-b664-b63fdd8c5230)
-
-
-Dff_const5.v:
-
-![dff_const5 file](https://github.com/siddharthanand3/vsdhdp/assets/171400217/97c85158-cb06-4fad-be5b-89260485def1)
-
-![gtkwave const5](https://github.com/siddharthanand3/vsdhdp/assets/171400217/3955d1cc-3d1f-4ec1-a085-8274cf9aa10f)
-
-![dff_const5 netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/fa6d846c-8a42-4a08-b011-e2ad86870dfe)
-
-
-
-Day 4
-
-
-Gate level simulation (GLS)
-
-
-Synthesis simulation mismatch:
-
-
-Steps:
-
-1) GTKWave simulation
-2) Yosys synthesis of netlist
-3) Gate level simulation to compare the two simulations and confirm
-
-Code:
-
-GTKWave simulation:
-
-1) iverilog (name of the verilog file).v tb_(name of the verilog file).v
-2) ./a.out
-3) gtkwave tb_(name of the verilog file).v
-
-
-Yosys synthesis of netlist:
-
- read_liberty -lib (path to the .lib file)
- read_verilog (name of the verilog file).v
- synth -top (name of the module)
- abc -liberty (path to the .lib file)
- write_verilog (name of the verilog file)_net.v
- show
-
-
-Gate level simulation:
-
-1) iverilog (path to the primitives.v file) (path to the sky130_fd_sc_hd.v file) (name of the verilog file)_net.v (testbench of the verilog file)
-2) ./a.out
-3) gtkwave (testbench of the verilog file).vcd
-
-
-
-Ternary_mux_operator.v:
-
-
-File:
-
-![ternarymuxfile](https://github.com/siddharthanand3/vsdhdp/assets/171400217/e3a704ac-9b72-47c8-89b0-be29492823c5)
-
-
-GTKWave simulation:
-
-![gtkwave ternary mux](https://github.com/siddharthanand3/vsdhdp/assets/171400217/22b26915-2e98-4f00-8707-5bb375750505)
-
-
-Netlist:
-
-![netlistternarymux](https://github.com/siddharthanand3/vsdhdp/assets/171400217/882805fb-8763-49a5-91fe-dba2548dd597)
-
-
-Confirmed GLS output:
-
-![gls output ternary mux](https://github.com/siddharthanand3/vsdhdp/assets/171400217/7e832ae8-a720-4181-80dc-3aa6d88677f3)
-
-
-Since the GLS output is matching the initial GTKWave simulation the gate level simulation is complete.
-
-
-
-Bad_mux.v:
-
-
-File:
-
-![badmuxfile](https://github.com/siddharthanand3/vsdhdp/assets/171400217/11de45ac-99d6-4798-9e68-0e2cd1d7ad3a)
-
-
-GTKWave simulation:
-
-![badmux gtkwave](https://github.com/siddharthanand3/vsdhdp/assets/171400217/4a4116cf-b540-4800-90b6-4798d8b56096)
-
-
-Netlist:
-
-![badmux netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/f59a16cf-5fd8-45ad-a280-67ff30b1071d)
-
-
-Confirmed GLS output:
-
-![badmux gls](https://github.com/siddharthanand3/vsdhdp/assets/171400217/1d1a7da5-ac43-4a1a-8460-c3a05080d0df)
-
-
-Here, we see that the GLS output does not match the initial GTKWave simulation. This is a prime example of synthesis simulation mismatch. The cause of this is missing sensitivity list. As we see in the verilog code, the 'if' loop is dependent solely on the changing nature of the 'sel' input. This doesn't take into account the changes occuring in 'i0' and 'i1' inputs. 
-
-
-Blocking_caveat.v:
-
-
-
-File:
-
-![blockingcaveatfile](https://github.com/siddharthanand3/vsdhdp/assets/171400217/59ce738b-d7ef-4cbf-ad11-920aafc23f49)
-
-
-GTKWave simulatiom:
-
-![blockingcaveat gtk](https://github.com/siddharthanand3/vsdhdp/assets/171400217/25cf96a8-6956-48c6-93b9-bcd72315d68e)
-
-
-Netlist:
-
-![blocking caveat netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/362f6518-6409-41b2-bf9a-834f71717220)
-
-
-Confirmed GLS output:
-
-![gls output blocking caveat](https://github.com/siddharthanand3/vsdhdp/assets/171400217/14045d2f-88ae-4cf4-970d-18ec67712e25)
-
+**Confirmed GLS output:**
+![Blocking_caveat GLS Output](https://github.com/siddharthanand3/vsdhdp/assets/171400217/14045d2f-88ae-4cf4-970d-18ec67712e25)
 
 In the above example, the Gate Level Simulation failed. This is due to a synthesis simulation mismatch caused by a blocking statement. Hence, it is important to note that we need to avoid using blocking statements as much as possible. And when we do use them, we need to have the utmost clarity so as to prevent such errors.
-
-
+ </details>
+</details>
 Week 3
 
 

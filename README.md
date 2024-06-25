@@ -421,14 +421,12 @@ GTKWave simulation:
 
 Yosys synthesis of netlist:
 
----
  read_liberty -lib (path to the .lib file)
  read_verilog (name of the verilog file).v
  synth -top (name of the module)
  abc -liberty (path to the .lib file)
  write_verilog (name of the verilog file)_net.v
  show
----
 
 
 Gate level simulation:

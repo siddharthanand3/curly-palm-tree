@@ -4,6 +4,7 @@
 - [Week 0](#week-0)
 - [Week 1](#week-1)
 - [Week 2](#week-2)
+- [Week 3](#week-3)
 
 <details>
   <summary>

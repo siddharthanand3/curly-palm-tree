@@ -522,6 +522,18 @@ riscv64-unknown-elf-objdump -d (name of the file).o | less
 /main
 ```
 
-![main objdump](https://github.com/siddharthanand3/vsdhdp/assets/171400217/ad410aa2-850e-4c78-997a-11e44f521456)
- </details>
+![O1](https://github.com/siddharthanand3/vsdhdp/assets/171400217/d320df6e-f539-40fa-b1fe-1a878f2c85d4)
+
+
+#### In order to reduce the number of instructions so that speed is increased:
+
+```bash
+riscv64-unknown-elf-gcc -ofast -mabi=lp64 -march=rv64i -o (name of the file).o (name of the file).c
+```
+
+#### Reduced instruction set:
+
+![ofast instruction](https://github.com/siddharthanand3/vsdhdp/assets/171400217/17d70b49-99e6-4987-bfa4-37625c435f7b)
+
+</details>
 </details>

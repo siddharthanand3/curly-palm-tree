@@ -1,9 +1,9 @@
-module iiitb_rv32i_tb;
+module tb_rv32i;
 
 reg clk,RN;
 wire [31:0]WB_OUT,NPC;
 
-iiitb_rv32i rv32(clk,RN,NPC,WB_OUT);
+rv32i rv32(clk,RN,NPC,WB_OUT);
 
 
 always #3 clk=!clk;

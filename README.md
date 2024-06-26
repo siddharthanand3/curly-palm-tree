@@ -561,20 +561,21 @@ riscv64-unknown-elf-gcc -ofast -mabi=lp64 -march=rv64i -o (name of the file).o (
 <details>
     <summary>RISC-V Simulation using GTKWave</summary>
 
-#### GTKWave simulation:
 
 #### In order to clone the files and download the netlist files for simulation and synthesis:
+
 ```bash
 git clone https://github.com/vinayrayapati/iiitb_rv32i
 cd iiitb_rv32i
 ```
+
+#### GTKWave simulation:
 
 ```bash
 iverilog iiitb_rv32i.v iiitb_rv32i_tb.v
 ./a.out
 gtkwave iiitb_rv32i_tb.v
 ```
-
 
   </details>
   

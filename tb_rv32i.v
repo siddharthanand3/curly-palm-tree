@@ -12,8 +12,8 @@ initial begin
 RN  = 1'b1;
 clk = 1'b1;
 
-$dumpfile ("iiitb_rv32i.vcd"); //by default vcd
-$dumpvars (0, iiitb_rv32i_tb);
+$dumpfile ("rv32i.vcd"); //by default vcd
+  $dumpvars (0, tb_rv32i);
   
   #5 RN = 1'b0;
   

@@ -473,7 +473,8 @@ leafpad (name of the file).c
 
 #### C code:
 
-![sum1ton c ss](https://github.com/siddharthanand3/vsdhdp/assets/171400217/30c5058a-cf2c-456a-8fab-f3f53502b2a2)
+![Screenshot 2024-06-26 223602](https://github.com/siddharthanand3/vsdhdp/assets/171400217/4c3e3837-f8e0-4730-abf1-2a88e947d800)
+
 
 #### Output of the code:
 
@@ -486,7 +487,8 @@ ls -ltr
 ![Screenshot 2024-06-25 180104](https://github.com/siddharthanand3/vsdhdp/assets/171400217/1296a5cf-bf2f-4662-8d56-9af62cb1de26)
 
  </details>
-  <details>
+ 
+ <details>
     <summary>RISC-V Based Lab</summary>
 
 
@@ -498,7 +500,8 @@ ls -ltr
 cat (name of the file).c
 ```
 
-![cat c code](https://github.com/siddharthanand3/vsdhdp/assets/171400217/77a956b2-28ec-437f-85cb-821a7be989d6)
+![cat c code](https://github.com/siddharthanand3/vsdhdp/assets/171400217/a5ef253a-eb1e-4260-95fa-c02c78c7bfbd)
+
 
 #### Utilizing the RISC-V compiler:
 
@@ -522,7 +525,7 @@ riscv64-unknown-elf-objdump -d (name of the file).o | less
 /main
 ```
 
-![O1](https://github.com/siddharthanand3/vsdhdp/assets/171400217/d320df6e-f539-40fa-b1fe-1a878f2c85d4)
+![O1](https://github.com/siddharthanand3/vsdhdp/assets/171400217/1df9dccb-6faf-4f8e-b70d-e364e8761eca)
 
 
 #### In order to reduce the number of instructions so that speed is increased:
@@ -534,7 +537,7 @@ riscv64-unknown-elf-gcc -ofast -mabi=lp64 -march=rv64i -o (name of the file).o (
 
 #### Reduced instruction set:
 
-![ofast instruction](https://github.com/siddharthanand3/vsdhdp/assets/171400217/17d70b49-99e6-4987-bfa4-37625c435f7b)
+![ofast instruction](https://github.com/siddharthanand3/vsdhdp/assets/171400217/abf48a44-b595-48c9-9447-5dffda7f23cd)
 
 
 #### Optimization flags:

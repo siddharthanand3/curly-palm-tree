@@ -538,7 +538,7 @@ riscv64-unknown-elf-gcc -ofast -mabi=lp64 -march=rv64i -o (name of the file).o (
 
 #### Optimization flags:
 
-### O0: optimization for compilation time (default) 
+##### O0: optimization for compilation time (default) 
 
 </details>
 </details>

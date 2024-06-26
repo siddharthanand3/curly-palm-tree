@@ -10,6 +10,7 @@
     <h2 id = 'Week 0'>Week 0</h2>
   </summary>
 
+<p>
   ## Yosys Installation
 
   1. Update package list and install dependencies:
@@ -49,6 +50,7 @@
 
   ![GTK Wave Installation Screenshot](https://github.com/siddharthanand3/vsdhdp/assets/171400217/fe3a3ab1-4a81-4a36-a04c-decf631f9ade)
 
+</p>
 </details>
 
 

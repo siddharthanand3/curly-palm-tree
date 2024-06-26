@@ -531,6 +531,7 @@ riscv64-unknown-elf-objdump -d (name of the file).o | less
 riscv64-unknown-elf-gcc -ofast -mabi=lp64 -march=rv64i -o (name of the file).o (name of the file).c
 ```
 
+
 #### Reduced instruction set:
 
 ![ofast instruction](https://github.com/siddharthanand3/vsdhdp/assets/171400217/17d70b49-99e6-4987-bfa4-37625c435f7b)
@@ -553,4 +554,20 @@ riscv64-unknown-elf-gcc -ofast -mabi=lp64 -march=rv64i -o (name of the file).o (
 ##### Os: Optimize for size. -Os enables all -O2 optimizations that do not typically increase code size. It also performs further optimizations designed to reduce code size. -Os disables the following optimization flags: -falign-functions -falign-jumps -falign-loops -falign-labels -freorder-blocks -freorder-blocks-and-partition -fprefetch-loop-arrays -ftree-vect-loop-version
 
   </details>
+
+<details>
+    <summary>RISC-V Simulation using GTKWave</summary>
+
+#### GTKWave simulation:
+
+```bash
+iverilog iiitb_rv32i.v iiitb_rv32i_tb.v
+./a.out
+gtkwave iiitb_rv32i_tb.v
+```
+
+
+
+  </details>
+  
 </details>

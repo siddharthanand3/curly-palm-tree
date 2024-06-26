@@ -535,5 +535,10 @@ riscv64-unknown-elf-gcc -ofast -mabi=lp64 -march=rv64i -o (name of the file).o (
 
 ![ofast instruction](https://github.com/siddharthanand3/vsdhdp/assets/171400217/17d70b49-99e6-4987-bfa4-37625c435f7b)
 
+
+#### Optimization flags:
+
+### O0: optimization for compilation time (default) 
+
 </details>
 </details>

@@ -6,7 +6,9 @@
 - [Week 2](#week-2)
 
 <details>
-  <summary>Week 0</summary>
+  <summary>
+    <h2 id = 'Week 0'>Week 0</h2>
+  </summary>
 
   ## Yosys Installation
 
@@ -51,7 +53,9 @@
 
 
 <details>
-  <summary>Week 1</summary>
+  <summary>
+    <h2 id = 'Week 1'>Week 1</h2>
+  </summary>
 
 <details>
   <summary>Day 1</summary>
@@ -232,7 +236,9 @@
 
 
 <details>
-  <summary>Week 2</summary>
+  <summary>
+    <h2 id = 'Week 2'>Week 2</h2>
+  </summary>
   <details>
     <summary>Day 3: Logic Optimization</summary>
     
@@ -443,7 +449,9 @@ In the above example, the Gate Level Simulation failed. This is due to a synthes
 </details>
 
 <details>
-  <summary>Week 3</summary>
+  <summary>
+    <h2 id = 'Week 3'>Week 3</h2>
+  </summary>
  
   <details>
     <summary>Compilation of the C Code</summary>

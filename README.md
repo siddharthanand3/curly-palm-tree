@@ -62,7 +62,7 @@
   </summary>
 
 <details>
-  <summary>Day 1: Introduction to Verilog RTL Design</summary>
+  <summary>Introduction to Verilog RTL Design</summary>
 
 #### Viewing the Output After Simulation in GTKWave
 
@@ -130,7 +130,7 @@
 </details>
 
 <details>
-  <summary>Day 2: Timing libs, hierarchical vs flat synthesis</summary>
+  <summary>Timing libs, hierarchical vs flat synthesis</summary>
 
 #### Accessing the .lib File
 
@@ -244,7 +244,7 @@
     <h2 id = 'Week 2'>Week 2</h2>
   </summary>
   <details>
-    <summary>Day 3: Logic Optimization</summary>
+    <summary>Logic Optimization</summary>
     
 #### Logic Optimization
 
@@ -363,7 +363,7 @@ Logic optimization is a process of finding an equivalent representation of the s
  </details>
 
  <details>
-    <summary>Day 4: Gate Level Simulation (GLS)</summary>
+    <summary>Gate Level Simulation (GLS)</summary>
 
 #### Gate Level Simulation (GLS)
 

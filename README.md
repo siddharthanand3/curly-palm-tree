@@ -566,16 +566,16 @@ riscv64-unknown-elf-gcc -ofast -mabi=lp64 -march=rv64i -o (name of the file).o (
 #### In order to clone the files and download the netlist files for simulation and synthesis:
 
 ```bash
-git clone https://github.com/vinayrayapati/iiitb_rv32i
-cd iiitb_rv32i
+git clone https://github.com/siddharthanand3/vsdhdp
+cd rv32i
 ```
 
 #### GTKWave simulation:
 
 ```bash
-iverilog iiitb_rv32i.v iiitb_rv32i_tb.v
+iverilog rv32i.v tb_rv32i.v
 ./a.out
-gtkwave iiitb_rv32i_tb.v
+gtkwave tb_rv32i.vcd
 ```
 
   </details>

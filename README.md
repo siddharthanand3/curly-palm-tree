@@ -62,7 +62,7 @@
   </summary>
 
 <details>
-  <summary>Day 1</summary>
+  <summary>Day 1: Introduction to Verilog RTL Design</summary>
 
 #### Viewing the Output After Simulation in GTKWave
 
@@ -130,7 +130,7 @@
 </details>
 
 <details>
-  <summary>Day 2</summary>
+  <summary>Day 2: Timing libs, hierarchical vs flat synthesis</summary>
 
 #### Accessing the .lib File
 

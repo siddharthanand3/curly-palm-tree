@@ -561,7 +561,9 @@ riscv64-unknown-elf-gcc -ofast -mabi=lp64 -march=rv64i -o (name of the file).o (
 <details>
   <summary>RISC-V rv32i</summary>
 <details>
-    <summary>RISC-V Simulation using GTKWave</summary>
+    <summary>
+    <h4 id='RISC-V Simulation using GTKWave'>  RISC-V Simulation using GTKWave </h4>
+    </summary>
 
 
 #### In order to clone the files and download the netlist files for simulation and synthesis:
@@ -582,7 +584,9 @@ gtkwave tb_rv32i.vcd
   </details>
 
 <details>
-    <summary>RISC-V Synthesis using Yosys</summary>
+    <summary>
+      <h4 id='RISC-V Synthesis using Yosys'>RISC-V Synthesis using Yosys</h4>
+      </summary>
 
 
 #### Synthesis to convert the RTL design code to netlist:
@@ -602,7 +606,9 @@ write_verilog -noattr iiitb_rv32i_synth.v
   </details>
 
 <details>
-    <summary>Gate level synthesis</summary>
+    <summary>
+      <h4 id='RISC-V Simulation using GTKWave'>Gate level synthesis</h4>
+      </summary>
 
 #### Gate level simulation:
 

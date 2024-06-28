@@ -597,6 +597,14 @@ clean
 flatten
 write_verilog -noattr iiitb_rv32i_synth.v
 ```
-  
+
   </details>
+
+<details>
+    <summary>RISC-V Synthesis using Yosys</summary>
+
+#### Gate level simulation:
+
+
+  
 </details>

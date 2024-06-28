@@ -575,6 +575,8 @@ iverilog rv32i.v tb_rv32i.v
 gtkwave tb_rv32i.vcd
 ```
 
+Unable to understand the instructions part.
+
   </details>
 
 <details>
@@ -599,6 +601,9 @@ write_verilog -noattr rv32i_synth.v
 
 The netlist file `rv32i_synth.v` is created in the home directory.
 
+![presence of netlist file](https://github.com/siddharthanand3/vsdhdp/assets/171400217/0a719fb2-d99d-4747-ab44-dd3ba7ca2380)
+
+
   </details>
 
 <details>
@@ -608,6 +613,13 @@ The netlist file `rv32i_synth.v` is created in the home directory.
 
 #### Gate level simulation:
 
+```bash
+iverilog (path to the primitives.v file) (path to the sky130_fd_sc_hd__tt_025C_1v80.lib file) rv32i_synt.v tb_rv32i.v
+./a.out
+gtkwave rv32i.vcd
+```
+
+![glssimulationofrv32i](https://github.com/siddharthanand3/vsdhdp/assets/171400217/03d72d11-c44e-4329-84f5-09e892c350d6)
 
 
 

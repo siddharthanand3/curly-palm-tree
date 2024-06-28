@@ -593,14 +593,14 @@ gtkwave tb_rv32i.vcd
 
 ```bash
 read_liberty -lib lib/sky130_fd_sc_hd__tt_025C_1v80.lib
-read_verilog iiitb_rv32i.v
-synth -top iiitb_rv32i	
+read_verilog rv32i.v
+synth -top rv32i	
 dfflibmap -liberty lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 proc ; opt
 abc -liberty lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 clean
 flatten
-write_verilog -noattr iiitb_rv32i_synth.v
+write_verilog -noattr rv32i_synth.v
 ```
 
   </details>

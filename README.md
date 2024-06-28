@@ -575,6 +575,8 @@ iverilog rv32i.v tb_rv32i.v
 gtkwave tb_rv32i.vcd
 ```
 
+![Screenshot 2024-06-29 002745](https://github.com/siddharthanand3/vsdhdp/assets/171400217/80d98b2b-a846-4ef7-8a19-e82a36ca94ca)
+
 Unable to understand the instructions part.
 
   </details>
@@ -603,7 +605,6 @@ The netlist file `rv32i_synth.v` is created in the home directory.
 
 ![presence of netlist file](https://github.com/siddharthanand3/vsdhdp/assets/171400217/0a719fb2-d99d-4747-ab44-dd3ba7ca2380)
 
-
   </details>
 
 <details>
@@ -620,7 +621,6 @@ gtkwave rv32i.vcd
 ```
 
 ![glssimulationofrv32i](https://github.com/siddharthanand3/vsdhdp/assets/171400217/03d72d11-c44e-4329-84f5-09e892c350d6)
-
 
 
 </details>

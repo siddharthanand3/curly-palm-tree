@@ -544,17 +544,11 @@ riscv64-unknown-elf-gcc -ofast -mabi=lp64 -march=rv64i -o (name of the file).o (
 | Optimization flags | Details |
 |-|-|
 | `O0` | Default optimization for compilation time. | 
-
 | `O1` | It optimizes minimally. |
-
 | `O2` | It optimizes slightly more than O1. |
-
 | `O3` | It optimizes even more. |
-
-| Ofast | It optimizes very aggressively to the point of breaking standard compliance. |
-
+| `Ofast` | It optimizes very aggressively to the point of breaking standard compliance. |
 | `Og` | Optimize debugging experience. -Og enables optimizations that do not interfere with debugging. It should be the optimization level of choice for the standard edit-compile-debug cycle, offering a reasonable level of optimization while maintaining fast compilation and a good debugging experience. |
-
 | `Os` | Optimize for size. `Os` enables all `O2` optimizations that do not typically increase code size. It also performs further optimizations designed to reduce code size. `Os` disables the following optimization flags: `-falign-functions -falign-jumps -falign-loops -falign-labels -freorder-blocks -freorder-blocks-and-partition -fprefetch-loop-arrays -ftree-vect-loop-version`. |
 
   </details>

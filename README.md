@@ -558,7 +558,8 @@ riscv64-unknown-elf-gcc -ofast -mabi=lp64 -march=rv64i -o (name of the file).o (
 ##### Os: Optimize for size. -Os enables all -O2 optimizations that do not typically increase code size. It also performs further optimizations designed to reduce code size. -Os disables the following optimization flags: -falign-functions -falign-jumps -falign-loops -falign-labels -freorder-blocks -freorder-blocks-and-partition -fprefetch-loop-arrays -ftree-vect-loop-version
 
   </details>
-
+<details>
+  <summary>RISC-V rv32i</summary>
 <details>
     <summary>RISC-V Simulation using GTKWave</summary>
 
@@ -601,10 +602,12 @@ write_verilog -noattr iiitb_rv32i_synth.v
   </details>
 
 <details>
-    <summary>RISC-V Synthesis using Yosys</summary>
+    <summary>Gate level synthesis</summary>
 
 #### Gate level simulation:
 
 
+</details>
+</details>
   
 </details>

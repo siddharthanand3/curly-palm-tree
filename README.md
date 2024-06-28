@@ -603,14 +603,18 @@ flatten
 write_verilog -noattr rv32i_synth.v
 ```
 
+The netlist file `rv32i_synth.v` is created in the home directory.
+
   </details>
 
 <details>
     <summary>
-      <h4 id='RISC-V Simulation using GTKWave'>Gate level synthesis</h4>
+      <h4 id='Gate level simulation of RISC-V'>Gate level simulation of RISC-V</h4>
       </summary>
 
 #### Gate level simulation:
+
+
 
 
 </details>

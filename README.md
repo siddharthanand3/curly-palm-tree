@@ -554,6 +554,18 @@ riscv64-unknown-elf-gcc -ofast -mabi=lp64 -march=rv64i -o (name of the file).o (
   </details>
 <details>
   <summary>RISC-V rv32i</summary>
+  <details>
+    <summary>
+      <h4 id='RISC-V: An overview'>RISC-V: An overview</h4>
+      </summary>
+
+#### **RISC-V architecture** 
+
+  The RISC-V architecture is built upon a set of key design principles that contribute to its performance, efficiency, and adaptability. These principles include the use of a reduced instruction set, modularity, and extensibility. By adhering to these principles, RISC-V enables the development of processors that can be tailored to specific applications and use cases, providing a high degree of customization and optimization.
+
+  ![image](https://github.com/siddharthanand3/vsdhdp/assets/171400217/80d84c9f-7e37-4212-bb5a-b837e920e08b)
+
+</details>
 <details>
     <summary>
     <h4 id='RISC-V Simulation using GTKWave'>  RISC-V Simulation using GTKWave </h4>
@@ -600,18 +612,7 @@ The netlist file `rv32i_synth.v` is created in the home directory.
 ![presence of netlist file](https://github.com/siddharthanand3/vsdhdp/assets/171400217/0a719fb2-d99d-4747-ab44-dd3ba7ca2380)
 
   </details>
-<details>
-    <summary>
-      <h4 id='RISC-V: An overview'>RISC-V: An overview</h4>
-      </summary>
 
-#### **RISC-V architecture** 
-
-  The RISC-V architecture is built upon a set of key design principles that contribute to its performance, efficiency, and adaptability. These principles include the use of a reduced instruction set, modularity, and extensibility. By adhering to these principles, RISC-V enables the development of processors that can be tailored to specific applications and use cases, providing a high degree of customization and optimization.
-
-  ![image](https://github.com/siddharthanand3/vsdhdp/assets/171400217/80d84c9f-7e37-4212-bb5a-b837e920e08b)
-
-</details>
 <details>
     <summary>
       <h4 id='Gate level simulation of RISC-V'>Gate level simulation of RISC-V</h4>

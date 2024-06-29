@@ -64,8 +64,8 @@
 <details>
   <summary>Introduction to Verilog RTL Design</summary>
 
-#### Viewing the Output After Simulation in GTKWave
-
+#### _**Viewing the Output After Simulation in GTKWave**
+_
 1. **Open iVerilog:**
     - ![ss for opening iverilog](https://github.com/siddharthanand3/vsdhdp/assets/171400217/bbd88023-3ee5-4547-af92-191251f8c92a)
 
@@ -85,11 +85,11 @@
     - OUTPUT:
     - ![Screenshot 2024-06-11 003114](https://github.com/siddharthanand3/vsdhdp/assets/171400217/6bbf9384-86a3-4b88-8fc3-092955a237b0)
 
-#### Viewing the Verilog Code for Both the Testbench and the File
+#### **Viewing the Verilog Code for Both the Testbench and the File**
 
 - ![iverilog testbench and file](https://github.com/siddharthanand3/vsdhdp/assets/171400217/717bfe71-c7a4-4564-86d4-fcebb9355613)
 
-#### Read Liberty Command to Read Both the .lib File and Verilog Code File
+#### **Read Liberty Command to Read Both the .lib File and Verilog Code File**
 
 - ![read lib 1](https://github.com/siddharthanand3/vsdhdp/assets/171400217/56b46a7a-631e-4660-9619-c3cd602aed9f)
 - ![readverilog](https://github.com/siddharthanand3/vsdhdp/assets/171400217/d049566f-a9c8-4467-bf9e-f8bda294e001)
@@ -567,7 +567,7 @@ git clone https://github.com/siddharthanand3/vsdhdp
 cd rv32i
 ```
 
-#### GTKWave simulation:
+#### **GTKWave simulation**:
 
 ```bash
 iverilog rv32i.v tb_rv32i.v
@@ -575,9 +575,7 @@ iverilog rv32i.v tb_rv32i.v
 gtkwave tb_rv32i.vcd
 ```
 
-![Screenshot 2024-06-29 002745](https://github.com/siddharthanand3/vsdhdp/assets/171400217/80d98b2b-a846-4ef7-8a19-e82a36ca94ca)
-
-Unable to understand the instructions part.
+| 
 
   </details>
 
@@ -587,7 +585,7 @@ Unable to understand the instructions part.
       </summary>
 
 
-#### Synthesis to convert the RTL design code to netlist:
+#### **Synthesis to convert the RTL design code to netlist**:
 
 ```bash
 read_liberty -lib lib/sky130_fd_sc_hd__tt_025C_1v80.lib
@@ -608,7 +606,7 @@ The netlist file `rv32i_synth.v` is created in the home directory.
       <h4 id='Gate level simulation of RISC-V'>Gate level simulation of RISC-V</h4>
       </summary>
 
-#### Gate level simulation:
+#### **Gate level simulation**:
 
 ```bash
 iverilog (path to the primitives.v file) (path to the sky130_fd_sc_hd__tt_025C_1v80.lib file) rv32i_synt.v tb_rv32i.v

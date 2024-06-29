@@ -64,7 +64,7 @@
 <details>
   <summary>Introduction to Verilog RTL Design</summary>
 
-#### ***Viewing the Output After Simulation in GTKWave***
+### ***Viewing the Output After Simulation in GTKWave***
 
 1. **Open iVerilog:**
     - ![ss for opening iverilog](https://github.com/siddharthanand3/vsdhdp/assets/171400217/bbd88023-3ee5-4547-af92-191251f8c92a)

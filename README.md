@@ -8,12 +8,12 @@
 
 <details>
   <summary>
-    <h2 id = 'Week 0'>Week 0</h2>
+    <h2 id = 'Week 0'>**Week 0**</h2>
   </summary>
 
 <p>
   
-  ## Yosys Installation
+  ## **Yosys Installation**
 
   1. Update package list and install dependencies:
       ```sh
@@ -32,7 +32,7 @@
 
   ![Yosys Installation Screenshot](https://github.com/siddharthanand3/vsdhdp/assets/171400217/38640060-1f57-4b90-85ce-02d3d8da50b6)
 
-  ## iVerilog Installation
+  ## **iVerilog Installation**
 
   1. Update package list and install iVerilog:
       ```sh
@@ -42,7 +42,7 @@
 
   ![iVerilog Installation Screenshot](https://github.com/siddharthanand3/vsdhdp/assets/171400217/0a4109eb-273c-4712-936b-3f2052e3cfb1)
 
-  ## GTK Wave Installation
+  ## **GTKWave Installation**
 
   1. Update package list and install GTK Wave:
       ```sh
@@ -58,14 +58,14 @@
 
 <details>
   <summary>
-    <h2 id = 'Week 1'>Week 1</h2>
+    <h2 id = 'Week 1'>**Week 1**</h2>
   </summary>
 
 <details>
   <summary>Introduction to Verilog RTL Design</summary>
 
-#### _**Viewing the Output After Simulation in GTKWave**
-_
+#### ***Viewing the Output After Simulation in GTKWave***
+
 1. **Open iVerilog:**
     - ![ss for opening iverilog](https://github.com/siddharthanand3/vsdhdp/assets/171400217/bbd88023-3ee5-4547-af92-191251f8c92a)
 
@@ -94,7 +94,7 @@ _
 - ![read lib 1](https://github.com/siddharthanand3/vsdhdp/assets/171400217/56b46a7a-631e-4660-9619-c3cd602aed9f)
 - ![readverilog](https://github.com/siddharthanand3/vsdhdp/assets/171400217/d049566f-a9c8-4467-bf9e-f8bda294e001)
 
-#### Synthesis Design
+#### **Synthesis Design**
 
 - Yosys is the synthesizer used to convert the RTL Design into a netlist for viewing purposes.
 - Code:

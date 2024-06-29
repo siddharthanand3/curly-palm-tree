@@ -8,7 +8,7 @@
 
 <details>
   <summary>
-    <h2 id = 'Week 0'>**Week 0**</h2>
+    <h2 id = 'Week 0'>Week 0</h2>
   </summary>
 
 <p>
@@ -58,7 +58,7 @@
 
 <details>
   <summary>
-    <h2 id = 'Week 1'>**Week 1**</h2>
+    <h2 id = 'Week 1'>Week 1</h2>
   </summary>
 
 <details>

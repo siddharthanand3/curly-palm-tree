@@ -603,17 +603,33 @@ gtkwave tb_rv32i.vcd
 |  SLL R15, R1, R2  |  32'h00208783  |
 
 #### **Analysing the obtained waveform pertaining to each of the above instruction:**
-**```Instruction 1: ADD R6, R2, R1```**  
+**`Instruction 1: ADD R6, R2, R1`**  
 
 ![instruction 1](https://github.com/siddharthanand3/vsdhdp/assets/171400217/ec6b814b-93ae-4978-84d1-deba37bbbf97)
 
-**```Instruction 2: SUB R7, R1, R2```**
+**`Instruction 2: SUB R7, R1, R2`**
 
 ![instruction 2](https://github.com/siddharthanand3/vsdhdp/assets/171400217/7ea4a566-d8ec-45ba-9ee8-252bb913ea7f)
 
-**```Instruction 3: AND R8, R1, R3```**
+**`Instruction 3: AND R8, R1, R3`**
 
 ![instruction3](https://github.com/siddharthanand3/vsdhdp/assets/171400217/e87a951a-1ca2-4178-abe2-b082310d476b)
+
+**`Instruction 4: OR R9, R2, R5`**
+
+![instruction4](https://github.com/siddharthanand3/vsdhdp/assets/171400217/0ee70de0-788c-489a-a0d6-9b254ac32fd5)
+
+**`Instruction 5: OR R9, R2, R5`**
+
+![instruction5](https://github.com/siddharthanand3/vsdhdp/assets/171400217/5f4a8849-6c79-4f14-afe1-a2d85428e38b)
+
+**`Instruction 6: OR R9, R2, R5`**
+
+![instruction6](https://github.com/siddharthanand3/vsdhdp/assets/171400217/9ffac6ae-651c-45e5-8dfa-735d31638857)
+
+**`Instruction 7: OR R9, R2, R5`**
+
+![instruction7](https://github.com/siddharthanand3/vsdhdp/assets/171400217/8677cd09-5232-4829-b7d9-9422955c42d8)
 
   </details>
 

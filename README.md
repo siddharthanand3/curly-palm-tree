@@ -456,7 +456,26 @@ In the above example, the Gate Level Simulation failed. This is due to a synthes
   <summary>
     <h2 id = 'Week 3'>Week 3</h2>
   </summary>
- 
+  <details>
+    <summary>
+      <h4 id='RISC-V: An overview'>RISC-V: An overview</h4>
+      </summary>
+
+#### **RISC-V architecture:** 
+
+  The RISC-V architecture is built upon a set of key design principles that contribute to its performance, efficiency, and adaptability. These principles include the use of a reduced instruction set, modularity, and extensibility. By adhering to these principles, RISC-V enables the development of processors that can be tailored to specific applications and use cases, providing a high degree of customization and optimization.
+
+  ![image](https://github.com/siddharthanand3/vsdhdp/assets/171400217/80d84c9f-7e37-4212-bb5a-b837e920e08b)
+
+#### **Instruction set:**
+
+ The RISC-V instruction set architecture (ISA) is a set of instructions for a computer processor. It supports a wide range of applications, including embedded systems, application processors, and microcontrollers. The RISC-V instructions are designed to improve code density and performance while ensuring that code is compact and easy to debug. The instruction set includes integer and floating-point computing, as well as memory and control instructions. The instruction set is extensible, allowing for custom instructions to be added to the architecture.
+
+![image](https://github.com/siddharthanand3/vsdhdp/assets/171400217/4096d8c2-7a49-41f9-83b5-cb7694b47eab)
+
+![image](https://github.com/siddharthanand3/vsdhdp/assets/171400217/2d850c99-8130-4be8-9d9b-d1ba481ff846)
+
+</details>
   <details>
     <summary>Compilation of the C Code</summary>
 
@@ -554,26 +573,7 @@ riscv64-unknown-elf-gcc -ofast -mabi=lp64 -march=rv64i -o (name of the file).o (
   </details>
 <details>
   <summary>RISC-V rv32i</summary>
-  <details>
-    <summary>
-      <h4 id='RISC-V: An overview'>RISC-V: An overview</h4>
-      </summary>
-
-#### **RISC-V architecture:** 
-
-  The RISC-V architecture is built upon a set of key design principles that contribute to its performance, efficiency, and adaptability. These principles include the use of a reduced instruction set, modularity, and extensibility. By adhering to these principles, RISC-V enables the development of processors that can be tailored to specific applications and use cases, providing a high degree of customization and optimization.
-
-  ![image](https://github.com/siddharthanand3/vsdhdp/assets/171400217/80d84c9f-7e37-4212-bb5a-b837e920e08b)
-
-#### **Instruction set:**
-
- The RISC-V instruction set architecture (ISA) is a set of instructions for a computer processor. It supports a wide range of applications, including embedded systems, application processors, and microcontrollers. The RISC-V instructions are designed to improve code density and performance while ensuring that code is compact and easy to debug. The instruction set includes integer and floating-point computing, as well as memory and control instructions. The instruction set is extensible, allowing for custom instructions to be added to the architecture.
-
-![image](https://github.com/siddharthanand3/vsdhdp/assets/171400217/4096d8c2-7a49-41f9-83b5-cb7694b47eab)
-
-![image](https://github.com/siddharthanand3/vsdhdp/assets/171400217/2d850c99-8130-4be8-9d9b-d1ba481ff846)
-
-</details>
+ 
 <details>
     <summary>
     <h4 id='RISC-V Simulation using GTKWave'>  RISC-V Simulation using GTKWave </h4>

@@ -587,20 +587,18 @@ iverilog rv32i.v tb_rv32i.v
 gtkwave tb_rv32i.vcd
 ```
 
-|  **Operation**  |  **Hardcoded ISA**  |  
-|  :----:  |  :----:  |  
-|  ADD R6, R2, R1  |  32'h02208300  |  
-|  SUB R7, R1, R2  |  32'h02209380  |  
-|  AND R8, R1, R3  |  32'h0230a400  |  
-|  OR R9, R2, R5  |  32'h02513480  |  
-|  XOR R10, R1, R4  |  32'h0240c500  |  
-|  SLT R1, R2, R4  |  32'h02415580  |  
-|  ADDI R12, R4, 5  |  32'h00520600  |  
-|  BEQ R0, R0, 15  |  32'h00f00002  |  
-|  SW R3, R1, 2  |  32'h00209181  |  
-|  LW R13, R1, 2  |  32'h00208681  |  
-|  SRL R16, R14, R2  |  32'h00271803  |
-|  SLL R15, R1, R2  |  32'h00208783  |
+| **S. No.** |  **Operation**  |  **Hardcoded ISA**  |  
+|  :----:  |  :----:  |  :----:  |  
+|  1.  |  ADD R6, R2, R1  |  32'h02208300  |  
+|  2.  |  SUB R7, R1, R2  |  32'h02209380  |  
+|  3.  |  AND R8, R1, R3  |  32'h0230a400  |  
+|  4.  |  OR R9, R2, R5  |  32'h02513480  |  
+|  5.  |  XOR R10, R1, R4  |  32'h0240c500  |  
+|  6.  |  SLT R1, R2, R4  |  32'h02415580  |  
+|  7.  |  ADDI R12, R4, 5  |  32'h00520600  |  
+|  8.  |  BEQ R0, R0, 15  |  32'h00f00002  |  
+|  9.  |  SW R3, R1, 2  |  32'h00209181  |  
+|  10.  |  LW R13, R1, 2  |  32'h00208681  |  
 
 #### **Analysing the obtained waveform pertaining to each of the above instruction:**
 **`Instruction 1: ADD R6, R2, R1`**  
@@ -619,17 +617,29 @@ gtkwave tb_rv32i.vcd
 
 ![instruction4](https://github.com/siddharthanand3/vsdhdp/assets/171400217/0ee70de0-788c-489a-a0d6-9b254ac32fd5)
 
-**`Instruction 5: OR R9, R2, R5`**
+**`Instruction 5: XOR R10, R1, R4`**
 
 ![instruction5](https://github.com/siddharthanand3/vsdhdp/assets/171400217/5f4a8849-6c79-4f14-afe1-a2d85428e38b)
 
-**`Instruction 6: OR R9, R2, R5`**
+**`Instruction 6: SLT R1, R2, R4`**
 
 ![instruction6](https://github.com/siddharthanand3/vsdhdp/assets/171400217/9ffac6ae-651c-45e5-8dfa-735d31638857)
 
-**`Instruction 7: OR R9, R2, R5`**
+**`Instruction 7: ADDI R12, R4, 5`**
 
 ![instruction7](https://github.com/siddharthanand3/vsdhdp/assets/171400217/8677cd09-5232-4829-b7d9-9422955c42d8)
+
+**`Instruction 8: BEQ R0, R0, 15`**
+
+![instruction 8](https://github.com/siddharthanand3/vsdhdp/assets/171400217/be27c487-0b6d-4937-ad02-2a0b164cdf24)
+
+**`Instruction 9: SW R3, R1, 2`**
+
+![instruction 9](https://github.com/siddharthanand3/vsdhdp/assets/171400217/56af21dc-8ddd-4280-9487-334e5c99343f)
+
+**`Instruction 10: LW R13, R1, 2`**
+
+![instruction 10](https://github.com/siddharthanand3/vsdhdp/assets/171400217/0c404f7d-f4b6-44e1-a91f-cfe5c6e66793)
 
   </details>
 

@@ -457,9 +457,7 @@ In the above example, the Gate Level Simulation failed. This is due to a synthes
     <h2 id = 'Week 3'>Week 3</h2>
   </summary>
   <details>
-    <summary>
-      <h4 id='RISC-V: An overview'>RISC-V: An overview</h4>
-      </summary>
+    <summary>RISC-V: An overview</summary>
 
 #### **RISC-V architecture:** 
 

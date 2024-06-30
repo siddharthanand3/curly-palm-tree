@@ -460,24 +460,24 @@ In the above example, the Gate Level Simulation failed. This is due to a synthes
   <details>
     <summary>Compilation of the C Code</summary>
 
-#### Installation of the leafpad editor:
+#### **Installation of the leafpad editor:**
 
 ```bash
 sudo apt install leafpad
 ```
 
-#### Open the leafpad editor:
+#### **Open the leafpad editor:**
 
 ```bash
 leafpad (name of the file).c
 ```
 
-#### C code:
+#### **C code:**
 
 ![Screenshot 2024-06-26 223602](https://github.com/siddharthanand3/vsdhdp/assets/171400217/4c3e3837-f8e0-4730-abf1-2a88e947d800)
 
 
-#### Output of the code:
+#### **Output of the code:**
 
 ```bash
 gcc (name of the file).c
@@ -493,9 +493,9 @@ ls -ltr
     <summary>RISC-V Based Lab</summary>
 
 
-#### Code:
+#### **Code:**
 
-#### Display the C code on terminal:
+#### **Display the C code on terminal:**
 
 ```bash
 cat (name of the file).c
@@ -504,13 +504,13 @@ cat (name of the file).c
 ![cat c code](https://github.com/siddharthanand3/vsdhdp/assets/171400217/a5ef253a-eb1e-4260-95fa-c02c78c7bfbd)
 
 
-#### Utilizing the RISC-V compiler:
+#### **Utilizing the RISC-V compiler:**
 
 ```bash
 riscv64-unknown-elf-gcc -o1 -mabi=lp64 -march=rv64i -o (name of the file).o (name of the file).c
 ```
 
-#### Check if the file has been created:
+#### **Check if the file has been created:**
 
 ```bash
 ls -ltr (name of the file).o
@@ -518,7 +518,7 @@ ls -ltr (name of the file).o
 
 ![Screenshot 2024-06-25 185502](https://github.com/siddharthanand3/vsdhdp/assets/171400217/7fc1a23f-a8fa-47a2-9d5a-60415d9b0f85)
 
-#### In order to view the Assembly level breakdown:
+#### **In order to view the Assembly level breakdown:**
 
 ```bash
 riscv64-unknown-elf-objdump -d (name of the file).o
@@ -529,14 +529,14 @@ riscv64-unknown-elf-objdump -d (name of the file).o | less
 ![O1](https://github.com/siddharthanand3/vsdhdp/assets/171400217/1df9dccb-6faf-4f8e-b70d-e364e8761eca)
 
 
-#### In order to reduce the number of instructions so that speed is increased:
+#### **In order to reduce the number of instructions so that speed is increased:**
 
 ```bash
 riscv64-unknown-elf-gcc -ofast -mabi=lp64 -march=rv64i -o (name of the file).o (name of the file).c
 ```
 
 
-#### Reduced instruction set:
+#### **Reduced instruction set:**
 
 ![ofast instruction](https://github.com/siddharthanand3/vsdhdp/assets/171400217/abf48a44-b595-48c9-9447-5dffda7f23cd)
 
@@ -559,11 +559,19 @@ riscv64-unknown-elf-gcc -ofast -mabi=lp64 -march=rv64i -o (name of the file).o (
       <h4 id='RISC-V: An overview'>RISC-V: An overview</h4>
       </summary>
 
-#### **RISC-V architecture** 
+#### **RISC-V architecture:** 
 
   The RISC-V architecture is built upon a set of key design principles that contribute to its performance, efficiency, and adaptability. These principles include the use of a reduced instruction set, modularity, and extensibility. By adhering to these principles, RISC-V enables the development of processors that can be tailored to specific applications and use cases, providing a high degree of customization and optimization.
 
   ![image](https://github.com/siddharthanand3/vsdhdp/assets/171400217/80d84c9f-7e37-4212-bb5a-b837e920e08b)
+
+#### **Instruction set:**
+
+ The RISC-V instruction set architecture (ISA) is a set of instructions for a computer processor. It supports a wide range of applications, including embedded systems, application processors, and microcontrollers. The RISC-V instructions are designed to improve code density and performance while ensuring that code is compact and easy to debug. The instruction set includes integer and floating-point computing, as well as memory and control instructions. The instruction set is extensible, allowing for custom instructions to be added to the architecture.
+
+![image](https://github.com/siddharthanand3/vsdhdp/assets/171400217/4096d8c2-7a49-41f9-83b5-cb7694b47eab)
+
+![image](https://github.com/siddharthanand3/vsdhdp/assets/171400217/2d850c99-8130-4be8-9d9b-d1ba481ff846)
 
 </details>
 <details>

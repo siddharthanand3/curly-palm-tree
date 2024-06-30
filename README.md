@@ -601,6 +601,20 @@ gtkwave tb_rv32i.vcd
 |  LW R13, R1, 2  |  32'h00208681  |  
 |  SRL R16, R14, R2  |  32'h00271803  |
 |  SLL R15, R1, R2  |  32'h00208783  |
+
+#### **Analysing the obtained waveform pertaining to each of the above instruction:**
+**```Instruction 1: ADD R6, R2, R1```**  
+
+![instruction 1](https://github.com/siddharthanand3/vsdhdp/assets/171400217/ec6b814b-93ae-4978-84d1-deba37bbbf97)
+
+**```Instruction 2: SUB R7, R1, R2```**
+
+![instruction 2](https://github.com/siddharthanand3/vsdhdp/assets/171400217/7ea4a566-d8ec-45ba-9ee8-252bb913ea7f)
+
+**```Instruction 3: AND R8, R1, R3```**
+
+![instruction3](https://github.com/siddharthanand3/vsdhdp/assets/171400217/e87a951a-1ca2-4178-abe2-b082310d476b)
+
   </details>
 
 <details>

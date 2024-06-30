@@ -587,8 +587,20 @@ iverilog rv32i.v tb_rv32i.v
 gtkwave tb_rv32i.vcd
 ```
 
-| 
-
+|  **Operation**  |  **Hardcoded ISA**  |  
+|  :----:  |  :----:  |  
+|  ADD R6, R2, R1  |  32'h02208300  |  
+|  SUB R7, R1, R2  |  32'h02209380  |  
+|  AND R8, R1, R3  |  32'h0230a400  |  
+|  OR R9, R2, R5  |  32'h02513480  |  
+|  XOR R10, R1, R4  |  32'h0240c500  |  
+|  SLT R1, R2, R4  |  32'h02415580  |  
+|  ADDI R12, R4, 5  |  32'h00520600  |  
+|  BEQ R0, R0, 15  |  32'h00f00002  |  
+|  SW R3, R1, 2  |  32'h00209181  |  
+|  LW R13, R1, 2  |  32'h00208681  |  
+|  SRL R16, R14, R2  |  32'h00271803  |
+|  SLL R15, R1, R2  |  32'h00208783  |
   </details>
 
 <details>

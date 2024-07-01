@@ -672,12 +672,6 @@ Output of BNE: The BNE instruction checks that both the inputs are not equal, an
 
 ![instruction 9](https://github.com/siddharthanand3/vsdhdp/assets/171400217/56af21dc-8ddd-4280-9487-334e5c99343f)
 
-**`Instruction 10: SLL R15, R1, R2`**
-
-Output of SLL: The first input signifies the binary number(0001) that will be shifted left. The second input signifies the amount of shift(2).
-Therefore 1(0001)<<2 = 4(0100)
-
-![instruction 10](https://github.com/siddharthanand3/vsdhdp/assets/171400217/0c404f7d-f4b6-44e1-a91f-cfe5c6e66793)
 
   </details>
 

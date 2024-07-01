@@ -605,45 +605,77 @@ gtkwave tb_rv32i.vcd
 |  8.  |  BEQ R0, R0, 15  |  32'h00f00002  |  
 |  9.  |  SW R3, R1, 2  |  32'h00209181  |  
 |  10.  |  LW R13, R1, 2  |  32'h00208681  |  
+|  11.  |  SRL R16, R14, R2  |  32'h00271803  |
+|  12.  |  SLL R15, R1, R2  |  32'h00208783  |
 
 #### **Analysing the obtained waveform pertaining to each of the above instruction:**
+
+`clk` - clock
+`ID_EX_A` - Input stored in register 1
+`ID_EX_B` - Input stored in register 2
+`EX_MEM_ALUOUT` - Obtained output
+`EX_MEM_IR` - 32 bit ISA for each instruction
+
 **`Instruction 1: ADD R6, R2, R1`**  
+
+Output of ADD: 1+2 = 3
 
 ![instruction 1](https://github.com/siddharthanand3/vsdhdp/assets/171400217/ec6b814b-93ae-4978-84d1-deba37bbbf97)
 
 **`Instruction 2: SUB R7, R1, R2`**
 
+Output of SUB: 1-2 = -1 = FFFFFF...
+
 ![instruction 2](https://github.com/siddharthanand3/vsdhdp/assets/171400217/7ea4a566-d8ec-45ba-9ee8-252bb913ea7f)
 
 **`Instruction 3: AND R8, R1, R3`**
+
+Output of AND: 3(0011) & 1(0001) = 1(0001)
 
 ![instruction3](https://github.com/siddharthanand3/vsdhdp/assets/171400217/e87a951a-1ca2-4178-abe2-b082310d476b)
 
 **`Instruction 4: OR R9, R2, R5`**
 
+Output of OR: 2(0010) | 5(0101) = 7(0111)
+
 ![instruction4](https://github.com/siddharthanand3/vsdhdp/assets/171400217/0ee70de0-788c-489a-a0d6-9b254ac32fd5)
 
 **`Instruction 5: XOR R10, R1, R4`**
+
+Output of XOR: 1(0001) ^ 4(0100) = 5(0101)
 
 ![instruction5](https://github.com/siddharthanand3/vsdhdp/assets/171400217/5f4a8849-6c79-4f14-afe1-a2d85428e38b)
 
 **`Instruction 6: SLT R1, R2, R4`**
 
+Output of SLT: It compares the first input with the second input. If the first input is lesser than the second, then 1. Else 0.
+2<4, hence 1.
+
 ![instruction6](https://github.com/siddharthanand3/vsdhdp/assets/171400217/9ffac6ae-651c-45e5-8dfa-735d31638857)
 
 **`Instruction 7: ADDI R12, R4, 5`**
+
+Output of ADDI: It adds the first input with an immediate value.
 
 ![instruction7](https://github.com/siddharthanand3/vsdhdp/assets/171400217/8677cd09-5232-4829-b7d9-9422955c42d8)
 
 **`Instruction 8: BEQ R0, R0, 15`**
 
+Output of BEQ: BEQ is a branching instruction which increments the program counter(PC) by the provided number(in this case, 15) if both inputs are equal.
+Here since both inputs are equal, we can see the increase in the program counter.
+
 ![instruction 8](https://github.com/siddharthanand3/vsdhdp/assets/171400217/be27c487-0b6d-4937-ad02-2a0b164cdf24)
 
-**`Instruction 9: SW R3, R1, 2`**
+**`Instruction 9: BNE R0, R1, 20`**
+
+Output of BNE: The BNE instruction checks that both the inputs are not equal, and increments the program counter(PC) by the provided number(in this case, 20).
 
 ![instruction 9](https://github.com/siddharthanand3/vsdhdp/assets/171400217/56af21dc-8ddd-4280-9487-334e5c99343f)
 
-**`Instruction 10: LW R13, R1, 2`**
+**`Instruction 10: SLL R15, R1, R2`**
+
+Output of SLL: The first input signifies the binary number(0001) that will be shifted left. The second input signifies the amount of shift(2).
+Therefore 1(0001)<<2 = 4(0100)
 
 ![instruction 10](https://github.com/siddharthanand3/vsdhdp/assets/171400217/0c404f7d-f4b6-44e1-a91f-cfe5c6e66793)
 

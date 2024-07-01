@@ -657,21 +657,20 @@ Output of SLT: It compares the first input with the second input. If the first i
 
 Output of ADDI: It adds the first input with an immediate value.
 
-![instruction7](https://github.com/siddharthanand3/vsdhdp/assets/171400217/8677cd09-5232-4829-b7d9-9422955c42d8)
+![instruction7](https://github.com/siddharthanand3/vsdhdp/assets/171400217/2671bad3-0e20-4694-8762-9c6e6579b9f2)
 
 **`Instruction 8: BEQ R0, R0, 15`**
 
 Output of BEQ: BEQ is a branching instruction which increments the program counter(PC) by the provided number(in this case, 15) if both inputs are equal.
 Here since both inputs are equal, we can see the increase in the program counter.
 
-![instruction 8](https://github.com/siddharthanand3/vsdhdp/assets/171400217/be27c487-0b6d-4937-ad02-2a0b164cdf24)
+![instruction 8](https://github.com/siddharthanand3/vsdhdp/assets/171400217/0d27a9a3-c089-4804-bce2-4998963fdf16)
 
 **`Instruction 9: BNE R0, R1, 20`**
 
 Output of BNE: The BNE instruction checks that both the inputs are not equal, and increments the program counter(PC) by the provided number(in this case, 20).
 
-![instruction 9](https://github.com/siddharthanand3/vsdhdp/assets/171400217/56af21dc-8ddd-4280-9487-334e5c99343f)
-
+![instruction 9](https://github.com/siddharthanand3/vsdhdp/assets/171400217/045474cc-f70d-4159-a433-c887de978a8e)
 
   </details>
 

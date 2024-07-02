@@ -674,6 +674,15 @@ Hardcoded ISA: 32'h00f00002
 
 ![instruction 8](https://github.com/siddharthanand3/vsdhdp/assets/171400217/0d27a9a3-c089-4804-bce2-4998963fdf16)
 
+**`Instruction 9: SW R3, R1, 2`**
+
+Output of SW: The store word `(SW)` instruction reads the lower 4 bytes of your source register and stores them into memory at the address given in the destination operand.
+Memory in [ Source register 1 + offset ] is transferred to Destination register.
+Hardcoded ISA: 32'h00209181
+
+![instruction 9](https://github.com/siddharthanand3/vsdhdp/assets/171400217/71b933a4-29cd-4f70-93d7-c6e164b59fdf)
+
+
   </details>
 
 <details>
@@ -711,7 +720,46 @@ iverilog (path to the primitives.v file) (path to the sky130_fd_sc_hd__tt_025C_1
 gtkwave rv32i.vcd
 ```
 
-![glssimulationofrv32i](https://github.com/siddharthanand3/vsdhdp/assets/171400217/03d72d11-c44e-4329-84f5-09e892c350d6)
+
+**`Instruction 1: ADD R6, R2, R1`**  
+
+![instruction 1](https://github.com/siddharthanand3/vsdhdp/assets/171400217/62f6b7ec-8f1b-47fa-a0dc-01f4f752ec19)
+
+**`Instruction 2: SUB R7, R1, R2`**
+
+![instruction 2](https://github.com/siddharthanand3/vsdhdp/assets/171400217/4b4b0b33-4d2e-444d-9f5e-9cb34ee72266)
+
+**`Instruction 3: AND R8, R1, R3`**
+
+![instruction3](https://github.com/siddharthanand3/vsdhdp/assets/171400217/f3a35e82-b1c4-422e-9ab1-00956334a984)
+
+**`Instruction 4: OR R9, R2, R5`**
+
+![instruction4](https://github.com/siddharthanand3/vsdhdp/assets/171400217/de686b7c-82e6-400c-bccc-c947cfa88528)
+
+**`Instruction 5: XOR R10, R1, R4`**
+
+![instruction5](https://github.com/siddharthanand3/vsdhdp/assets/171400217/6345dbfb-a3c1-49f2-8dd5-6609c45cd81d)
+
+**`Instruction 6: SLT R1, R2, R4`**
+
+![instruction6](https://github.com/siddharthanand3/vsdhdp/assets/171400217/36838e4b-e13f-4c6a-ba5f-b08338f9afc3)
+
+**`Instruction 7: ADDI R12, R4, 5`**
+
+![instruction7](https://github.com/siddharthanand3/vsdhdp/assets/171400217/e37f0c02-41c7-417d-bc98-e2f6645230f5)
+
+**`Instruction 8: BEQ R0, R0, 15`**
+
+![instruction 8](https://github.com/siddharthanand3/vsdhdp/assets/171400217/705d9c8e-3308-4880-a2ab-f3e8610fa440)
+
+**`Instruction 9: SW R3, R1, 2`**
+
+![instruction 9](https://github.com/siddharthanand3/vsdhdp/assets/171400217/e53e0e36-684a-495d-9000-ab3208e57650)
+
+
+The above screenshots are proof of the confirmed Gate Level Simulation (GLS), as there is no mismatch post synthesis.
+
 
 
 </details>

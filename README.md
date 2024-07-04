@@ -723,19 +723,19 @@ gtkwave rv32i.vcd
 
 **`Instruction 1: ADD R6, R2, R1`**  
 
-![instruction 1](https://github.com/siddharthanand3/vsdhdp/assets/171400217/62f6b7ec-8f1b-47fa-a0dc-01f4f752ec19)
+![instruction 1](https://github.com/siddharthanand3/vsdhdp/assets/171400217/24bd4132-60a0-4a18-bd50-59784c272977)
 
 **`Instruction 2: SUB R7, R1, R2`**
 
-![instruction 2](https://github.com/siddharthanand3/vsdhdp/assets/171400217/4b4b0b33-4d2e-444d-9f5e-9cb34ee72266)
+![instruction 2](https://github.com/siddharthanand3/vsdhdp/assets/171400217/3dbac635-133f-4dd3-a383-3421fd3e4c63)
 
 **`Instruction 3: AND R8, R1, R3`**
 
-![instruction3](https://github.com/siddharthanand3/vsdhdp/assets/171400217/f3a35e82-b1c4-422e-9ab1-00956334a984)
+![instruction3](https://github.com/siddharthanand3/vsdhdp/assets/171400217/6c7ee19c-d8e3-4e94-a08b-f1f2ab14d327)
 
 **`Instruction 4: OR R9, R2, R5`**
 
-![instruction4](https://github.com/siddharthanand3/vsdhdp/assets/171400217/de686b7c-82e6-400c-bccc-c947cfa88528)
+![instruction4](https://github.com/siddharthanand3/vsdhdp/assets/171400217/148a0bd9-7e66-4b3d-aac4-01491035e7cd)
 
 **`Instruction 5: XOR R10, R1, R4`**
 

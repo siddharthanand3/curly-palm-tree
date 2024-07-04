@@ -739,23 +739,23 @@ gtkwave rv32i.vcd
 
 **`Instruction 5: XOR R10, R1, R4`**
 
-![instruction5](https://github.com/siddharthanand3/vsdhdp/assets/171400217/6345dbfb-a3c1-49f2-8dd5-6609c45cd81d)
+![instruction5](https://github.com/siddharthanand3/vsdhdp/assets/171400217/27877b3d-a0a2-4bc0-88b2-807ed6b46ccb)
 
 **`Instruction 6: SLT R1, R2, R4`**
 
-![instruction6](https://github.com/siddharthanand3/vsdhdp/assets/171400217/36838e4b-e13f-4c6a-ba5f-b08338f9afc3)
+![instruction6](https://github.com/siddharthanand3/vsdhdp/assets/171400217/14f69da4-98c0-41fb-9b23-cb8fe503d0fb)
 
 **`Instruction 7: ADDI R12, R4, 5`**
 
-![instruction7](https://github.com/siddharthanand3/vsdhdp/assets/171400217/e37f0c02-41c7-417d-bc98-e2f6645230f5)
+![instruction7](https://github.com/siddharthanand3/vsdhdp/assets/171400217/c0bb5064-cf83-4bef-86b7-1b994f0ba66b)
 
 **`Instruction 8: BEQ R0, R0, 15`**
 
-![instruction 8](https://github.com/siddharthanand3/vsdhdp/assets/171400217/705d9c8e-3308-4880-a2ab-f3e8610fa440)
+![instruction 8](https://github.com/siddharthanand3/vsdhdp/assets/171400217/8ba2831f-a632-41b8-bb72-6427e6744f0f)
 
 **`Instruction 9: SW R3, R1, 2`**
 
-![instruction 9](https://github.com/siddharthanand3/vsdhdp/assets/171400217/e53e0e36-684a-495d-9000-ab3208e57650)
+![instruction 9](https://github.com/siddharthanand3/vsdhdp/assets/171400217/debff06c-1b90-4460-86a3-0a9725c4dd9f)
 
 
 The above screenshots are proof of the confirmed Gate Level Simulation (GLS), as there is no mismatch post synthesis.

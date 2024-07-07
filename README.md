@@ -5,6 +5,7 @@
 - [Week 1](#week-1)
 - [Week 2](#week-2)
 - [Week 3](#week-3)
+- [Week 4](#week-4)
 
 <details>
   <summary>
@@ -764,5 +765,13 @@ The above screenshots are proof of the confirmed Gate Level Simulation (GLS), as
 
 </details>
 </details>
+  
+</details>
+
+<details>
+  <summary>
+     <h2 id = 'Week 4'>Week 4</h2>
+  </summary>
+
   
 </details>

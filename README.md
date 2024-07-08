@@ -787,7 +787,15 @@ STA breaks a design down into timing paths, calculates the signal propagation de
 
 OpenSTA is a gate level static timing verifier. As a stand-alone executable it can be used to verify the timing of a design using standard file formats.
 
-
+Steps to install OpenSTA:
+```
+git clone https://github.com/parallaxsw/OpenSTA.git
+cd OpenSTA
+mkdir build
+cd build
+cmake ..
+make
+```
 </details>
   
 </details>

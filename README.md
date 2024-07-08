@@ -772,6 +772,13 @@ The above screenshots are proof of the confirmed Gate Level Simulation (GLS), as
   <summary>
      <h2 id = 'Week 4'>Week 4</h2>
   </summary>
-
+<details>  
+<summary> Static timing Analysis (STA)</summary>  
+<h3>What is static timing analysis?</h3>  
+----------------------------------------------------------------------------------------------------------------
+  
+<h3>OpenSTA</h3>
+----------------------------------------------------------------------------------------------------------------
+</details>
   
 </details>

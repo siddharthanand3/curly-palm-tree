@@ -776,6 +776,8 @@ The above screenshots are proof of the confirmed Gate Level Simulation (GLS), as
 <summary> Static timing Analysis (STA)</summary>  
 <h3>What is static timing analysis?</h3>  
 ----------------------------------------------------------------------------------------------------------------
+
+  Static timing analysis (STA) is a method of validating the timing performance of a design by checking all possible paths for timing violations. STA breaks a design down into timing paths, calculates the signal propagation delay along each path, and checks for violations of timing constraints inside the design and at the input/output interface.
   
 <h3>OpenSTA</h3>
 ----------------------------------------------------------------------------------------------------------------

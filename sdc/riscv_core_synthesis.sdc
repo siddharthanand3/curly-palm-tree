@@ -1,43 +1,39 @@
-###############################################################################
-# Created by write_sdc
-# Sat Mar  2 09:12:17 2024
-###############################################################################
-current_design riscv_core
-###############################################################################
-# Timing Constraints
-###############################################################################
-create_clock -name clk -period 10.0000 [get_ports {clk}]
-set_clock_uncertainty -setup 0.5000 clk
-set_clock_uncertainty -hold 0.2000 clk
-set_clock_latency -source -min 1.0000 [get_clocks {clk}]
-set_clock_latency -source -max 4.0000 [get_clocks {clk}]
-set_input_delay 1.0000 -clock [get_clocks {clk}] -min -add_delay [get_ports {reset}]
-set_input_delay 3.0000 -clock [get_clocks {clk}] -max -add_delay [get_ports {reset}]
-set_output_delay 5.0000 -clock [get_clocks {clk}] -rise -min -add_delay [get_ports {out[0]}]
-set_output_delay 5.0000 -clock [get_clocks {clk}] -fall -min -add_delay [get_ports {out[0]}]
-set_output_delay 5.0000 -clock [get_clocks {clk}] -rise -min -add_delay [get_ports {out[1]}]
-set_output_delay 5.0000 -clock [get_clocks {clk}] -fall -min -add_delay [get_ports {out[1]}]
-set_output_delay 5.0000 -clock [get_clocks {clk}] -rise -min -add_delay [get_ports {out[2]}]
-set_output_delay 5.0000 -clock [get_clocks {clk}] -fall -min -add_delay [get_ports {out[2]}]
-set_output_delay 5.0000 -clock [get_clocks {clk}] -rise -min -add_delay [get_ports {out[3]}]
-set_output_delay 5.0000 -clock [get_clocks {clk}] -fall -min -add_delay [get_ports {out[3]}]
-set_output_delay 5.0000 -clock [get_clocks {clk}] -rise -min -add_delay [get_ports {out[4]}]
-set_output_delay 5.0000 -clock [get_clocks {clk}] -fall -min -add_delay [get_ports {out[4]}]
-set_output_delay 5.0000 -clock [get_clocks {clk}] -rise -min -add_delay [get_ports {out[5]}]
-set_output_delay 5.0000 -clock [get_clocks {clk}] -fall -min -add_delay [get_ports {out[5]}]
-set_output_delay 5.0000 -clock [get_clocks {clk}] -rise -min -add_delay [get_ports {out[6]}]
-set_output_delay 5.0000 -clock [get_clocks {clk}] -fall -min -add_delay [get_ports {out[6]}]
-set_output_delay 5.0000 -clock [get_clocks {clk}] -rise -min -add_delay [get_ports {out[7]}]
-set_output_delay 5.0000 -clock [get_clocks {clk}] -fall -min -add_delay [get_ports {out[7]}]
-set_output_delay 5.0000 -clock [get_clocks {clk}] -rise -min -add_delay [get_ports {out[8]}]
-set_output_delay 5.0000 -clock [get_clocks {clk}] -fall -min -add_delay [get_ports {out[8]}]
-set_output_delay 5.0000 -clock [get_clocks {clk}] -rise -min -add_delay [get_ports {out[9]}]
-set_output_delay 5.0000 -clock [get_clocks {clk}] -fall -min -add_delay [get_ports {out[9]}]
-###############################################################################
-# Environment
-###############################################################################
-set_input_transition -min 0.5000 [get_ports {reset}]
-set_input_transition -max 0.1000 [get_ports {reset}]
-###############################################################################
-# Design Rules
-###############################################################################
+set_units -time ns
+
+set period 10.000
+create_clock -name clk -period $period [get_ports {clk}]
+
+set_clock_latency -source -min 1 clk
+set_clock_latency -source -max 4 clk
+
+
+set clk_uncertainty_factor_setup 0.05
+set clk_uncertainty_setup [expr $period * $clk_uncertainty_factor_setup]
+set clk_uncertainty_factor_hold 0.02
+set clk_uncertainty_hold [expr $period * $clk_uncertainty_factor_hold]
+set_clock_uncertainty -setup $clk_uncertainty_setup [get_clock clk]
+set_clock_uncertainty -hold $clk_uncertainty_hold [get_clock clk]
+
+
+set min_input_dly_factor 0.1
+set max_input_dly_factor 0.3
+set min_input_dly [expr $period * $min_input_dly_factor]
+set max_input_dly [expr $period * $max_input_dly_factor]
+set_input_delay -clock clk -min $min_input_dly [get_ports reset]
+set_input_delay -clock clk -max $max_input_dly [get_ports reset]
+
+
+set min_tran_factor 0.01
+set max_tran_factor 0.05
+set min_tran [expr $period * $min_tran_factor]
+set max_tran [expr $period * $max_tran_factor]
+set_input_transition -max $min_tran [get_ports reset]
+set_input_transition -min $max_tran [get_ports reset] 
+
+
+set min_ouput_dly_factor 0.2
+set max_ouput_dly_factor 0.5
+set min_ouput_dly [expr $period * $min_ouput_dly_factor]
+set max_ouput_dly [expr $period * $max_ouput_dly_factor]
+set_output_delay -clock clk -min $min_ouput_dly [get_ports out]
+set_output_delay -clock clk -min $max_ouput_dly [get_ports out]

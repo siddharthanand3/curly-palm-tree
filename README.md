@@ -801,6 +801,25 @@ cmake ..
 make
 ```
 
+STA of RISC-V CPU core using OpenSTA:
+
+1. Open a new folder which contains all the required files.
+2. `sta`
+3. `read_liberty ./sky130_fd_sc_hd__tt_025C_1v80.lib`
+4. `read_verilog ./rv32i_synth.v`
+5. `link_design rv32i`
+6. `current_design`
+7. `read_sdc riscv_core_synthesis.sdc`
+8. `check_setup -verbose -unconstrained_endpoints`
+9. `report_checks -path_delay min_max -fields {nets cap slew input_pins fanout} -digits {4}`
+
+Min path:
+
+![minpath](https://github.com/user-attachments/assets/383ced60-c91c-4d7e-83ed-c5bf17b68225)
+
+Max path:
+
+![maxpath](https://github.com/user-attachments/assets/9f924f08-63fa-4fe9-9352-0ef42fd6866d)
 
 </details>
   

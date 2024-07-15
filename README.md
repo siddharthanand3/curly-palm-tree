@@ -810,8 +810,9 @@ STA of RISC-V CPU core using OpenSTA:
 5. `link_design rv32i`
 6. `current_design`
 7. `read_sdc riscv_core_synthesis.sdc`
-8. `check_setup -verbose -unconstrained_endpoints`
-9. `report_checks -path_delay min_max -fields {nets cap slew input_pins fanout} -digits {4}`
+8. `create_clock -name clk -period 10.0000 [get_ports {clk}]`
+9. `check_setup -verbose -unconstrained_endpoints`
+10. `report_checks -path_delay min_max -fields {nets cap slew input_pins fanout} -digits {4}`
 
 Min path:
 

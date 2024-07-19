@@ -6,6 +6,7 @@
 - [Week 2](#week-2)
 - [Week 3](#week-3)
 - [Week 4](#week-4)
+- [Week 5](#week-5)
 
 <details>
   <summary>
@@ -823,5 +824,13 @@ Max path:
 ![maxpath](https://github.com/user-attachments/assets/9f924f08-63fa-4fe9-9352-0ef42fd6866d)
 
 </details>
+  
+</details>
+
+<details>
+<summary>
+  <h2 id = 'Week 5'> Week 5 </h2>
+</summary>  
+
   
 </details>

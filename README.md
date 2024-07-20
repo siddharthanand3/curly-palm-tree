@@ -811,9 +811,8 @@ STA of RISC-V CPU core using OpenSTA:
 5. `link_design rv32i`
 6. `current_design`
 7. `read_sdc riscv_core_synthesis.sdc`
-8. `create_clock -name clk -period 10.0000 [get_ports {clk}]`
-9. `check_setup -verbose -unconstrained_endpoints`
-10. `report_checks -path_delay min_max -fields {nets cap slew input_pins fanout} -digits {4}`
+8. `check_setup -verbose -unconstrained_endpoints`
+9. `report_checks -path_delay min_max -fields {nets cap slew input_pins fanout} -digits {4}`
 
 Min path:
 
@@ -831,6 +830,11 @@ Max path:
 <summary>
   <h2 id = 'Week 5'> Week 5 </h2>
 </summary>  
+
+Configuration of the .tcl file:
+
+![Screenshot 2024-07-20 053448](https://github.com/user-attachments/assets/9189bd37-86ea-4cb5-98ff-41077899dbba)
+
 
   
 </details>

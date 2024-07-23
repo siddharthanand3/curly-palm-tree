@@ -835,6 +835,33 @@ Configuration of the .tcl file:
 
 ![Screenshot 2024-07-20 053448](https://github.com/user-attachments/assets/9189bd37-86ea-4cb5-98ff-41077899dbba)
 
+Some basic commands for setting design constraints:
 
-  
+1. `get_*` - querying commands
+   i) `get_ports`: It is used to query the ports in the design.
+   ii) `get_clocks`: It is used to query the clocks in the design.
+   iii) `get_attribute`: It is used to view properties of the cells or ports.
+
+Note: `-filter` is used to input conditions while using `get_*` commands.
+
+2. `report_*` - used to obtain details regarding any specific ports or pins
+
+Configuring the Design constraints:
+
+1. `create_clock -name <name_of_clock:'my_clk'> -per ,period:'5(in ns)'> [clock definition point]`: command to generate a clock
+2. `set_clock_latency <delay> <name of the clock>`: In order to model clock delay in the network.
+3. `set_clock_uncertainty <delay = skew + jitter> <name of the clock>`: This is for setting the clock network (skew + jitter).
+
+Important note: It is imperative that after performing the CLock Tree Synthesis (CTS), we take only jitter into account. This is because the skew will be calculated from the clock network.
+
+`set_clock_uncertainty <delay = jitter> <name of the clock>`: post CTS.
+
+The period given in the `create_clock` command is actually the time period between two rising edges in the clock cycle.
+
+`-wave {<first rising edge> <first falling edge>}`: this is used to signify that the starting phase (i.e. 0 is a falling edge).
+
+Model
+
+
 </details>
+

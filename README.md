@@ -860,7 +860,33 @@ The period given in the `create_clock` command is actually the time period betwe
 
 `-wave {<first rising edge> <first falling edge>}`: this is used to signify that the starting phase (i.e. 0 is a falling edge).
 
-Model
+
+TCL file defining the corners:
+
+![image](https://github.com/user-attachments/assets/6ddcec89-1a36-442a-9115-10b604d8e8c7)
+
+STA of slow, typical and fast libraries:
+
+Slow library:
+
+![Screenshot 2024-07-26 194838](https://github.com/user-attachments/assets/43ffa531-d36a-4b7c-aa8d-7d144bdf1e37)
+
+
+Typical library:
+
+![Screenshot 2024-07-26 194848](https://github.com/user-attachments/assets/9e4fcf72-1504-44f4-9438-8e704a346836)
+
+
+Fast library:
+
+![Screenshot 2024-07-26 194811](https://github.com/user-attachments/assets/50710848-0d16-4fd5-94fc-3e240e83792e)
+
+
+TNS:
+
+
+
+WNS:
 
 
 </details>

@@ -882,12 +882,12 @@ Fast library:
 ![Screenshot 2024-07-26 194811](https://github.com/user-attachments/assets/50710848-0d16-4fd5-94fc-3e240e83792e)
 
 
-TNS:
+WNS:
 
 ![image](https://github.com/user-attachments/assets/be370d8b-f634-4d02-9e4a-1e0144a3168b)
 
 
-WNS:
+TNS:
 
 ![image](https://github.com/user-attachments/assets/1bae1a48-d8e0-4b7c-8770-c08d29bbed35)
 

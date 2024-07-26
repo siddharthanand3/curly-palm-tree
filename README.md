@@ -884,6 +884,7 @@ Fast library:
 
 TNS:
 
+![image](https://github.com/user-attachments/assets/be370d8b-f634-4d02-9e4a-1e0144a3168b)
 
 
 WNS:

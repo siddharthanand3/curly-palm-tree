@@ -883,6 +883,10 @@ Fast library:
 
 ![Screenshot 2024-07-26 194811](https://github.com/user-attachments/assets/50710848-0d16-4fd5-94fc-3e240e83792e)
 
+TCL file for output generation:
+
+![Screenshot 2024-07-26 195419](https://github.com/user-attachments/assets/4c707813-d647-4410-bfa1-85e282834abf)
+
 
 WNS:
 

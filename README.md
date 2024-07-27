@@ -885,7 +885,7 @@ Fast library:
 
 TCL file for output generation:
 
-![Screenshot 2024-07-26 195419](https://github.com/user-attachments/assets/4c707813-d647-4410-bfa1-85e282834abf)
+![image](https://github.com/user-attachments/assets/4ba69a9b-fcf3-40be-a3b3-00a47144a5e8)
 
 
 WNS:

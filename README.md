@@ -892,14 +892,14 @@ WNS:
 
 Worst negative slack (WNS) is the setup slack of the critical path in your design.
 
-![image](https://github.com/user-attachments/assets/be370d8b-f634-4d02-9e4a-1e0144a3168b)
+![image](https://github.com/user-attachments/assets/10d98ccb-c591-403a-8bd0-87bf3b3fdca0)
 
 
 TNS:
 
 The "Total Negative Slack (TNS)" is the sum of the (real) negative slack in your design.
 
-![image](https://github.com/user-attachments/assets/1bae1a48-d8e0-4b7c-8770-c08d29bbed35)
+![image](https://github.com/user-attachments/assets/27b30f62-d7fc-4e2a-acad-59abf5e181d6)
 
 </details>
 

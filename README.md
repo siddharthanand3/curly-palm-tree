@@ -863,6 +863,8 @@ The period given in the `create_clock` command is actually the time period betwe
 
 TCL file defining the corners:
 
+Process corners in VLSI refer to the variations in transistor and circuit behavior due to manufacturing tolerances. These variations can significantly impact the timing and performance of a circuit during static timing analysis (STA).
+
 ![image](https://github.com/user-attachments/assets/6ddcec89-1a36-442a-9115-10b604d8e8c7)
 
 STA of slow, typical and fast libraries:
@@ -884,10 +886,14 @@ Fast library:
 
 WNS:
 
+Worst negative slack (WNS) is the setup slack of the critical path in your design.
+
 ![image](https://github.com/user-attachments/assets/be370d8b-f634-4d02-9e4a-1e0144a3168b)
 
 
 TNS:
+
+The "Total Negative Slack (TNS)" is the sum of the (real) negative slack in your design.
 
 ![image](https://github.com/user-attachments/assets/1bae1a48-d8e0-4b7c-8770-c08d29bbed35)
 

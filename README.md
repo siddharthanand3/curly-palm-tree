@@ -909,6 +909,20 @@ The "Total Negative Slack (TNS)" is the sum of the (real) negative slack in your
   <h2 id = 'Week 6'> Week 6 </h2>
 </summary>
 
+Interactive mode of OpenLANE:
+
+1. `prep -design <design_name>`
+2. `run_synthesis`
+3.  `run_floorplan`
+4.  `run_placement`
+5.  `run_cts`
+6.  `run_routing`
+7.  `run_magic`
+8.  `run_magic_spice_export`
+9.  `run_magic_drc`
+10.  `run_netgen`
+11.  `run_magic_antenna_check`
+
 Flop ratio of picorv32a:
 
 ![picorv32a](https://github.com/user-attachments/assets/fb231790-39b9-4f00-92be-2ac702d3f1b2)

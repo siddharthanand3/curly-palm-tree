@@ -909,6 +909,14 @@ The "Total Negative Slack (TNS)" is the sum of the (real) negative slack in your
   <h2 id = 'Week 6'> Week 6 </h2>
 </summary>
 
+Flop ratio of picorv32a:
 
+![picorv32a](https://github.com/user-attachments/assets/fb231790-39b9-4f00-92be-2ac702d3f1b2)
+
+Number of D- flip dlops is indicated by file name ending with 'dfxtp'. It's 1613.
+
+Total number of cells = 14876
+
+1613/14876=0.1084 or 10%.
 
 </details>

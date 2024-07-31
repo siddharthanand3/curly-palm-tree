@@ -7,7 +7,8 @@
 - [Week 3](#week-3)
 - [Week 4](#week-4)
 - [Week 5](#week-5)
-
+- [Week 6](#week-6)
+  
 <details>
   <summary>
     <h2 id = 'Week 0'>Week 0</h2>
@@ -903,3 +904,11 @@ The "Total Negative Slack (TNS)" is the sum of the (real) negative slack in your
 
 </details>
 
+<details>
+<summary>
+  <h2 id = 'Week 6'> Week 6 </h2>
+</summary>
+
+
+
+</details>

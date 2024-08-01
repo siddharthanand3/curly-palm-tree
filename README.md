@@ -941,4 +941,13 @@ Floorplan:
 2. `prep -design picorv32a`
 3. `run_synthesis`
 4. `run_floorplan`
+
+Pre-placement:
+
+![pre placement](https://github.com/user-attachments/assets/81d85793-c1df-4f44-b113-1ecb832f3e75)
+
+Post-placement:
+
+![Screenshot 2024-08-01 112556](https://github.com/user-attachments/assets/7ae1718b-602a-40e7-94c6-7fe61448f44d)
+
 </details>

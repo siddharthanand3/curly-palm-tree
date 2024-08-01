@@ -923,6 +923,8 @@ Interactive mode of OpenLANE:
 10.  `run_netgen`
 11.  `run_magic_antenna_check`
 
+Labs were performed with regard to design <`design name: picorv32a`>.
+
 Flop ratio of picorv32a:
 
 ![picorv32a](https://github.com/user-attachments/assets/fb231790-39b9-4f00-92be-2ac702d3f1b2)
@@ -933,4 +935,10 @@ Total number of cells = 14876
 
 1613/14876=0.1084 or 10%.
 
+Floorplan:
+
+1. `./flow.tcl -interactive`
+2. `prep -design picorv32a`
+3. `run_synthesis`
+4. `run_floorplan`
 </details>

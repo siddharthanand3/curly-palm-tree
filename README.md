@@ -1004,6 +1004,30 @@ Standard cells legally placed:
 <h3>Designing library cells using magic and ngspice</h3>
 </summary>
 
+SPICE simulations:
+
+The order of description of the MOS transistors is `drain gate source substrate`.
+
+```
+*** Model Descriptions ***
+*** Netlist Descriptions ***
+M1 out in vdd vdd PMOS W=0.375u L=0.25u
+M2 out in 0 0 NMOS W=0.375u L=0.25u
+
+cload out 0 10f
+
+Vdd vdd 0 2.5
+Vin in 0 2.5
+
+*** Simulation Commands***
+.op
+.dc Vin 0 2.5 0.05
+
+*** .include tech parameters file ***
+.LIB "<name of tech parameters file>" CMOS_MODELS
+.end
+```
+
 Cloning the design of the custom inverter layout from the referenced repository:
 
 1. `cd /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane`

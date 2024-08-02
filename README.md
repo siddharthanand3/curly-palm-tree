@@ -999,4 +999,13 @@ Standard cells legally placed:
 ![Unplacedstandardcellslegallyplace](https://github.com/user-attachments/assets/1ddb96fd-fad1-43cd-b5ca-85ebb7417504)
 </details>
 
+<details>
+<summary> 
+<h3>Designing library cells using magic and ngspice</h3>
+</summary>
+
+  
+</details>
+
+
 </details>

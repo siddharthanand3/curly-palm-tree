@@ -933,7 +933,7 @@ Number of D- flip dlops is indicated by file name ending with 'dfxtp'. It's 1613
 
 Total number of cells = 14876
 
-1613/14876=0.1084 or 10%.
+$1613/14876=0.1084$ or 10%.
 
 Floorplan:
 
@@ -944,10 +944,51 @@ Floorplan:
 
 Pre-placement:
 
-![pre placement](https://github.com/user-attachments/assets/81d85793-c1df-4f44-b113-1ecb832f3e75)
+Contents of floorplan.def:
+
+![floorplan def](https://github.com/user-attachments/assets/8bfd6103-c432-4004-8942-81fa57ae15b4)
+
+Commands to load floorplan def in magic:
+
+1. `cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/17-03_12-06/results/floorplan/`
+2. `magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &`
+
+![ss in floorplan def](https://github.com/user-attachments/assets/4b439e72-ff90-42a0-9925-eca88d955f21)
+
+Equidistant ports:
+
+![equidistant ports](https://github.com/user-attachments/assets/ee51a002-73d9-4594-9dc2-53f12b876b56)
+
+Port placement:
+
+![metal3layer](https://github.com/user-attachments/assets/781b45a1-53ef-4f24-9f35-a6d89df9c195)
+
+![metal2layer](https://github.com/user-attachments/assets/b53d9c71-55b0-4482-b974-1aadc187a229)
+
+Decap and tap cells:
+
+![decap and tap cells](https://github.com/user-attachments/assets/ef0d0af6-f9bc-4f20-a990-3e827f89fa53)
+
+Standard cells at the origin:
+
+![subcell](https://github.com/user-attachments/assets/8366fb44-c690-4ad7-9ab7-a6a3c318867c)
 
 Post-placement:
 
-![Screenshot 2024-08-01 112556](https://github.com/user-attachments/assets/7ae1718b-602a-40e7-94c6-7fe61448f44d)
+1. `run_placement`
+
+Commands to load placement def in magic:
+
+1. `cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/17-03_12-06/results/placement/`
+2. `magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &`
+
+![placement def](https://github.com/user-attachments/assets/a2a29434-1947-4e07-8d54-ff2fa6dc3aef)
+
+We previously saw in the floorplan about unplaced standard cells.
+
+Standard cells legally placed:
+
+![Unplacedstandardcellslegallyplace](https://github.com/user-attachments/assets/1ddb96fd-fad1-43cd-b5ca-85ebb7417504)
+
 
 </details>

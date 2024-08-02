@@ -1147,8 +1147,26 @@ Cell rise delay calculation:
 ```math
 Rise\ cell\ delay\ = X\ axis\ value\ for\ output\ at\ 50\% - X\ axis\ value\ for\ input\ at\ 50\%
 ```
+```math
+50\%\ of\ 3.3V\ = 1.65\ V
+```
 
+Cell rise delay at 50% of output:
+
+![cellrisedelay](https://github.com/user-attachments/assets/d39d7d13-82bd-44a6-a3de-1e584dd5cdc4)
+
+![50%cellrise](https://github.com/user-attachments/assets/ed55b631-847d-46d7-91ae-59a41b59c34f)
+
+
+```math
+Rise\ transition\ time = 2.2114\ - 2.1498\ = 0.0616\ ns\ = 61.6\ ps\
+```
 </details>
 
 
+<details>
+<summary> 
+<h3>Problems in the old magic tech file and DRC rules</h3>
+</summary>
+</details>
 </details>

@@ -1117,7 +1117,7 @@ Ngspice simulation:
 Rise transition time calculation:
 
 ```math
-Rise\ transition\ time = X-axis\ value\ for\ output\ at\ 80\% - X-axis\ value\ for\ output\ at\ 20\%
+Rise\ transition\ time = X\ axis\ value\ for\ output\ at\ 80\% - X\ axis\ value\ for\ output\ at\ 20\%
 ```
 ```math
 20\%\ of\ output = 660\ mV
@@ -1126,6 +1126,27 @@ Rise\ transition\ time = X-axis\ value\ for\ output\ at\ 80\% - X-axis\ value\ f
 80\%\ of\ output = 2.64\ V
 ```
 
+Output at 20%:
+
+![code 20%](https://github.com/user-attachments/assets/84ab70aa-58a6-49b4-b126-d6df1edc3f83)
+
+![20% img](https://github.com/user-attachments/assets/b13ae857-6d3e-4fe4-b2b0-f4148d0d865f)
+
+Output at 80%:
+
+![code 80%](https://github.com/user-attachments/assets/7541551d-2715-4c8c-9006-89f76f9ba3b5)
+
+![80% img](https://github.com/user-attachments/assets/5a7e3dcb-d084-46be-9f07-f62b6741be6c)
+
+```math
+Rise\ transition\ time = 2.2465\ - 2.1823\ = 0.0642\ ns\ = 64.2\ ps\
+```
+
+Cell rise delay calculation:
+
+```math
+Rise\ cell\ delay\ = X\ axis\ value\ for\ output\ at\ 50\% - X\ axis\ value\ for\ input\ at\ 50\%
+```
 
 </details>
 

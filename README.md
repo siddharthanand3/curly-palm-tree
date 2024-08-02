@@ -909,6 +909,17 @@ The "Total Negative Slack (TNS)" is the sum of the (real) negative slack in your
   <h2 id = 'Week 6'> Week 6 </h2>
 </summary>
 
+There are 3 major elements that are required to execute the design flow of ASIC:
+
+* Hardware Development Language
+* EDA tools
+* Process Design kits (PDKs)
+
+The flow from RTL to GDSII:
+
+![image](https://github.com/user-attachments/assets/3c685192-624a-48a0-a594-599c392e204e)
+
+
 Interactive mode of OpenLANE:
 
 1. `prep -design <design_name>`
@@ -1058,7 +1069,36 @@ Identifying PMOS and NMOS on the custom inverter layout:
 ![pmos identified](https://github.com/user-attachments/assets/7a6fa8e1-250d-436e-b3db-3c69db9ff937)
 
 ![nmosidentified](https://github.com/user-attachments/assets/b32f424d-5554-4aec-95f7-94404a725ac7)
-  
+
+Verification that the output (labelled Y) is in fact connected to the drain of both PMOS and NMOS:
+
+![yconnectedtopmosandn](https://github.com/user-attachments/assets/ba5f4c0e-9db0-4c75-abe9-37382971b330)
+
+Verification that Vss is connected to the source of NMOS:
+
+![vgndconnectedtosourceofnmos](https://github.com/user-attachments/assets/a2641752-0634-4984-bd6d-4027cd3f6fe5)
+
+Verification that Vdd is connected to the source of PMOS:
+
+![vddconnectedtosourceofpmos](https://github.com/user-attachments/assets/c0a27e37-60fe-488c-bc3a-4c17df84b60a)
+
+Spice extraction of the inverter:
+
+In the tkcon window:
+
+1. `extract all`
+
+`.ext` file has been created.
+
+2. `ext2spice cthresh 0 rthresh 0`
+3. `ext2spice`
+
+![sky130_inv spice](https://github.com/user-attachments/assets/7525b98b-182f-498d-95b5-e74334a0dfa2)
+
+The `.spice` file has successfully been created.
+
+![sky130_inv spice](https://github.com/user-attachments/assets/d691567c-4b9a-4596-8cd2-004d08376d6d)
+
 </details>
 
 

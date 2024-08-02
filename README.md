@@ -1174,4 +1174,10 @@ Corrupt skywater process magic tech file and performing DRC corrections:
 1. `wget https://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz`
 
 </details>
+<details>
+<summary> 
+<h3>Clock tree synthesis</h3>
+</summary>
+
+</details>
 </details>

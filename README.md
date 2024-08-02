@@ -1016,6 +1016,15 @@ Copy the magic tech file `sky130A.tech` to the same folder in order to not write
 Open the custom inverter design on magic:
 
 4. `magic -T sky130A.tech sky130_inv.mag &` 
+
+![inverterlayout](https://github.com/user-attachments/assets/b0e00f7c-90fb-4c5b-a140-aee3d48aecb7)
+
+
+Identifying PMOS and NMOS on the custom inverter layout:
+
+![pmos identified](https://github.com/user-attachments/assets/7a6fa8e1-250d-436e-b3db-3c69db9ff937)
+
+![nmosidentified](https://github.com/user-attachments/assets/b32f424d-5554-4aec-95f7-94404a725ac7)
   
 </details>
 

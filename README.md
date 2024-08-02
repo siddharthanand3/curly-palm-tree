@@ -925,16 +925,24 @@ Interactive mode of OpenLANE:
 
 Labs were performed with regard to design <`design name: picorv32a`>.
 
+<details>
+<summary> 
+<h3>Flop ratio</h3>
+</summary>
 Flop ratio of picorv32a:
 
 ![picorv32a](https://github.com/user-attachments/assets/fb231790-39b9-4f00-92be-2ac702d3f1b2)
 
 Number of D- flip dlops is indicated by file name ending with 'dfxtp'. It's 1613.
 
-Total number of cells = 14876
+$Total number of cells = 14876
 
-$1613/14876=0.1084$ or 10%.
-
+1613/14876=0.1084 or 10%.$
+</details>
+<details>
+<summary> 
+<h3>Floorplan and placement post synthesis</h3>
+</summary>
 Floorplan:
 
 1. `./flow.tcl -interactive`
@@ -989,6 +997,6 @@ We previously saw in the floorplan about unplaced standard cells.
 Standard cells legally placed:
 
 ![Unplacedstandardcellslegallyplace](https://github.com/user-attachments/assets/1ddb96fd-fad1-43cd-b5ca-85ebb7417504)
-
+</details>
 
 </details>

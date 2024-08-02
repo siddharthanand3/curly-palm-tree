@@ -1004,6 +1004,18 @@ Standard cells legally placed:
 <h3>Designing library cells using magic and ngspice</h3>
 </summary>
 
+Cloning the design of the custom inverter layout from the referenced repository:
+
+1. `cd /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane`
+2. `git clone https://github.com/nickson-jose/vsdstdcelldesign`
+
+Copy the magic tech file `sky130A.tech` to the same folder in order to not write the entire path repeatedly.
+
+3. `cp /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech`
+
+Open the custom inverter design on magic:
+
+4. `magic -T sky130A.tech sky130_inv.mag &` 
   
 </details>
 

@@ -1116,12 +1116,17 @@ Ngspice simulation:
 
 Rise transition time calculation:
 
-<p align ="center"> 
-  $Rise transition time = X-axis value at 80% - X-axis value at 20%
-  20% of the output = 660mV
-  80% of the output =2.64V$
-  </p>
-$$
+```math
+Rise\ transition\ time = X-axis\ value\ for\ output\ at\ 80\% - X-axis\ value\ for\ output\ at\ 20\%
+```
+```math
+20\%\ of\ output = 660\ mV
+```
+```math
+80\%\ of\ output = 2.64\ V
+```
+
+
 </details>
 
 

@@ -1097,8 +1097,31 @@ In the tkcon window:
 
 The `.spice` file has successfully been created.
 
-![sky130_inv spice](https://github.com/user-attachments/assets/d691567c-4b9a-4596-8cd2-004d08376d6d)
+Edited `sky130_inv.spice` file:
 
+![spicefile](https://github.com/user-attachments/assets/aedd0ebe-b3ce-4540-b46b-78ac3bef224d)
+
+Ngspice installation:
+
+`sudo apt install ngspice`
+
+Ngspice simulation:
+
+1. `ngspice sky130_inv.spice`
+2. `plot y vs time a`
+
+![image](https://github.com/user-attachments/assets/c35a2938-bb64-4965-b0a8-7544f4fd19ca)
+
+![graph](https://github.com/user-attachments/assets/7b1f3583-ba26-4e34-bd6b-587c93570c4d)
+
+Rise transition time calculation:
+
+<p align ="center"> 
+  $Rise transition time = X-axis value at 80% - X-axis value at 20%
+  20% of the output = 660mV
+  80% of the output =2.64V$
+  </p>
+$$
 </details>
 
 

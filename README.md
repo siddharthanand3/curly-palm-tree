@@ -1168,5 +1168,10 @@ Rise\ transition\ time = 2.2114\ - 2.1498\ = 0.0616\ ns\ = 61.6\ ps\
 <summary> 
 <h3>Problems in the old magic tech file and DRC rules</h3>
 </summary>
+
+Corrupt skywater process magic tech file and performing DRC corrections:
+
+1. `wget https://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz`
+
 </details>
 </details>

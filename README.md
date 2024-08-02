@@ -927,8 +927,14 @@ Labs were performed with regard to design <`design name: picorv32a`>.
 
 <details>
 <summary> 
-<h3>Flop ratio</h3>
+<h3>Synthesis and Flop ratio</h3>
 </summary>
+
+`run_synthesis` command to execute synthesis of picorv32a:
+
+![image](https://github.com/user-attachments/assets/f4e385f5-e06c-4e15-95bc-880423f175b0)
+
+  
 Flop ratio of picorv32a:
 
 ![picorv32a](https://github.com/user-attachments/assets/fb231790-39b9-4f00-92be-2ac702d3f1b2)
@@ -937,7 +943,7 @@ Number of D- flip dlops is indicated by file name ending with 'dfxtp'. It's 1613
 
 $Total number of cells = 14876
 
-1613/14876=0.1084 or 10%.$
+1613/14876=0.1084 or 10.84%.$
 </details>
 <details>
 <summary> 
@@ -949,6 +955,9 @@ Floorplan:
 2. `prep -design picorv32a`
 3. `run_synthesis`
 4. `run_floorplan`
+
+![floorplan](https://github.com/user-attachments/assets/27d0d613-dd02-4ac6-8cbd-e9b96e4c6c37)
+
 
 Pre-placement:
 

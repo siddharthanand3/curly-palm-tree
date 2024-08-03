@@ -951,10 +951,11 @@ Flop ratio of picorv32a:
 ![picorv32a](https://github.com/user-attachments/assets/fb231790-39b9-4f00-92be-2ac702d3f1b2)
 
 Number of D- flip dlops is indicated by file name ending with 'dfxtp'. It's 1613.
+```math
+Total number of cells = 14876
 
-$Total number of cells = 14876
-
-1613/14876=0.1084 or 10.84%.$
+1613/14876=0.1084 or 10.84%.
+```
 </details>
 <details>
 <summary> 

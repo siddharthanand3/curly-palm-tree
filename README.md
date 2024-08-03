@@ -954,7 +954,7 @@ Number of D- flip dlops is indicated by file name ending with 'dfxtp'. It's 1613
 ```math
 Total\ number\ of\ cells = 14876\
 
-1613\/14876\=0.1084 or 10.84\%.
+1613\ / 14876\ = 0.1084\ or\ 10.84\%.
 ```
 </details>
 <details>

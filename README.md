@@ -1172,7 +1172,18 @@ Rise\ transition\ time = 2.2114\ - 2.1498\ = 0.0616\ ns\ = 61.6\ ps\
 
 Corrupt skywater process magic tech file and performing DRC corrections:
 
-1. `wget https://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz`
+1. Download `drc_tests.tgz` from `https://opencircutdesign.com/open_pdks/archive`.
+2. `tar xfz drc_tests.tgz`
+
+Now that the folder `drc_tests` has been successfully extracted in the `home` folder go ahead and see its contents.
+
+3. `cd drc_tests`
+4. `ls -al`
+
+Screenshot of the command window and the contents:
+
+![drc_tests](https://github.com/user-attachments/assets/43d45a12-b21a-490d-a6a8-5420562d6306)
+
 
 </details>
 <details>

@@ -1192,6 +1192,18 @@ Screenshot of the command window and the contents:
 </details>
 <details>
 <summary> 
+<h3>Timing modelling using delay tables</h3>
+</summary>
+
+</details>
+<details>
+<summary> 
+<h3>Timing modelling using ideal clocks in OpenSTA</h3>
+</summary>
+
+</details>
+<details>
+<summary> 
 <h3>Clock tree synthesis</h3>
 </summary>
 

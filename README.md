@@ -1194,6 +1194,16 @@ Screenshot of the command window and the contents:
 <summary> 
 <h3>Timing modelling using delay tables</h3>
 </summary>
+Let's revisit the custom inverter layout:
+
+1. `cd Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign`
+2. `magic -T sky130A.tech sky130_inv.mag &`
+
+![custominverterlay](https://github.com/user-attachments/assets/98b17110-902e-4a41-80bf-8aceaf37eefb)
+
+`tracks.info` of sky130_fd_sc_hd:
+
+1. `cd Desktop/work/tools/openlane_working_dir/openlane/`
 
 </details>
 <details>

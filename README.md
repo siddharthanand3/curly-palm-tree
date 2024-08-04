@@ -906,7 +906,7 @@ The "Total Negative Slack (TNS)" is the sum of the (real) negative slack in your
 
 <details>
 <summary>
-  <h2 id = 'Week 6'> Week 6 </h2>
+  <h2 id = 'week-6'> Week 6 </h2>
 </summary>
 
 There are 3 major elements that are required to execute the design flow of ASIC:
@@ -1172,7 +1172,7 @@ Rise\ transition\ time = 2.2114\ - 2.1498\ = 0.0616\ ns\ = 61.6\ ps\
 
 Corrupt skywater process magic tech file and performing DRC corrections:
 
-1. Download `drc_tests.tgz` from `https://opencircutdesign.com/open_pdks/archive`.
+1. Download `drc_tests.tgz` from [`https://opencircuitdesign.com/open_pdks/archive`](https://opencircuitdesign.com/open_pdks/archive).
 2. `tar xfz drc_tests.tgz`
 
 Now that the folder `drc_tests` has been successfully extracted in the `home` folder go ahead and see its contents.

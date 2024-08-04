@@ -1184,6 +1184,10 @@ Screenshot of the command window and the contents:
 
 ![drc_tests](https://github.com/user-attachments/assets/43d45a12-b21a-490d-a6a8-5420562d6306)
 
+.magicrc file:
+
+![magicrc](https://github.com/user-attachments/assets/ce4d6885-b7f0-4bf1-a694-31ba1515b722)
+
 
 </details>
 <details>

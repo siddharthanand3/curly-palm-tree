@@ -1227,6 +1227,11 @@ The second condition states that the width of the cell must be an odd multiple o
 ``` math
 0.5\ + 1\ + 1\ + 0.5\ = 3\ which\ is\ odd.
 ```
+
+``` math
+Width\ of\ the\ standard\ cell\ = 0.46\ * 3\ = 1.38\ um.
+```
+
 Condition 3 verified:
 
 ![height and width of the cell](https://github.com/user-attachments/assets/3170adcf-0d3b-47b7-be7a-fcf25bf7bbdf)
@@ -1237,6 +1242,9 @@ The third condition states that the height of the cell must be an even multiple 
 0.5\ + 1\ + 1\ + 1\ + 1\ + 1\ + 1\ + 1\ + 0.5\ = 8\ which\ is\ even.
 ```
 
+``` math
+Height\ of\ the\ standard\ cell\ = 0.34\ * 8\ = 2.72\ um.
+```
 
 </details>
 <details>

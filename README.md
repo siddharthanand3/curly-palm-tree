@@ -11,7 +11,7 @@
   
 <details>
   <summary>
-    <h2 id = 'Week 0'>Week 0</h2>
+    <h2 id = 'week-0'>Week 0</h2>
   </summary>
 
 <p>
@@ -61,7 +61,7 @@
 
 <details>
   <summary>
-    <h2 id = 'Week 1'>Week 1</h2>
+    <h2 id = 'week-1'>Week 1</h2>
   </summary>
 
 <details>
@@ -244,7 +244,7 @@
 
 <details>
   <summary>
-    <h2 id = 'Week 2'>Week 2</h2>
+    <h2 id = 'week-2'>Week 2</h2>
   </summary>
   <details>
     <summary>Logic Optimization</summary>
@@ -457,7 +457,7 @@ In the above example, the Gate Level Simulation failed. This is due to a synthes
 
 <details>
   <summary>
-    <h2 id = 'Week 3'>Week 3</h2>
+    <h2 id = 'week-3'>Week 3</h2>
   </summary>
   <details>
     <summary>RISC-V: An overview</summary>
@@ -776,7 +776,7 @@ The above screenshots are proof of the confirmed Gate Level Simulation (GLS), as
 
 <details>
   <summary>
-     <h2 id = 'Week 4'>Week 4</h2>
+     <h2 id = 'week-4'>Week 4</h2>
   </summary>
 <details>  
 <summary> Static timing Analysis (STA)</summary>  
@@ -829,7 +829,7 @@ Max path:
 
 <details>
 <summary>
-  <h2 id = 'Week 5'> Week 5 </h2>
+  <h2 id = 'week-5'> Week 5 </h2>
 </summary>  
 
 Configuration of the .tcl file:

@@ -1246,6 +1246,61 @@ The third condition states that the height of the cell must be an even multiple 
 Height\ of\ the\ standard\ cell\ = 0.34\ * 8\ = 2.72\ um.
 ```
 
+Save the file as `sky130_vsdinv.mag`:
+
+![commandtosavevsdinv](https://github.com/user-attachments/assets/6496325f-5398-49a9-acff-5c951520e0a1)
+
+Location of the saved file in parent directory:
+
+![commandwindow](https://github.com/user-attachments/assets/2906d20d-0300-4c34-8f7a-9a554f776ad0)
+
+Screenshot of newly created lef file:
+
+![vsdinv lef](https://github.com/user-attachments/assets/6cbe24b3-14f1-4048-8819-f3682dbbbd4f)
+
+Copy the newly generated lef and associated required lib files to the `src` directory located in `picorv32a` design:
+
+1. `cp sky130_vsdinv.lef /home/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src`
+2. `cp sky130_fd_sc_hd__* /home/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src`
+
+![copywindow](https://github.com/user-attachments/assets/6bbc9e7b-1dff-4fdd-a258-6361068a92d3)
+
+![srcwindow](https://github.com/user-attachments/assets/f53bfe37-46d2-4078-85dc-00219eeccd32)
+
+Editing the `config.tcl` to change the lib files and add the extra lef into OpenLANE lef:
+
+Commands to be added:
+
+```
+set ::env(LIB_SYNTH) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib"
+set ::env(LIB_FASTEST) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__fast.lib"
+set ::env(LIB_SLOWEST) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__slow.lib"
+set ::env(LIB_TYPICAL) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib"
+
+set ::env(EXTRA_LEFS) [glob $::env(OPENLANE_ROOT)/designs/$::env(DESIGN_NAME)/src/*.lef]
+```
+
+Screenshot of the edited `config.tcl`:
+
+![updatedconfig tcl](https://github.com/user-attachments/assets/bcd8d7d5-68c3-4958-9536-1806e543ed05)
+
+Run the OpenLANE flow with the new custom inverter file:
+
+1. `cd Desktop/work/tools/openlane_working_dir/openlane`
+2. `docker`
+3. `./flow.tcl -interactive`
+4. `package require openlane 0.9`
+5. `prep -design picorv32a`
+6. `set lefs [glob $::env(DESIGN_DIR)/src/*.lef]`
+7. `add_lefs -src $lefs`
+8. `run_synthesis`
+
+Command window ss:
+
+![design_values 2](https://github.com/user-attachments/assets/9c7f39be-d300-4152-a4bc-063ca65e7057)
+
+![design_values 1](https://github.com/user-attachments/assets/0d10a057-de93-46ad-9a80-15ecb6bee9f3)
+
 </details>
 <details>
 <summary> 

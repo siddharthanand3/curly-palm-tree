@@ -1306,6 +1306,54 @@ The current design values before modifying them to improve timing:
 
 ![design_values 1](https://github.com/user-attachments/assets/0d10a057-de93-46ad-9a80-15ecb6bee9f3)
 
+We can see below that the custom inverter file is saved as a macro in the `merged.lef`.
+
+Screenshot of `merged.lef` in `tmp` directory:
+
+![custominverterasmacro](https://github.com/user-attachments/assets/64d0005f-5a6d-4bc1-9dfc-7c02d06ec820)
+
+```
+prep -design picorv32a -tag 05-08_16-23 -overwrite
+
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+add_lefs -src $lefs
+
+echo $::env(SYNTH_STRATEGY)
+set ::env(SYNTH_STRATEGY) "DELAY 3"
+echo $::env(SYNTH_BUFFERING)
+echo $::env(SYNTH_SIZING)
+set ::env(SYNTH_SIZING) 1
+echo $::env(SYNTH_DRIVING_CELL)
+
+run_synthesis
+```
+
+Screenshots from the command window:
+
+![synthesissuccessful](https://github.com/user-attachments/assets/de7174f1-3080-42d1-9995-78d82089b1c5)
+
+![area](https://github.com/user-attachments/assets/b618f819-7037-49a4-83f2-07dca472d295)
+
+![slack](https://github.com/user-attachments/assets/2617b5d3-34f9-4218-93c3-80cbece9c72b)
+
+
+Floorplan initiation:
+
+Using `run_floorplan` throws an unexplainable error, therefore we can use the following commands which are already sourced in the `run_floorplan` command:
+
+```
+init_floorplan
+place_io
+tap_decap_or
+```
+Screenshots of the commands:
+
+![init_floorplan](https://github.com/user-attachments/assets/a95386cb-132d-465a-830b-7508687988e7)
+
+![place_io](https://github.com/user-attachments/assets/3377dec1-b051-4204-ace9-d19ca605445d)
+
+![tap_decap_or](https://github.com/user-attachments/assets/ed9d2954-e174-4e7d-b352-7e4d43dad006)
+
 </details>
 <details>
 <summary> 

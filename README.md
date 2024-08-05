@@ -1361,6 +1361,15 @@ Placement after the finishing of the floorplane:
 
 ![placement](https://github.com/user-attachments/assets/d2ae32a6-b21b-48c2-b4f4-4f0ff4c6c9d9)
 
+Load the `placement.def` file in magic:
+
+1. `cd /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/05-06_16-23/results/placement`
+2. `magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &`
+
+The `placement.def` file displayed on magic:
+
+![placement def](https://github.com/user-attachments/assets/2552a8b3-afaf-4b71-a98a-5aff652a44b0)
+
 </details>
 <details>
 <summary> 

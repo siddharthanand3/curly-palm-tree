@@ -1140,7 +1140,7 @@ Output at 80%:
 ![80% img](https://github.com/user-attachments/assets/5a7e3dcb-d084-46be-9f07-f62b6741be6c)
 
 ```math
-Rise\ transition\ time = 2.2465\ - 2.1823\ = 0.0642\ ns\ = 64.2\ ps\
+Rise\ transition\ time = 2.2465\ - 2.1823\ = 0.0642\ ns\ = 64.2\ ps
 ```
 
 Cell rise delay calculation:
@@ -1160,7 +1160,7 @@ Cell rise delay at 50% of output:
 
 
 ```math
-Rise\ transition\ time = 2.2114\ - 2.1498\ = 0.0616\ ns\ = 61.6\ ps\
+Rise\ transition\ time = 2.2114\ - 2.1498\ = 0.0616\ ns\ = 61.6\ ps
 ```
 </details>
 
@@ -1225,7 +1225,7 @@ Condition 2 verified:
 The second condition states that the width of the cell must be an odd multiple of the X pitch.
 
 ``` math
-0.5\ + 1\ + 1\ + 0.5\ = 3\ which\ is\ odd.\
+0.5\ + 1\ + 1\ + 0.5\ = 3\ which\ is\ odd.
 ```
 </details>
 <details>

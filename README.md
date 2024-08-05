@@ -1297,6 +1297,11 @@ Run the OpenLANE flow with the new custom inverter file:
 
 Command window ss:
 
+![synthesis_was_successful](https://github.com/user-attachments/assets/fa58b9ab-b3f0-466e-9069-02fa643f8314)
+
+
+The current design values before modifying them to improve timing:
+
 ![design_values 2](https://github.com/user-attachments/assets/9c7f39be-d300-4152-a4bc-063ca65e7057)
 
 ![design_values 1](https://github.com/user-attachments/assets/0d10a057-de93-46ad-9a80-15ecb6bee9f3)

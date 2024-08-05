@@ -1190,6 +1190,7 @@ Screenshot of the command window and the contents:
 
 
 </details>
+
 <details>
 <summary> 
 <h3>Timing modelling using delay tables</h3>
@@ -1260,8 +1261,8 @@ Screenshot of newly created lef file:
 
 Copy the newly generated lef and associated required lib files to the `src` directory located in `picorv32a` design:
 
-1. `cp sky130_vsdinv.lef /home/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src`
-2. `cp sky130_fd_sc_hd__* /home/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src`
+1. `cp sky130_vsdinv.lef /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src`
+2. `cp sky130_fd_sc_hd__* /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src`
 
 ![copywindow](https://github.com/user-attachments/assets/6bbc9e7b-1dff-4fdd-a258-6361068a92d3)
 
@@ -1353,6 +1354,12 @@ Screenshots of the commands:
 ![place_io](https://github.com/user-attachments/assets/3377dec1-b051-4204-ace9-d19ca605445d)
 
 ![tap_decap_or](https://github.com/user-attachments/assets/ed9d2954-e174-4e7d-b352-7e4d43dad006)
+
+Placement after the finishing of the floorplane:
+
+`run_placement`
+
+![placement](https://github.com/user-attachments/assets/d2ae32a6-b21b-48c2-b4f4-4f0ff4c6c9d9)
 
 </details>
 <details>

@@ -1225,7 +1225,7 @@ Condition 2 verified:
 The second condition states that the width of the cell must be an odd multiple of the X pitch.
 
 ``` math
-0.5\ + 1\ + 1\ + 0.5\ = 3\ which\ is\ odd\.
+0.5\ + 1\ + 1\ + 0.5\ = 3\ which\ is\ odd.\
 ```
 </details>
 <details>

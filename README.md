@@ -1203,8 +1203,30 @@ Let's revisit the custom inverter layout:
 
 `tracks.info` of sky130_fd_sc_hd:
 
-1. `cd Desktop/work/tools/openlane_working_dir/openlane/`
+1. `cd Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/`
+2. `less tracks.info`
 
+![tracks info](https://github.com/user-attachments/assets/667b69ba-067d-47c6-a0b8-d43f7de1d007)
+
+`tkcon` grid command window:
+
+![tkcon grid](https://github.com/user-attachments/assets/801ea11d-e930-43a0-8707-1bc8af4b8d2d)
+
+Condition 1 verified:
+
+![condition1](https://github.com/user-attachments/assets/a1e3a86b-058a-4478-ae71-20a5833b1ba5)
+
+Both the input and the output ports are at the intersection of the vertical and horizontal tracks. This ensures interconnectivity in both x and y direction for the ports.
+
+Condition 2 verified:
+
+![image](https://github.com/user-attachments/assets/c5f1fee9-28f6-4344-97e5-6e2dd5165a6b)
+
+The second condition states that the width of the cell must be an odd multiple of the X pitch.
+
+``` math
+0.5\ + 1\ + 1\ + 0.5\ = 3\ which\ is\ odd\.
+```
 </details>
 <details>
 <summary> 

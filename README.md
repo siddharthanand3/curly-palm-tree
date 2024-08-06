@@ -1370,6 +1370,19 @@ The `placement.def` file displayed on magic:
 
 ![placement def](https://github.com/user-attachments/assets/2552a8b3-afaf-4b71-a98a-5aff652a44b0)
 
+When zoomed in, we can observe instances of `vsdinv` getting utilised.
+
+![placement vsdinv](https://github.com/user-attachments/assets/ac9d95fa-f7b9-41b3-8db1-e3d66cc395df)
+
+In the tkcon window:
+
+1. `expand`
+
+We notice that the instance of `sky130_vsdinv` is directly connected to the cells of the other library:
+
+![expand](https://github.com/user-attachments/assets/05c831ae-9a8d-45ed-bd01-6e8e4e72c726)
+
+
 </details>
 <details>
 <summary> 

@@ -1401,6 +1401,11 @@ Performing synthesis and preparing for post-synth STA:
 
 ![Screenshot 2024-08-06 190716](https://github.com/user-attachments/assets/61a2936a-6965-4e4e-84d6-b3fa9e1a8e25)
 
+Create a `pre_sta.conf` file for STA analysis in Openlane directory:
+
+![pre_sta conf](https://github.com/user-attachments/assets/5c124bb3-a63c-4b9d-9ef3-dccefe90d42e)
+
+
 
 </details>
 <details>

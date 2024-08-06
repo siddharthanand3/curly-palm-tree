@@ -1388,6 +1388,19 @@ We notice that the instance of `sky130_vsdinv` is directly connected to the cell
 <summary> 
 <h3>Timing modelling using ideal clocks in OpenSTA</h3>
 </summary>
+Performing synthesis and preparing for post-synth STA:
+
+1. `cd Desktop/work/tools/openlane_working_dir/openlane`
+2. `docker`
+3. `package require openlane 0.9`
+4. `prep -design picorv32a`
+5. `set lefs [glob $::env(DESIGN_DIR)/src/*.lef]`
+6. `add_lefs -src $lefs`
+7. `set ::env(SYNTH_SIZING) 1`
+8. `run_synthesis`
+
+![Screenshot 2024-08-06 190716](https://github.com/user-attachments/assets/61a2936a-6965-4e4e-84d6-b3fa9e1a8e25)
+
 
 </details>
 <details>

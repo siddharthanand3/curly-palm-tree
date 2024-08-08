@@ -1386,7 +1386,7 @@ We notice that the instance of `sky130_vsdinv` is directly connected to the cell
 </details>
 <details>
 <summary> 
-<h3>Timing modelling using ideal clocks in OpenSTA</h3>
+<h3>Timing modelling using ideal clocks in OpenSTA and Clock Tree Synthesis</h3>
 </summary>
 Performing synthesis and preparing for post-synth STA:
 
@@ -1559,8 +1559,9 @@ Placement:
 10. `run_placement`
 
 Clock Tree Synthesis (CTS):
-11. `run_cts`
 
+11. `run_cts`
+12. `echo $::env(CTS_CLK_BUFFER_LIST)`
 ![loadingback](https://github.com/user-attachments/assets/b312d364-0023-41ef-97fa-0d521c8a43fd)
 
 ![loadingback2](https://github.com/user-attachments/assets/5df9ba4a-0c76-496f-8514-de0d8d7fabf8)
@@ -1575,11 +1576,14 @@ Clock Tree Synthesis (CTS):
 
 ![loadingback7](https://github.com/user-attachments/assets/7f079ace-6678-4279-b874-e55f12e45986)
 
+![loadingback8](https://github.com/user-attachments/assets/121edbee-d183-4143-bca0-3ffcedf9a3c7)
+
 </details>
 <details>
 <summary> 
-<h3>Clock tree synthesis</h3>
+<h3>OpenROAD Timing Analysis</h3>
 </summary>
+
 
 </details>
 </details>

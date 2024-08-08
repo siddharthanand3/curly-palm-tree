@@ -1584,6 +1584,21 @@ Clock Tree Synthesis (CTS):
 <h3>OpenROAD Timing Analysis</h3>
 </summary>
 
+Performing timing analysis of the `picorv32a` design on OpenROAD:
+
+1. `openroad`
+2. `read_lef /openLANE_flow/designs/picorv32a/runs/24-03_10-03/tmp/merged.lef`
+3. `read_def /openLANE_flow/designs/picorv32a/runs/24-03_10-03/results/cts/picorv32a.cts.def`
+4. `write_db pico_cts.db`
+5. `read_db pico_cts.db`
+6. `read_verilog /openLANE_flow/designs/picorv32a/runs/24-03_10-03/results/synthesis/picorv32a.synthesis_cts.v`
+7. `read_liberty $::env(LIB_SYNTH_COMPLETE)`
+8. `link_design picorv32a`
+9. `read_sdc /openLANE_flow/designs/picorv32a/src/my_base.sdc`
+10. `set_propagated_clock [all_clocks]`
+11. `report_checks -path_delay min_max -fields {slew trans net cap input_pins} -format full_clock_expanded -digits 4`
+
+![openroad](https://github.com/user-attachments/assets/09cfee01-6c85-45c0-8199-1eab156f8d99)
 
 </details>
 </details>

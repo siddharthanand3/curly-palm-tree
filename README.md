@@ -1465,8 +1465,35 @@ In order optimise timing,
 
 ![slackreduce2](https://github.com/user-attachments/assets/9fb9d9f9-52fa-4efc-9154-67b38c416119)
 
-![Uploading slackreduce3.png…]()
+![slackreduce3](https://github.com/user-attachments/assets/20bcd9c3-e49d-49b5-9452-9b49b4e3ecc7)
 
+Similarly in the case below:
+
+The OR gate with drive strength 2 is driving 4 fanouts.
+
+![slackreduce0](https://github.com/user-attachments/assets/2ac73681-adfc-4b3f-a958-b4b321828b4a)
+
+1. `report_net -connections _11675_`
+2. `replace_cell _14514_ sky130_fd_sc_hd__or3_4`
+3. `report_checks -fields {net cap slew input_pins} -digits 4`
+
+![slackreduce1](https://github.com/user-attachments/assets/7ccfd77c-55cb-415d-90d7-1cc1dea69a88)
+
+![slackreduce2](https://github.com/user-attachments/assets/13eae6bd-8f9c-4aef-a050-c213161192c6)
+
+![slackreduce3](https://github.com/user-attachments/assets/56ad9bd3-1774-46fc-844f-e132325910c4)
+
+In the below case the OR gate of drive strength has a lot of delay:
+
+![slackreduce0](https://github.com/user-attachments/assets/573e7e40-d15e-471f-9940-e14a8d95f242)
+
+1. `report_net -connections _11643_`
+2. `replace_cell _14481_ sky130_fd_sc_hd__or4_4`
+3. `report_checks -fields {net cap slew input_pins} -digits 4`
+
+![slackreduce1](https://github.com/user-attachments/assets/318f04c0-f4ac-4e3d-8192-6fea154e463e)
+
+![slackreduce3](https://github.com/user-attachments/assets/187c32e1-c4a3-4b88-90c9-ad36c2c24ace)
 
 report_net 
 </details>

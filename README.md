@@ -1448,6 +1448,27 @@ Static Timing Analysis:
 
 ![sta](https://github.com/user-attachments/assets/df987d25-b4b4-4bcb-9144-3a1836df213a)
 
+Timing ECO fixes to reduce slack violations:
+
+![image](https://github.com/user-attachments/assets/d19fb30c-7ea1-45af-b09c-67857ee942e9)
+
+Notice how an OR gate of drive strength 2 is driving 4 fanouts.
+
+In order optimise timing,
+
+1. `report_net -connections _11672_`
+2. `help replace_cell`
+3. `replace_cell _14510_ sky130_fd_sc_hd__or3_4`
+4. `report_checks -fields {net cap slew input_pins} -digits 4`
+
+![slackreduce1](https://github.com/user-attachments/assets/3c28a025-1cd5-49ae-8b4b-133637cce2b6)
+
+![slackreduce2](https://github.com/user-attachments/assets/9fb9d9f9-52fa-4efc-9154-67b38c416119)
+
+![Uploading slackreduce3.png…]()
+
+
+report_net 
 </details>
 <details>
 <summary> 

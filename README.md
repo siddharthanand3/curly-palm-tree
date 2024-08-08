@@ -1406,6 +1406,47 @@ Create a `pre_sta.conf` file for STA analysis in Openlane directory:
 ![pre_sta conf](https://github.com/user-attachments/assets/5c124bb3-a63c-4b9d-9ef3-dccefe90d42e)
 
 
+Create a new `my_base.sdc` file specifically for STA analysis in the `/openlane/designs/picorv32a/src/` folder:
+
+![mybase sdc](https://github.com/user-attachments/assets/ef4228dc-cbc2-4e4f-a496-f3709ab286d5)
+
+
+STA Analysis:
+
+1. `sta pre_sta.conf`
+
+![sta1](https://github.com/user-attachments/assets/21290400-06f0-40e4-a565-dde3a4d46684)
+
+![sta2](https://github.com/user-attachments/assets/7e938d8b-9653-48d5-90f1-eaeeb2a7ba82)
+
+![sta3](https://github.com/user-attachments/assets/b3f770fc-ff3b-42d7-be7d-d67bb9c21d0a)
+
+![sta4](https://github.com/user-attachments/assets/c252adce-a56b-40d2-a7d3-b18a9bb8f19b)
+
+![sta5](https://github.com/user-attachments/assets/8dafc6de-9822-46f6-adfe-a7838fb0ca7f)
+
+
+Adding parameters to reduce fanout, in turn reducing the delay:
+
+1. `prep -design picorv32a -tag 08-08_06-55 -overwrite`
+2. `set lefs [glob $::env(DESIGN_DIR)/src/*.lef]`
+3. `add_lefs -src $lefs`
+4. `set ::env(SYNTH_SIZING) 1`
+5. `set ::env(SYNTH_MAX_FANOUT) 4`
+6. `echo $::env(SYNTH_DRIVING_CELL)`
+7. `run_synthesis`
+
+![run_synthesis](https://github.com/user-attachments/assets/d78c5999-c22a-4b14-8623-0f9d8a43a477)
+
+Static Timing Analysis:
+
+`sta pre_sta.conf`
+
+![sta1](https://github.com/user-attachments/assets/147e3f79-db23-4532-8d1c-832c40bf5bc3)
+
+![Screenshot 2024-08-08 155559](https://github.com/user-attachments/assets/434c5655-bd51-467b-ba62-157c44a60291)
+
+![sta](https://github.com/user-attachments/assets/df987d25-b4b4-4bcb-9144-3a1836df213a)
 
 </details>
 <details>

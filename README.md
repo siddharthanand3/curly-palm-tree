@@ -1483,7 +1483,7 @@ The OR gate with drive strength 2 is driving 4 fanouts.
 
 ![slackreduce3](https://github.com/user-attachments/assets/56ad9bd3-1774-46fc-844f-e132325910c4)
 
-In the below case the OR gate of drive strength has a lot of delay:
+In the below case the OR gate of drive strength 2, driving OA gate has a lot of delay:
 
 ![slackreduce0](https://github.com/user-attachments/assets/573e7e40-d15e-471f-9940-e14a8d95f242)
 
@@ -1495,7 +1495,10 @@ In the below case the OR gate of drive strength has a lot of delay:
 
 ![slackreduce3](https://github.com/user-attachments/assets/187c32e1-c4a3-4b88-90c9-ad36c2c24ace)
 
-report_net 
+Similarly in the case below:
+
+
+
 </details>
 <details>
 <summary> 

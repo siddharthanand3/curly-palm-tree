@@ -1507,6 +1507,74 @@ Similarly in the case below:
 
 ![slackreduce3](https://github.com/user-attachments/assets/dff258de-9538-4aeb-af23-5861efe0d025)
 
+Commands to verify instance `_14506_` is replaced with `sky130_fd_sc_hd__or4_4`:
+
+`report_checks -from _29043_ -to _30440_ -through _14506_`
+
+![instance](https://github.com/user-attachments/assets/562a47db-3ab1-4a32-9b31-8edd00daaccb)
+
+We started ECO fixes at wns -23.9000 and now we stand at wns -22.6173 we reduced around 1.2827 ns of violation.
+
+Now we need to replace the old synthesised netlist with the new netlist where we have performed all the ECO fixes:
+
+In order to insert this updated netlist, we can utilise the `write_verilog` command and overwrite the old netlist.
+
+But for documentation purposes, we'll make a copy of the old netlist first.
+
+1. `cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/08-08_06-55/results/synthesis/`
+2. `cp picorv32a.synthesis.v picorv32a.synthesis_old.v`
+
+![rewriting0](https://github.com/user-attachments/assets/9d4d4b5d-a363-418b-8aff-c853e1b4fe67)
+
+`write_verilog`:
+
+1. `write_verilog /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/08-08_06-55/results/synthesis/picorv32a.synthesis.v`
+2. `exit`
+
+![rewriting](https://github.com/user-attachments/assets/d365e7c2-d2ed-4d4f-a07a-005d4a9598bb)
+
+Verification that `_14506_` is replaced with `sky130_fd_sc_hd__or4_4`:
+
+![instancegeneration](https://github.com/user-attachments/assets/5c123e62-4984-4aee-b66b-816466523b88)
+
+If you remember, we had earlier created a 0 tns & wns design.
+
+Let's load that back and progress to further stages.
+
+1. `prep -design picorv32a -tag 08-08_06-55 -overwrite`
+2. `set lefs [glob $::env(DESIGN_DIR)/src/*.lef]`
+3. `add_lefs -src $lefs `
+4. `set ::env(SYNTH_STRATEGY) "DELAY 3"`
+5. `set ::env(SYNTH_SIZING) 1`
+6. `run_synthesis`
+
+As discussed earlier, the below steps are sourced in `run_floorplan`:
+
+7. `init_floorplan`
+8. `place_io`
+9. `tap_decap_or`
+
+Placement:
+
+10. `run_placement`
+
+Clock Tree Synthesis (CTS):
+11. `run_cts`
+
+![loadingback](https://github.com/user-attachments/assets/b312d364-0023-41ef-97fa-0d521c8a43fd)
+
+![loadingback2](https://github.com/user-attachments/assets/5df9ba4a-0c76-496f-8514-de0d8d7fabf8)
+
+![loadingback3](https://github.com/user-attachments/assets/b78da739-5ff5-4b57-9509-24054618ab0d)
+
+![loadingback4](https://github.com/user-attachments/assets/42db88f8-ca1d-43ab-bc46-e9c6551cfe92)
+
+![loadingback5](https://github.com/user-attachments/assets/2a593bb6-9702-42b7-be24-736258bc5e17)
+
+![loadingback6](https://github.com/user-attachments/assets/9be8a4f4-1b38-49a7-8f7f-b3b1c73ba60d)
+
+![loadingback7](https://github.com/user-attachments/assets/7f079ace-6678-4279-b874-e55f12e45986)
+
 </details>
 <details>
 <summary> 

@@ -1497,7 +1497,15 @@ In the below case the OR gate of drive strength 2, driving OA gate has a lot of 
 
 Similarly in the case below:
 
+![slackreduce0](https://github.com/user-attachments/assets/f0829175-461b-4e7e-86b7-eaf65343c9b7)
 
+1. `report_net -connections _11668_`
+2. `replace_cell _14506_ sky130_fd_sc_hd__or4_4`
+3. `report_checks -fields {net cap slew input_pins} -digits 4`
+
+![slackreduce1](https://github.com/user-attachments/assets/417ad86c-3420-49db-b623-1400f78c99f3)
+
+![slackreduce3](https://github.com/user-attachments/assets/dff258de-9538-4aeb-af23-5861efe0d025)
 
 </details>
 <details>

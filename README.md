@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/54156cee-ff66-462e-9ec4-bd5802adf373)![image](https://github.com/user-attachments/assets/df1563f1-8007-45ee-8b8a-1c4e6b8d5fe9)# VSDHDP
+# VSDHDP
 
 ## Table of Contents
 - [Week 0](#week-0)

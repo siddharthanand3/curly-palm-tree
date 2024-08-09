@@ -1657,6 +1657,11 @@ Removing 'sky130_fd_sc_hd__clkbuf_1' cell from clock buffer list variable 'CTS_C
 
 ![openroad13](https://github.com/user-attachments/assets/d01c1b45-cacd-437c-acc5-bb430d4b8361)
 
+</details>
+<details>
+<summary> 
+<h3>Final Steps for RTL2GDS using OpenSTA and tritonRoute </h3>
+</summary>
 
 </details>
 </details>

@@ -1710,7 +1710,21 @@ Screenshots of the PDN def in magic:
 
 ![postrtl7](https://github.com/user-attachments/assets/5d4d0885-1408-49b6-9974-abaeb8e9e851)
 
+![postrtl6 5](https://github.com/user-attachments/assets/f6e0dae7-f8d4-425c-945d-a2792031f1f0)
+
 ![postrtl8](https://github.com/user-attachments/assets/8ea304e0-003c-4e78-8bad-2eb985e009cb)
+
+Routing using tritonRoute and exploration:
+
+1. `echo $::env(CURRENT_DEF)`
+2. `echo $::env(ROUTING_STRATEGY)`
+3. `run_routing`
+
+![postrtl9](https://github.com/user-attachments/assets/7c14b64f-6d99-44b7-9a54-d5db3f105d0b)
+
+![Screenshot 2024-08-09 193840](https://github.com/user-attachments/assets/5a875be0-6da3-47ad-9789-bb60b3e1a346)
+
+![Uploading postrtl10.png…]()
 
 </details>
 </details>

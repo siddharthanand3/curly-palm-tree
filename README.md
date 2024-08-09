@@ -1724,7 +1724,33 @@ Routing using tritonRoute and exploration:
 
 ![Screenshot 2024-08-09 193840](https://github.com/user-attachments/assets/5a875be0-6da3-47ad-9789-bb60b3e1a346)
 
-![Uploading postrtl10.png…]()
+![postrtl10](https://github.com/user-attachments/assets/9bb183a2-11c1-411e-8d17-dd14f9156ed3)
+
+Commands to load the routed def in magic:
+
+1. `cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/09-08_10-40/results/routing/`
+2. `magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.def &`
+
+![postrtl11](https://github.com/user-attachments/assets/775eb9af-9c58-4ae6-ada9-a795f5872d52)
+
+![postrtl12](https://github.com/user-attachments/assets/85b81d4c-6f41-4cf3-aeb5-853bf570af08)
+
+![postrtl13](https://github.com/user-attachments/assets/704d8abc-0ff0-4382-b5c0-e96021e07ba8)
+
+![postrtl14](https://github.com/user-attachments/assets/d90d04e8-f152-405d-8ccd-f36593f844cd)
+
+`fastroute.guide`:
+
+1. `cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/09-08_10-40/tmp/routing/`
+2. `vim 15-fastroute.guide`
+
+![fastroute guide](https://github.com/user-attachments/assets/7f9563a2-cf23-44a5-a6b6-0e06c37a888f)
+
+SPEF extractor parasitic extraction:
+
+1. `cd Desktop/work/tools/SPEF_EXTRACTOR`
+2. `python3 main.py /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/26-03_08-45/tmp/merged.lef /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/26-03_08-45/results/routing/picorv32a.def`
+
 
 </details>
 </details>

@@ -1700,5 +1700,17 @@ Power Distribution Network building:
 
 ![postrtl6](https://github.com/user-attachments/assets/0005d50b-024c-4809-b3b1-a21983215fd7)
 
+
+Load the PDN def in magic:
+
+1. `cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/09-08_10-40/tmp/floorplan/`
+2. `magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read 14-pdn.def &`
+
+Screenshots of the PDN def in magic:
+
+![postrtl7](https://github.com/user-attachments/assets/5d4d0885-1408-49b6-9974-abaeb8e9e851)
+
+![postrtl8](https://github.com/user-attachments/assets/8ea304e0-003c-4e78-8bad-2eb985e009cb)
+
 </details>
 </details>

@@ -1651,6 +1651,12 @@ Removing 'sky130_fd_sc_hd__clkbuf_1' cell from clock buffer list variable 'CTS_C
 
 ![openroad12](https://github.com/user-attachments/assets/e4823d6f-b6de-488a-a1ad-b1d68d6767f0)
 
+22. `echo $::env(CTS_CLK_BUFFER_LIST)`
+23. `set ::env(CTS_CLK_BUFFER_LIST) [linsert $::env(CTS_CLK_BUFFER_LIST) 0 sky130_fd_sc_hd__clkbuf_1]`
+24. `echo $::env(CTS_CLK_BUFFER_LIST)`
+
+![openroad13](https://github.com/user-attachments/assets/d01c1b45-cacd-437c-acc5-bb430d4b8361)
+
 
 </details>
 </details>

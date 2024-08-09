@@ -1188,11 +1188,7 @@ Screenshot of the command window and the contents:
 
 ![magicrc](https://github.com/user-attachments/assets/ce4d6885-b7f0-4bf1-a694-31ba1515b722)
 
-Incorrectly implemented `poly.9` simple rule correction:
-
-Poly rules:
-
-![peripheryrules](https://github.com/user-attachments/assets/23677d8c-4559-433f-85cc-0b628cef093d)
+Incorrectly implemented simple rule correction:
 
 `met3.mag`:
 
@@ -1210,7 +1206,9 @@ Loading poly:
 
 ![poly mag](https://github.com/user-attachments/assets/d8d9a4e3-1417-4684-8fab-6a08edeb210d)
 
-`poly.9`: Poly resistor spacing to poly or spacing (no overlap) to diff/tap at least 0.480µm
+Screenshot of `poly` rules:
+
+![peripheryrules](https://github.com/user-attachments/assets/23677d8c-4559-433f-85cc-0b628cef093d)
 
 In the below ss we can clearly notice the violation of `poly.9`
 
@@ -1229,6 +1227,10 @@ Let's update the `sky130A.tech` file in magic and check drc:
 3. `drc why`
 
 ![drccheck](https://github.com/user-attachments/assets/7849ca1e-080b-4aef-b150-1272eaa8039e)
+
+Screenshot of `difftap` rules:
+
+![difftap](https://github.com/user-attachments/assets/4db091ca-0305-47d1-9a58-bfd6de42aa6d)
 
 </details>
 

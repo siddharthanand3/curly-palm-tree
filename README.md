@@ -1600,5 +1600,13 @@ Performing timing analysis of the `picorv32a` design on OpenROAD:
 
 ![openroad](https://github.com/user-attachments/assets/09cfee01-6c85-45c0-8199-1eab156f8d99)
 
+![openroad1](https://github.com/user-attachments/assets/03d5b0c9-7874-4f28-ba39-c1515f7861a0)
+
+![openroad2](https://github.com/user-attachments/assets/dbb62b29-585d-462a-97d5-bd4812471ed6)
+
+![openroad3](https://github.com/user-attachments/assets/9a4269dc-c6c4-42e9-a317-9dca50471ae2)
+
+![openroad4](https://github.com/user-attachments/assets/4b4244bc-79e6-4a12-88cc-5a5fa7ad6cdc)
+
 </details>
 </details>

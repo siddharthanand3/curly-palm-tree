@@ -1,4 +1,4 @@
-# VSDHDP
+![image](https://github.com/user-attachments/assets/54156cee-ff66-462e-9ec4-bd5802adf373)![image](https://github.com/user-attachments/assets/df1563f1-8007-45ee-8b8a-1c4e6b8d5fe9)# VSDHDP
 
 ## Table of Contents
 - [Week 0](#week-0)
@@ -1188,6 +1188,47 @@ Screenshot of the command window and the contents:
 
 ![magicrc](https://github.com/user-attachments/assets/ce4d6885-b7f0-4bf1-a694-31ba1515b722)
 
+Incorrectly implemented `poly.9` simple rule correction:
+
+Poly rules:
+
+![peripheryrules](https://github.com/user-attachments/assets/23677d8c-4559-433f-85cc-0b628cef093d)
+
+`met3.mag`:
+
+![met3](https://github.com/user-attachments/assets/9231da4e-93f5-4f9e-91b4-3ae536d39b40)
+
+Use `drc why` to identify errors:
+
+![drc why](https://github.com/user-attachments/assets/8696c26e-cdd0-4166-8cbe-39c9ddb71842)
+
+Loading poly:
+
+`load poly`
+
+![poly](https://github.com/user-attachments/assets/a5164c6c-7564-4885-b677-4280faa600a2)
+
+![poly mag](https://github.com/user-attachments/assets/d8d9a4e3-1417-4684-8fab-6a08edeb210d)
+
+`poly.9`: Poly resistor spacing to poly or spacing (no overlap) to diff/tap at least 0.480µm
+
+In the below ss we can clearly notice the violation of `poly.9`
+
+![poly 9violation](https://github.com/user-attachments/assets/013a3ec8-035e-4e23-8b27-90b71e75a82d)
+
+DRC correction made:
+
+![correction](https://github.com/user-attachments/assets/c34652f0-96e8-4765-89b1-fe62921b91f2)
+
+![correction2](https://github.com/user-attachments/assets/1f333e6b-8ac0-4147-88a2-2364ee3420ac)
+
+Let's update the `sky130A.tech` file in magic and check drc:
+
+1. `tech load sky130A.tech`
+2. `drc check`
+3. `drc why`
+
+![drccheck](https://github.com/user-attachments/assets/7849ca1e-080b-4aef-b150-1272eaa8039e)
 
 </details>
 

@@ -1608,5 +1608,49 @@ Performing timing analysis of the `picorv32a` design on OpenROAD:
 
 ![openroad4](https://github.com/user-attachments/assets/4b4244bc-79e6-4a12-88cc-5a5fa7ad6cdc)
 
+Removing 'sky130_fd_sc_hd__clkbuf_1' cell from clock buffer list variable 'CTS_CLK_BUFFER_LIST':
+
+1. `echo $::env(CTS_CLK_BUFFER_LIST)`
+2. `set ::env(CTS_CLK_BUFFER_LIST) [lreplace $::env(CTS_CLK_BUFFER_LIST) 0 0]`
+3. `echo $::env(CTS_CLK_BUFFER_LIST)`
+4. `echo $::env(CURRENT_DEF)`
+5. `set ::env(CURRENT_DEF) /openLANE_flow/designs/picorv32a/runs/24-03_10-03/results/placement/picorv32a.placement.def`
+6. `run_cts`
+
+![openroad5](https://github.com/user-attachments/assets/be91638f-d751-4dc5-bb13-c8083de6cb68)
+
+![openroad6](https://github.com/user-attachments/assets/e5d6ff18-437e-480a-ac2a-b3b25a1208dd)
+
+7. `echo $::env(CTS_CLK_BUFFER_LIST)`
+8. `openroad`
+9. `read_lef /openLANE_flow/designs/picorv32a/runs/24-03_10-03/tmp/merged.lef`
+10. `read_def /openLANE_flow/designs/picorv32a/runs/24-03_10-03/results/cts/picorv32a.cts.def`
+11. `write_db pico_cts1.db`
+12. `read_db pico_cts.db`
+13. `read_verilog /openLANE_flow/designs/picorv32a/runs/24-03_10-03/results/synthesis/picorv32a.synthesis_cts.v`
+
+![openroad7](https://github.com/user-attachments/assets/2c09d898-e933-4bad-98ea-eff308171619)
+
+14. `read_liberty $::env(LIB_SYNTH_COMPLETE)`
+15. `link_design picorv32a`
+16. `read_sdc /openLANE_flow/designs/picorv32a/src/my_base.sdc`
+17. `set_propagated_clock [all_clocks]`
+18. `report_checks -path_delay min_max -fields {slew trans net cap input_pins} -format full_clock_expanded -digits 4`
+
+![openroad8](https://github.com/user-attachments/assets/15d43967-69e3-46ec-8b86-68f7e6e7d643)
+
+![openroad9](https://github.com/user-attachments/assets/fa0a2e7c-1f08-4b33-97a7-ac39a0603f37)
+
+![openroad10](https://github.com/user-attachments/assets/43e5a8ba-2370-4289-b920-581fe90efe31)
+
+![openroad11](https://github.com/user-attachments/assets/55890fef-1413-43f5-bf6b-fb9129fed5ec)
+
+19. `report_clock_skew -hold`
+20. `report_clock_skew -setup`
+21. `exit`
+
+![openroad12](https://github.com/user-attachments/assets/e4823d6f-b6de-488a-a1ad-b1d68d6767f0)
+
+
 </details>
 </details>

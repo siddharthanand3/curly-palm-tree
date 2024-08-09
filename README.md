@@ -1663,5 +1663,42 @@ Removing 'sky130_fd_sc_hd__clkbuf_1' cell from clock buffer list variable 'CTS_C
 <h3>Final Steps for RTL2GDS using OpenSTA and tritonRoute </h3>
 </summary>
 
+Power Distribution Network building:
+
+1. `docker`
+2. `package require openlane 0.9`
+3. `prep -design picorv32a`
+4. `set lefs [glob $::env(DESIGN_DIR)/src/*.lef]`
+5. `add_lefs -src $lefs`
+6. `set ::env(SYNTH_STRATEGY) "DELAY 3"`
+7. `set ::env(SYNTH_SIZING) 1`
+8. `run_synthesis`
+
+![postrtl0](https://github.com/user-attachments/assets/6b5385d4-5347-4d4d-8c9a-5088809c04d0)
+
+![postrtl1](https://github.com/user-attachments/assets/9d011f3a-7033-4a38-bde4-8fe49e5e4397)
+
+9. `init_floorplan`
+10. `place_io`
+11. `tap_decap_or`
+
+![postrtl2](https://github.com/user-attachments/assets/716bdf13-3e6c-4ad7-a6b4-f7ae31d84985)
+
+![postrtl3](https://github.com/user-attachments/assets/b571d376-b809-49ef-b210-24640d4c491a)
+
+12. `run_placement`
+
+![image](https://github.com/user-attachments/assets/9d5f915e-4f17-4fff-b59c-d3180e556829)
+
+13. `run_cts`
+
+![postrtl5](https://github.com/user-attachments/assets/e19c7e1c-cfdc-4676-9ad6-ccd21ca656df)
+
+14. `gen_pdn`
+
+![postrtl5 5](https://github.com/user-attachments/assets/30cf2d71-a634-43e5-9eed-90bcc43ceaff)
+
+![postrtl6](https://github.com/user-attachments/assets/0005d50b-024c-4809-b3b1-a21983215fd7)
+
 </details>
 </details>

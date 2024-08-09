@@ -1232,6 +1232,10 @@ Screenshot of `difftap` rules:
 
 ![difftap](https://github.com/user-attachments/assets/4db091ca-0305-47d1-9a58-bfd6de42aa6d)
 
+Incorrectly implemented `difftap.2` rule:
+
+![Uploading incorrectly implementeddifftap.png…]()
+
 </details>
 
 <details>

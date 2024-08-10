@@ -1801,4 +1801,10 @@ SPEF extractor parasitic extraction:
 
 
 </details>
+
+</details>
+<details>
+<summary> 
+<h2>Week 7</h2>
+</summary>
 </details>

@@ -1837,11 +1837,15 @@ Flop ratio:
 ```math
 Number\ of\ D-flip\ flops\ = 1618 
 ```
+
 ```math
 Number\ of\ cells\ = 7138
 ```
+
 ```math
 Flop\ ratio\ = 1618/7138 = 22.66%
 ```
+
+
 </details>
 </details>

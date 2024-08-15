@@ -1808,4 +1808,38 @@ SPEF extractor parasitic extraction:
 <summary> 
 <h2>Week 7</h2>
 </summary>
+
+Let's run the same flow for our custom `rv32i` design. 
+
+<details>
+<summary> 
+<h3>Synthesis and flop ratio</h3>
+</summary>
+
+Preparing the design and `run_synthesis` command:
+
+
+In the `openlane` folder:
+
+1. `docker`
+2. `./flow.tcl -interactive`
+3. `prep -design riscv`
+4. `run_synthesis`
+
+![riscv0](https://github.com/user-attachments/assets/ef368787-4473-4113-b522-b413a56fe654)
+
+![riscv1](https://github.com/user-attachments/assets/5c8e5c71-ca10-4b8b-aa6c-3b71b21d2714)
+
+Flop ratio:
+
+![riscv2](https://github.com/user-attachments/assets/bd3eddb1-6d57-45fd-9a9e-8b35939b5c4f)
+
+```math
+Number\ of\ D-flip\ flops\ = 1618\
+
+Number\ of\ cells\ = 7138\
+
+Flop\ ratio\ = 1618/7138 = 22.66%
+```
+</details>
 </details>

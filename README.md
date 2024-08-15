@@ -1846,6 +1846,8 @@ Number\ of\ cells\ = 7138
 Flop\ ratio\ = 1618/7138 = 22.66%
 ```
 
+  
+</details>
 <details>
 <summary> 
 <h3>Floorplan and placement post synthesis</h3>
@@ -1862,6 +1864,5 @@ Running the Floorplan:
 
 ![riscv6](https://github.com/user-attachments/assets/034fd411-a705-45bb-b219-399ed0887c3f)
 
-</details>  
 </details>
 </details>

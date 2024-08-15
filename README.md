@@ -1862,10 +1862,17 @@ Contents of `rv32i.floorplan.def`:
 
 ![riscv4](https://github.com/user-attachments/assets/ca934b05-ed31-4b55-b32d-43e9e75c01af)
 
+Commands to load floorplan def in magic:
+
+1. `cd Desktop/work/tools/openlane_working_dir/openlane/designs/riscv/runs/15-08_04-15/results/floorplan/`
+2. `magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read rv32i.floorplan.def &`
 
 ![riscv5](https://github.com/user-attachments/assets/e2052803-8107-43fb-a49c-3967b1a37211)
 
-![riscv6](https://github.com/user-attachments/assets/034fd411-a705-45bb-b219-399ed0887c3f)
+Showcasing the equidistant ports:
+
+![riscv6](https://github.com/user-attachments/assets/9192ce29-3b2e-47eb-ae8d-b1e85acd05d2)
+
 
 
 </details>

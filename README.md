@@ -1835,11 +1835,7 @@ Flop ratio:
 ![riscv2](https://github.com/user-attachments/assets/bd3eddb1-6d57-45fd-9a9e-8b35939b5c4f)
 
 ```math
-Number\ of\ D-flip\ flops\ = 1618\
-
-Number\ of\ cells\ = 7138\
-
-Flop\ ratio\ = 1618/7138 = 22.66%
+Number\ of\ D-flip\ flops\ = 1618\ Number\ of\ cells\ = 7138\ Flop\ ratio\ = 1618/7138 = 22.66%
 ```
 </details>
 </details>

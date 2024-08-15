@@ -1858,11 +1858,15 @@ Running the Floorplan:
 
 ![riscv3](https://github.com/user-attachments/assets/371b216a-c67c-4070-b17c-a9a393c01351)
 
+Contents of `rv32i.floorplan.def`:
+
 ![riscv4](https://github.com/user-attachments/assets/ca934b05-ed31-4b55-b32d-43e9e75c01af)
+
 
 ![riscv5](https://github.com/user-attachments/assets/e2052803-8107-43fb-a49c-3967b1a37211)
 
 ![riscv6](https://github.com/user-attachments/assets/034fd411-a705-45bb-b219-399ed0887c3f)
+
 
 </details>
 </details>

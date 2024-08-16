@@ -1812,113 +1812,80 @@ SPEF extractor parasitic extraction:
 Let's run the same flow for our custom `rv32i` design. 
 
 <details>
-<summary> 
-<h3>Synthesis and flop ratio</h3>
-</summary>
+  <summary>
+    <h3>Folders and files</h3>
+  </summary>
 
-Preparing the design and `run_synthesis` command:
+1. Create a `riscv` folder in the `designs` folder.
 
+Here's a layout of the folder and the important files in it:
 
-In the `openlane` folder:
+![riscvfolder](https://github.com/user-attachments/assets/da4e4856-632d-4d78-944f-350af7a899f2)
 
-1. `docker`
-2. `./flow.tcl -interactive`
-3. `prep -design riscv`
-4. `run_synthesis`
+`config.tcl` file:
 
-![riscv0](https://github.com/user-attachments/assets/ef368787-4473-4113-b522-b413a56fe654)
+![riscvfolder2](https://github.com/user-attachments/assets/8fa936b1-6652-4c18-9f63-59042efbc2cf)
 
-![riscv1](https://github.com/user-attachments/assets/5c8e5c71-ca10-4b8b-aa6c-3b71b21d2714)
+`src` folder:
 
-Flop ratio:
+![riscvfolder3](https://github.com/user-attachments/assets/61372214-9d1d-4b98-8c3e-0bf018b43991)
 
-![riscv2](https://github.com/user-attachments/assets/bd3eddb1-6d57-45fd-9a9e-8b35939b5c4f)
-
-```math
-Number\ of\ D-flip\ flops\ = 1618 
-```
-
-```math
-Number\ of\ cells\ = 7138
-```
-
-```math
-Flop\ ratio\ = 1618/7138 = 22.66%
-```
-
-  
-</details>
-<details>
-<summary> 
-<h3>Floorplan and placement post synthesis</h3>
-</summary>
-Running the Floorplan:
-
-1. `run_floorplan`
-
-![riscv3](https://github.com/user-attachments/assets/371b216a-c67c-4070-b17c-a9a393c01351)
-
-Contents of `rv32i.floorplan.def`:
-
-![riscv4](https://github.com/user-attachments/assets/ca934b05-ed31-4b55-b32d-43e9e75c01af)
-
-Commands to load floorplan def in magic:
-
-1. `cd Desktop/work/tools/openlane_working_dir/openlane/designs/riscv/runs/15-08_04-15/results/floorplan/`
-2. `magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read rv32i.floorplan.def &`
-
-![riscv5](https://github.com/user-attachments/assets/e2052803-8107-43fb-a49c-3967b1a37211)
-
-Showcasing the equidistant ports:
-
-![riscv6](https://github.com/user-attachments/assets/9192ce29-3b2e-47eb-ae8d-b1e85acd05d2)
-
-Port placement:
-
-![riscv7](https://github.com/user-attachments/assets/db6bcdc4-a543-4c24-857f-8f8870807bc8)
-
-Decap and tap cells:
-
-![riscv8](https://github.com/user-attachments/assets/81d1dc61-9214-484b-a1e9-ce1ca4d5af9c)
-
-Post-placement:
-
-1. `run_placement`
-
-Commands to load placement def in magic:
-
-1. `cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/17-03_12-06/results/placement/`
-2. `magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &`
-
-![riscv9](https://github.com/user-attachments/assets/ae252427-325e-4a4b-a364-bcf0afb07370)
-
-![riscv10](https://github.com/user-attachments/assets/cf46cdd7-69d6-465e-ad00-e1c8f981e38a)
-
-We previously saw in the floorplan about unplaced standard cells.
-
-Standard cells legally placed:
-
-![riscv11](https://github.com/user-attachments/assets/71889fb5-cfa7-4ae8-9be1-3dc910b7ad5d)
+Make sure to edit each of these files to match the design name and module name.
 
 </details>
 <details>
-<summary> 
-<h3>Incorporarting our custom inverter cell</h3>
+  <summary>
+    <h3>PDN generation</h3>
+  </summary>
 
-Run the OpenLANE flow with the new custom inverter file:
+1. `prep -design riscv`
+2. `set lefs [glob $::env(DESIGN_DIR)/src/*.lef]`
+3. `add_lefs -src $lefs`
+4. `set ::env(SYNTH_STRATEGY) "DELAY 3"`
+5. `set ::env(SYNTH_SIZING) 1`
+6. `run_synthesis`
+7. `init_floorplan`
+8. `place_io`
+9. `tap_decap_or`
+10. `run_placement`
+11. `run_cts`
+12. `gen_pdn`
 
-1. `cd Desktop/work/tools/openlane_working_dir/openlane`
-2. `docker`
-3. `./flow.tcl -interactive`
-4. `package require openlane 0.9`
-5. `prep -design riscv`
-6. `set lefs [glob $::env(DESIGN_DIR)/src/*.lef]`
-7. `add_lefs -src $lefs`
-8. `run_synthesis`
+![pdn](https://github.com/user-attachments/assets/88dc3dec-5c8b-436a-b67e-cef4051bc9dc)
 
-![riscv12](https://github.com/user-attachments/assets/e57af315-2b72-474b-b46b-48244b7b989f)
+Viewing it in magic:
 
-</summary>
+ 1. `cd Desktop/work/tools/openlane_working_dir/openlane/designs/riscv/runs/16-08_16-40/tmp/floorplan/`
+ 2. `magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read 14-pdn.def &`
+
+![pdn2](https://github.com/user-attachments/assets/9c2f6d6a-f490-4b03-a5aa-7d07b9060827)
+
+</details>
+
+<details>
+  <summary>
+    <h3>Routing</h3>
+  </summary>
+
+1. `run_routing`
+
+![routing](https://github.com/user-attachments/assets/20418cdd-dd4d-426e-8c5f-1a8d8197bf29)
+
+2. `cd Desktop/work/tools/openlane_working_dir/openlane/designs/riscv/runs/16-08_16-40/results/routing/`
+3. `magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read rv32i.def &`
+
+![routing2](https://github.com/user-attachments/assets/7435b627-450f-4388-9799-f09ffbd44582)
+
+![routing3](https://github.com/user-attachments/assets/e578bf74-5ca8-4e45-a480-da55478ed0d8)
+
+![routing4](https://github.com/user-attachments/assets/5a71e39a-8bae-4512-be5e-447fe8329ea4)
+
+![routing5](https://github.com/user-attachments/assets/c86026c9-256a-427f-a57f-04bed540afdb)
+
+4. `cd Desktop/work/tools/openlane_working_dir/openlane/designs/riscv/runs/16-08_16-40/tmp/routing/`
+5. `gvim 15-fastroute`
+
+![routing6](https://github.com/user-attachments/assets/99c8ef39-64b7-480a-a018-314d694121ff)
 
 </details>
 </details>

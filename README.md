@@ -1901,4 +1901,24 @@ Standard cells legally placed:
 ![riscv11](https://github.com/user-attachments/assets/71889fb5-cfa7-4ae8-9be1-3dc910b7ad5d)
 
 </details>
+<details>
+<summary> 
+<h3>Incorporarting our custom inverter cell</h3>
+
+Run the OpenLANE flow with the new custom inverter file:
+
+1. `cd Desktop/work/tools/openlane_working_dir/openlane`
+2. `docker`
+3. `./flow.tcl -interactive`
+4. `package require openlane 0.9`
+5. `prep -design riscv`
+6. `set lefs [glob $::env(DESIGN_DIR)/src/*.lef]`
+7. `add_lefs -src $lefs`
+8. `run_synthesis`
+
+![riscv12](https://github.com/user-attachments/assets/e57af315-2b72-474b-b46b-48244b7b989f)
+
+</summary>
+
+</details>
 </details>

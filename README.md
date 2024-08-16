@@ -1894,6 +1894,10 @@ Commands to load placement def in magic:
 
 ![riscv10](https://github.com/user-attachments/assets/cf46cdd7-69d6-465e-ad00-e1c8f981e38a)
 
+We previously saw in the floorplan about unplaced standard cells.
+
+Standard cells legally placed:
+
 ![riscv11](https://github.com/user-attachments/assets/71889fb5-cfa7-4ae8-9be1-3dc910b7ad5d)
 
 </details>

@@ -1873,7 +1873,28 @@ Showcasing the equidistant ports:
 
 ![riscv6](https://github.com/user-attachments/assets/9192ce29-3b2e-47eb-ae8d-b1e85acd05d2)
 
+Port placement:
 
+![riscv7](https://github.com/user-attachments/assets/db6bcdc4-a543-4c24-857f-8f8870807bc8)
+
+Decap and tap cells:
+
+![riscv8](https://github.com/user-attachments/assets/81d1dc61-9214-484b-a1e9-ce1ca4d5af9c)
+
+Post-placement:
+
+1. `run_placement`
+
+Commands to load placement def in magic:
+
+1. `cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/17-03_12-06/results/placement/`
+2. `magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &`
+
+![riscv9](https://github.com/user-attachments/assets/ae252427-325e-4a4b-a364-bcf0afb07370)
+
+![riscv10](https://github.com/user-attachments/assets/cf46cdd7-69d6-465e-ad00-e1c8f981e38a)
+
+![riscv11](https://github.com/user-attachments/assets/71889fb5-cfa7-4ae8-9be1-3dc910b7ad5d)
 
 </details>
 </details>

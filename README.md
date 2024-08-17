@@ -1833,6 +1833,17 @@ Here's a layout of the folder and the important files in it:
 Make sure to edit each of these files to match the design name and module name.
 
 </details>
+
+<details>
+  <summary>
+    <h3>PDN generation</h3>
+  </summary>
+
+Since we have incorporated our own custom inverter cell in this design as well, here are the instances of it occuring in our design.
+
+![extra](https://github.com/user-attachments/assets/934910ba-293a-4f18-9c9c-74641849ded5)
+
+</details>
 <details>
   <summary>
     <h3>PDN generation</h3>

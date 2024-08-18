@@ -1927,11 +1927,15 @@ Worst slack:
 
 ![postroutin3](https://github.com/user-attachments/assets/40b08636-095a-44c9-8599-ba171f85b45a)
 
+Graphical view:
+
 ![worst slack](https://github.com/user-attachments/assets/3917b547-2154-4fd3-9ffd-4efb569b5760)
 
 Total negative slack:
 
 ![postroutin4](https://github.com/user-attachments/assets/90064686-ffd5-475d-be0f-cc5b4b681fe6)
+
+Graphical view:
 
 ![tns](https://github.com/user-attachments/assets/33ff3876-63db-475d-b02e-e36de3a1bdf5)
 
@@ -1939,6 +1943,9 @@ Worst negative slack:
 
 ![postroutin5](https://github.com/user-attachments/assets/e1941f1a-8e21-48d4-b905-79e924cbd609)
 
+Graphical view:
+
 ![wns](https://github.com/user-attachments/assets/5c2083c3-71ac-469e-9c03-251fa76b28a3)
+
 </details>
 </details>

@@ -1905,10 +1905,6 @@ Viewing it in magic:
   <summary>
     <h2 id = 'week-8'>Week 8</h2>
   </summary>
-<details>
-  <summary>
-    <h3>Post routing STA</h3>
-  </summary>
 
 TCL file:
 
@@ -1947,5 +1943,4 @@ Graphical view:
 
 ![wns](https://github.com/user-attachments/assets/5c2083c3-71ac-469e-9c03-251fa76b28a3)
 
-</details>
 </details>

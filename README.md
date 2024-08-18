@@ -9,6 +9,7 @@
 - [Week 5](#week-5)
 - [Week 6](#week-6)
 - [Week 7](#week-7)
+- [Week 8](#week-8)
   
 <details>
   <summary>
@@ -1899,4 +1900,40 @@ Viewing it in magic:
 ![routing6](https://github.com/user-attachments/assets/99c8ef39-64b7-480a-a018-314d694121ff)
 
 </details>
+</details>
+<details>
+  <summary>
+    <h2 id = 'week-8'>Week 8</h2>
+  </summary>
+<details>
+  <summary>
+    <h3>Post routing STA</h3>
+  </summary>
+
+TCL file:
+
+![postroutin1](https://github.com/user-attachments/assets/f0838d7a-ba8a-4f3c-8945-2b1b4f7b4e92)
+
+1. `cd Desktop/work/tools/openlane_working_dir/openlane`
+2. `docker`
+3. `./flow.tcl -interactive`
+4. `openroad post_routing.tcl`
+
+Generated `.txt` files:
+
+![postroutin2](https://github.com/user-attachments/assets/25cc4fb1-ccfc-418b-8b49-24275c6bdf6f)
+
+Worst slack:
+
+![postroutin3](https://github.com/user-attachments/assets/40b08636-095a-44c9-8599-ba171f85b45a)
+
+Total negative slack:
+
+![postroutin4](https://github.com/user-attachments/assets/90064686-ffd5-475d-be0f-cc5b4b681fe6)
+
+Worst negative slack:
+
+![postroutin5](https://github.com/user-attachments/assets/e1941f1a-8e21-48d4-b905-79e924cbd609)
+
+
 </details>

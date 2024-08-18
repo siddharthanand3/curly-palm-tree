@@ -1906,6 +1906,8 @@ Viewing it in magic:
     <h2 id = 'week-8'>Week 8</h2>
   </summary>
 
+<h3>Post routing STA</h3>
+
 TCL file:
 
 ![postroutin1](https://github.com/user-attachments/assets/f0838d7a-ba8a-4f3c-8945-2b1b4f7b4e92)

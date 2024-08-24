@@ -67,65 +67,65 @@ Introduction to Verilog RTL Design
 ### ***Viewing the Output After Simulation in GTKWave***
 
 1. **Open iVerilog:**
-    - ![ss for opening iverilog](https://github.com/siddharthanand3/vsdhdp/assets/171400217/bbd88023-3ee5-4547-af92-191251f8c92a)
+   ![ss for opening iverilog](https://github.com/siddharthanand3/vsdhdp/assets/171400217/bbd88023-3ee5-4547-af92-191251f8c92a)
 
 2. **Create a VCD file:**
-    - Steps:
+   Steps:
     ```sh
     iverilog (name of the verilog file).v (tb_(name of verilog file)).v
     ./a.out
     ```
-    - ![ss for opening gtkwave after loading the files into iverilog](https://github.com/siddharthanand3/vsdhdp/assets/171400217/9c023f1a-c651-4cfa-bcf2-e514f69397a1)
+   ![ss for opening gtkwave after loading the files into iverilog](https://github.com/siddharthanand3/vsdhdp/assets/171400217/9c023f1a-c651-4cfa-bcf2-e514f69397a1)
 
 3. **Open the file in GTKWave to observe output:**
-    - Steps:
+   Steps:
     ```sh
     gtkwave (tb_(name of the verilog file)).vcd
     ```
-    - OUTPUT:
-    - ![Screenshot 2024-06-11 003114](https://github.com/siddharthanand3/vsdhdp/assets/171400217/6bbf9384-86a3-4b88-8fc3-092955a237b0)
+   OUTPUT:
+   ![Screenshot 2024-06-11 003114](https://github.com/siddharthanand3/vsdhdp/assets/171400217/6bbf9384-86a3-4b88-8fc3-092955a237b0)
 
 #### **Viewing the Verilog Code for Both the Testbench and the File**
 
-- ![iverilog testbench and file](https://github.com/siddharthanand3/vsdhdp/assets/171400217/717bfe71-c7a4-4564-86d4-fcebb9355613)
+![iverilog testbench and file](https://github.com/siddharthanand3/vsdhdp/assets/171400217/717bfe71-c7a4-4564-86d4-fcebb9355613)
 
 #### **Read Liberty Command to Read Both the .lib File and Verilog Code File**
 
-- ![read lib 1](https://github.com/siddharthanand3/vsdhdp/assets/171400217/56b46a7a-631e-4660-9619-c3cd602aed9f)
-- ![readverilog](https://github.com/siddharthanand3/vsdhdp/assets/171400217/d049566f-a9c8-4467-bf9e-f8bda294e001)
+![read lib 1](https://github.com/siddharthanand3/vsdhdp/assets/171400217/56b46a7a-631e-4660-9619-c3cd602aed9f)
+![readverilog](https://github.com/siddharthanand3/vsdhdp/assets/171400217/d049566f-a9c8-4467-bf9e-f8bda294e001)
 
 #### **Synthesis Design**
 
-- Yosys is the synthesizer used to convert the RTL Design into a netlist for viewing purposes.
-- Code:
-    ```sh
-    read_liberty -lib (.lib file location)
-    read_verilog (name of the verilog file).v
-    synth -top (module name in the verilog file)
-    abc -liberty (.lib file location)
-    ```
-- ![synthesisdesign](https://github.com/siddharthanand3/vsdhdp/assets/171400217/4d2b9b0b-49b3-4724-b2da-8b40f6db723c)
+Yosys is the synthesizer used to convert the RTL Design into a netlist for viewing purposes.
+Code:
+  ```sh
+  read_liberty -lib (.lib file location)
+  read_verilog (name of the verilog file).v
+  synth -top (module name in the verilog file)
+  abc -liberty (.lib file location)
+  ```
+![synthesisdesign](https://github.com/siddharthanand3/vsdhdp/assets/171400217/4d2b9b0b-49b3-4724-b2da-8b40f6db723c)
 
 #### Realize the Exact .lib File and Obtain Parameters for Verification
 
-- ![realisesky130_cd](https://github.com/siddharthanand3/vsdhdp/assets/171400217/3b53b11f-aed1-4861-9bda-9d96e9c0c53c)
+![realisesky130_cd](https://github.com/siddharthanand3/vsdhdp/assets/171400217/3b53b11f-aed1-4861-9bda-9d96e9c0c53c)
 
 #### Netlist Viewing
 
-- Code:
-    ```sh
-    show
-    ```
-- ![netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/b55cb99e-59a1-4503-ab0e-295d2aa938a9)
+Code:
+  ```sh
+  show
+  ```
+![netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/b55cb99e-59a1-4503-ab0e-295d2aa938a9)
 
 #### Writing the Verilog Netlist File
 
-- Code:
-    ```sh
-    write_verilog good_mux_netlist.v
-    !gvim good_mux_netlist.v
-    ```
-- ![netlist representation](https://github.com/siddharthanand3/vsdhdp/assets/171400217/d73a9989-b0a8-40e5-8da8-13f942f19803)
+Code:
+  ```sh
+  write_verilog good_mux_netlist.v
+  !gvim good_mux_netlist.v
+  ```
+![netlist representation](https://github.com/siddharthanand3/vsdhdp/assets/171400217/d73a9989-b0a8-40e5-8da8-13f942f19803)
 
 </details>
 

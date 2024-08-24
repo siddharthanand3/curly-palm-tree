@@ -127,9 +127,7 @@ Code:
   ```
 ![netlist representation](https://github.com/siddharthanand3/vsdhdp/assets/171400217/d73a9989-b0a8-40e5-8da8-13f942f19803)
 
-</details>
 
-<details>
   <summary>Timing libs, hierarchical vs flat synthesis</summary>
 
 #### Accessing the .lib File
@@ -351,9 +349,7 @@ Logic optimization is a process of finding an equivalent representation of the s
 
 ![Dff_const5 Netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/fa6d846c-8a42-4a08-b011-e2ad86870dfe)
 
- </details>
-
- <details>
+ 
     <summary>Gate Level Simulation (GLS)</summary>
 
 #### Gate Level Simulation (GLS)
@@ -440,15 +436,11 @@ Logic optimization is a process of finding an equivalent representation of the s
 ![Blocking_caveat GLS Output](https://github.com/siddharthanand3/vsdhdp/assets/171400217/14045d2f-88ae-4cf4-970d-18ec67712e25)
 
 In the above example, the Gate Level Simulation failed. This is due to a synthesis simulation mismatch caused by a blocking statement. Hence, it is important to note that we need to avoid using blocking statements as much as possible. And when we do use them, we need to have the utmost clarity so as to prevent such errors.
- </details>
-</details>
 
-<details>
-  <summary>
-    <h2 id = 'week-3'>Week 3</h2>
-  </summary>
-  <details>
-    <summary>RISC-V: An overview</summary>
+  
+<h2 id = 'week-3'>Week 3</h2>
+ 
+RISC-V: An overview
 
 #### **RISC-V architecture:** 
 
@@ -464,8 +456,7 @@ In the above example, the Gate Level Simulation failed. This is due to a synthes
 
 ![image](https://github.com/siddharthanand3/vsdhdp/assets/171400217/2d850c99-8130-4be8-9d9b-d1ba481ff846)
 
-</details>
-  <details>
+
     <summary>Compilation of the C Code</summary>
 
 #### **Installation of the leafpad editor:**
@@ -495,10 +486,8 @@ ls -ltr
 
 ![Screenshot 2024-06-25 180104](https://github.com/siddharthanand3/vsdhdp/assets/171400217/1296a5cf-bf2f-4662-8d56-9af62cb1de26)
 
- </details>
  
- <details>
-    <summary>RISC-V Based Lab</summary>
+RISC-V Based Lab
 
 
 #### **Code:**
@@ -559,14 +548,12 @@ riscv64-unknown-elf-gcc -ofast -mabi=lp64 -march=rv64i -o (name of the file).o (
 | `-Og` | Optimize debugging experience. -Og enables optimizations that do not interfere with debugging. It should be the optimization level of choice for the standard edit-compile-debug cycle, offering a reasonable level of optimization while maintaining fast compilation and a good debugging experience. |
 | `-Os` | Optimize for size. `Os` enables all `O2` optimizations that do not typically increase code size. It also performs further optimizations designed to reduce code size. `Os` disables the following optimization flags: `-falign-functions -falign-jumps -falign-loops -falign-labels -freorder-blocks -freorder-blocks-and-partition -fprefetch-loop-arrays -ftree-vect-loop-version`. |
 
-  </details>
-<details>
-  <summary>RISC-V rv32i</summary>
+RISC-V rv32i
  
-<details>
-    <summary>
-    <h4 id='RISC-V Simulation using GTKWave'>  RISC-V Simulation using GTKWave </h4>
-    </summary>
+
+    
+<h4 id='RISC-V Simulation using GTKWave'>  RISC-V Simulation using GTKWave </h4>
+  
 
 
 #### In order to clone the files and download the netlist files for simulation and synthesis:
@@ -674,12 +661,10 @@ Hardcoded ISA: 32'h00209181
 ![instruction 9](https://github.com/siddharthanand3/vsdhdp/assets/171400217/71b933a4-29cd-4f70-93d7-c6e164b59fdf)
 
 
-  </details>
-
-<details>
-    <summary>
-      <h4 id='RISC-V Synthesis using Yosys'>RISC-V Synthesis using Yosys</h4>
-      </summary>
+  
+  
+<h4 id='RISC-V Synthesis using Yosys'>RISC-V Synthesis using Yosys</h4>
+    
 
 
 #### **Synthesis to convert the RTL design code to netlist**:

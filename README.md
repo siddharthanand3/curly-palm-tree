@@ -17,7 +17,7 @@
 
 <p>
   
-  ## **Yosys Installation**
+  ### **Yosys Installation**
 
   1. Update package list and install dependencies:
 
@@ -38,7 +38,7 @@
 
   ![Yosys Installation Screenshot](https://github.com/siddharthanand3/vsdhdp/assets/171400217/38640060-1f57-4b90-85ce-02d3d8da50b6)
 
-## **iVerilog Installation**
+### **iVerilog Installation**
 
 1. Update package list and install iVerilog:
 
@@ -49,7 +49,7 @@ sudo apt-get install iverilog
 
 ![iVerilog Installation Screenshot](https://github.com/siddharthanand3/vsdhdp/assets/171400217/0a4109eb-273c-4712-936b-3f2052e3cfb1)
 
-## **GTKWave Installation**
+### **GTKWave Installation**
 
 1. Update package list and install GTK Wave:
 
@@ -66,7 +66,7 @@ sudo apt install gtkwave
 
 <h2 id = 'week-1'>Week 1</h2>
 
-Introduction to Verilog RTL Design
+### Introduction to Verilog RTL Design
 
 ### ***Viewing the Output After Simulation in GTKWave***
 

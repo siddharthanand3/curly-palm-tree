@@ -20,13 +20,15 @@
   ## **Yosys Installation**
 
   1. Update package list and install dependencies:
+
       ```sh
       sudo apt-get update
       sudo apt-get install build-essential clang bison flex libreadline-dev gawk tcl-dev libffi-dev git graphviz xdot pkg-config python3 libboost-system-dev libboost-python-dev libboost-filesystem-dev zlib1g-dev make
       ```
 
-  2. Clone the Yosys repository and install:
-      ```sh
+  3. Clone the Yosys repository and install:
+
+     ```sh
       git clone https://github.com/YosysHQ/yosys.git
       cd yosys
       make config-gcc
@@ -36,23 +38,25 @@
 
   ![Yosys Installation Screenshot](https://github.com/siddharthanand3/vsdhdp/assets/171400217/38640060-1f57-4b90-85ce-02d3d8da50b6)
 
-  ## **iVerilog Installation**
+## **iVerilog Installation**
 
-  1. Update package list and install iVerilog:
-      ```sh
-      sudo apt-get update
-      sudo apt-get install iverilog
-      ```
+1. Update package list and install iVerilog:
 
-  ![iVerilog Installation Screenshot](https://github.com/siddharthanand3/vsdhdp/assets/171400217/0a4109eb-273c-4712-936b-3f2052e3cfb1)
+```sh
+sudo apt-get update
+sudo apt-get install iverilog
+```
 
-  ## **GTKWave Installation**
+![iVerilog Installation Screenshot](https://github.com/siddharthanand3/vsdhdp/assets/171400217/0a4109eb-273c-4712-936b-3f2052e3cfb1)
 
-  1. Update package list and install GTK Wave:
-      ```sh
-      sudo apt-get update
-      sudo apt install gtkwave
-      ```
+## **GTKWave Installation**
+
+1. Update package list and install GTK Wave:
+
+```sh
+sudo apt-get update
+sudo apt install gtkwave
+```
 
   ![GTK Wave Installation Screenshot](https://github.com/siddharthanand3/vsdhdp/assets/171400217/fe3a3ab1-4a81-4a36-a04c-decf631f9ade)
 
@@ -67,23 +71,30 @@ Introduction to Verilog RTL Design
 ### ***Viewing the Output After Simulation in GTKWave***
 
 1. **Open iVerilog:**
-   ![ss for opening iverilog](https://github.com/siddharthanand3/vsdhdp/assets/171400217/bbd88023-3ee5-4547-af92-191251f8c92a)
+
+![ss for opening iverilog](https://github.com/siddharthanand3/vsdhdp/assets/171400217/bbd88023-3ee5-4547-af92-191251f8c92a)
 
 2. **Create a VCD file:**
-   Steps:
-    ```sh
-    iverilog (name of the verilog file).v (tb_(name of verilog file)).v
-    ./a.out
-    ```
-   ![ss for opening gtkwave after loading the files into iverilog](https://github.com/siddharthanand3/vsdhdp/assets/171400217/9c023f1a-c651-4cfa-bcf2-e514f69397a1)
+
+Steps:
+
+```sh
+iverilog (name of the verilog file).v (tb_(name of verilog file)).v
+./a.out
+```
+![ss for opening gtkwave after loading the files into iverilog](https://github.com/siddharthanand3/vsdhdp/assets/171400217/9c023f1a-c651-4cfa-bcf2-e514f69397a1)
 
 3. **Open the file in GTKWave to observe output:**
-   Steps:
-    ```sh
-    gtkwave (tb_(name of the verilog file)).vcd
-    ```
-   OUTPUT:
-   ![Screenshot 2024-06-11 003114](https://github.com/siddharthanand3/vsdhdp/assets/171400217/6bbf9384-86a3-4b88-8fc3-092955a237b0)
+
+Steps:
+
+```sh
+gtkwave (tb_(name of the verilog file)).vcd
+```
+
+OUTPUT:
+
+![Screenshot 2024-06-11 003114](https://github.com/siddharthanand3/vsdhdp/assets/171400217/6bbf9384-86a3-4b88-8fc3-092955a237b0)
 
 #### **Viewing the Verilog Code for Both the Testbench and the File**
 
@@ -92,18 +103,22 @@ Introduction to Verilog RTL Design
 #### **Read Liberty Command to Read Both the .lib File and Verilog Code File**
 
 ![read lib 1](https://github.com/siddharthanand3/vsdhdp/assets/171400217/56b46a7a-631e-4660-9619-c3cd602aed9f)
+
 ![readverilog](https://github.com/siddharthanand3/vsdhdp/assets/171400217/d049566f-a9c8-4467-bf9e-f8bda294e001)
 
 #### **Synthesis Design**
 
 Yosys is the synthesizer used to convert the RTL Design into a netlist for viewing purposes.
+
 Code:
+
   ```sh
   read_liberty -lib (.lib file location)
   read_verilog (name of the verilog file).v
   synth -top (module name in the verilog file)
   abc -liberty (.lib file location)
   ```
+
 ![synthesisdesign](https://github.com/siddharthanand3/vsdhdp/assets/171400217/4d2b9b0b-49b3-4724-b2da-8b40f6db723c)
 
 #### Realize the Exact .lib File and Obtain Parameters for Verification
@@ -113,46 +128,56 @@ Code:
 #### Netlist Viewing
 
 Code:
-  ```sh
-  show
-  ```
+  
+```sh
+show
+```
+
 ![netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/b55cb99e-59a1-4503-ab0e-295d2aa938a9)
 
 #### Writing the Verilog Netlist File
 
 Code:
+
   ```sh
   write_verilog good_mux_netlist.v
   !gvim good_mux_netlist.v
   ```
+
 ![netlist representation](https://github.com/siddharthanand3/vsdhdp/assets/171400217/d73a9989-b0a8-40e5-8da8-13f942f19803)
 
 
-  <summary>Timing libs, hierarchical vs flat synthesis</summary>
+Timing libs, hierarchical vs flat synthesis
 
 #### Accessing the .lib File
 
-- ![lib ss](https://github.com/siddharthanand3/vsdhdp/assets/171400217/70ad16b6-d6ef-4d75-a96d-5c1ec3e603b3)
+![lib ss](https://github.com/siddharthanand3/vsdhdp/assets/171400217/70ad16b6-d6ef-4d75-a96d-5c1ec3e603b3)
 
 #### An Example for How Cells Are Stored
 
-- ![and gate specifications](https://github.com/siddharthanand3/vsdhdp/assets/171400217/c3c1af4f-98fe-413f-afb6-94e4c11484dc)
-- Different AND gates have different sizes and power consumed. For example, in the below figure although the AND4 gate occupies more area, the delay is lesser as compared to AND2 and AND0.
-- ![andgatesdifferent flavors](https://github.com/siddharthanand3/vsdhdp/assets/171400217/ad8e0ced-1908-4de6-9611-ede56eaa930f)
+![and gate specifications](https://github.com/siddharthanand3/vsdhdp/assets/171400217/c3c1af4f-98fe-413f-afb6-94e4c11484dc)
+
+Different AND gates have different sizes and power consumed. For example, in the below figure although the AND4 gate occupies more area, the delay is lesser as compared to AND2 and AND0.
+
+![andgatesdifferent flavors](https://github.com/siddharthanand3/vsdhdp/assets/171400217/ad8e0ced-1908-4de6-9611-ede56eaa930f)
 
 #### Synthesis of Multiple Modules
 
-- When a single module is used multiple times in a file, it is created only once and replicated to fit the requirement. This saves time and power.
-- Code:
-    ```sh
-    read_liberty -lib (path to the .lib file)
-    read_verilog (name of the Verilog file)
-    synth_top (name of the module)
-    abc -liberty (path to the .lib file)
-    show
-    ```
-- ![multi code](https://github.com/siddharthanand3/vsdhdp/assets/171400217/18d34fc2-97a0-4bf9-86ac-a7eb8815d4c8)
-- ![Multiple modules](https://github.com/siddharthanand3/vsdhdp/assets/171400217/bbdb9291-cf46-4a79-9b2e-fc8c14e0af55)
+When a single module is used multiple times in a file, it is created only once and replicated to fit the requirement. This saves time and power.
+
+Code:
+    
+  ```sh
+  read_liberty -lib (path to the .lib file)
+  read_verilog (name of the Verilog file)
+  synth_top (name of the module)
+  abc -liberty (path to the .lib file)
+  show
+  ```
+
+![multi code](https://github.com/siddharthanand3/vsdhdp/assets/171400217/18d34fc2-97a0-4bf9-86ac-a7eb8815d4c8)
+
+![Multiple modules](https://github.com/siddharthanand3/vsdhdp/assets/171400217/bbdb9291-cf46-4a79-9b2e-fc8c14e0af55)
 
 #### Design Output for Each Submodule
 
@@ -163,22 +188,25 @@ Code:
 The design is constituted of many submodules, and it is preserved.
 
 Code:
-    ```sh
-    read_liberty -lib <path to the .lib file>
-    read_verilog (name of the Verilog file)
-    synth_top (name)
-    abc -liberty (path to the .lib file)
-    show (name given)
-    ```
+    
+  ```sh
+  read_liberty -lib <path to the .lib file>
+  read_verilog (name of the Verilog file)
+  synth_top (name)
+  abc -liberty (path to the .lib file)
+  show (name given)
+  ```
+
 ![hierarchical design](https://github.com/siddharthanand3/vsdhdp/assets/171400217/418c90a1-3456-4ae4-ab94-c1ea064635ed)
 
 ![hierarchy is preserved](https://github.com/siddharthanand3/vsdhdp/assets/171400217/1ab9c081-60cc-4645-ad25-dc90a65bcc7c)
 
 Code:
-    ```sh
-    write_verilog -noattr (name)
-    !gvim (name)
-    ```
+  
+  ```sh
+  write_verilog -noattr (name)
+  !gvim (name)
+  ```
 
 #### Flattened File
 
@@ -208,12 +236,15 @@ Doing so helps efficiency and reduces delay.
 Code:
   
 To view in GTKWave:
+  
   ```sh
   iverilog (name of the verilog file).v tb_(name of the verilog file).v
   ./a.out
   gtkwave tb_(name of the verilog file).v
   ```
-  For viewing netlist in Yosys:
+  
+For viewing netlist in Yosys:
+  
   ```sh
   yosys
   read_liberty -lib (path to the .lib file)

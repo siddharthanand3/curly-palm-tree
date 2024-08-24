@@ -127,7 +127,6 @@ Code:
 
 #### Netlist Viewing
 
-Code:
   
 ```sh
 show
@@ -726,12 +725,10 @@ The netlist file `rv32i_synth.v` is created in the home directory.
 
 ![presence of netlist file](https://github.com/siddharthanand3/vsdhdp/assets/171400217/0a719fb2-d99d-4747-ab44-dd3ba7ca2380)
 
-  </details>
 
-<details>
-    <summary>
-      <h4 id='Gate level simulation of RISC-V'>Gate level simulation of RISC-V</h4>
-      </summary>
+    
+<h4 id='Gate level simulation of RISC-V'>Gate level simulation of RISC-V</h4>
+      
 
 #### **Gate level simulation**:
 
@@ -783,17 +780,11 @@ The above screenshots are proof of the confirmed Gate Level Simulation (GLS), as
 
 
 
-</details>
-</details>
-  
-</details>
 
-<details>
-  <summary>
-     <h2 id = 'week-4'>Week 4</h2>
-  </summary>
-<details>  
-<summary> Static timing Analysis (STA)</summary>  
+<h2 id = 'week-4'>Week 4</h2>
+
+Static timing Analysis (STA)  
+
 <h3>What is Static Timing Analysis?</h3>  
 
 * Static timing analysis (STA) is a method of validating the timing performance of a design by checking all possible paths for timing violations. 
@@ -837,14 +828,10 @@ Max path:
 
 ![maxpath](https://github.com/user-attachments/assets/9f924f08-63fa-4fe9-9352-0ef42fd6866d)
 
-</details>
-  
-</details>
 
-<details>
-<summary>
-  <h2 id = 'week-5'> Week 5 </h2>
-</summary>  
+
+<h2 id = 'week-5'> Week 5 </h2>
+  
 
 Configuration of the .tcl file:
 
@@ -916,12 +903,8 @@ The "Total Negative Slack (TNS)" is the sum of the (real) negative slack in your
 
 ![image](https://github.com/user-attachments/assets/27b30f62-d7fc-4e2a-acad-59abf5e181d6)
 
-</details>
 
-<details>
-<summary>
-  <h2 id = 'week-6'> Week 6 </h2>
-</summary>
+<h2 id = 'week-6'> Week 6 </h2>
 
 There are 3 major elements that are required to execute the design flow of ASIC:
 
@@ -950,10 +933,9 @@ Interactive mode of OpenLANE:
 
 Labs were performed with regard to design <`design name: picorv32a`>.
 
-<details>
-<summary> 
+ 
 <h3>Synthesis and Flop ratio</h3>
-</summary>
+
 
 `run_synthesis` command to execute synthesis of picorv32a:
 
@@ -970,11 +952,9 @@ Total\ number\ of\ cells = 14876\
 
 1613\ / 14876\ = 0.1084\ or\ 10.84\%.
 ```
-</details>
-<details>
-<summary> 
+
 <h3>Floorplan and placement post synthesis</h3>
-</summary>
+
 Floorplan:
 
 1. `./flow.tcl -interactive`
@@ -1032,12 +1012,8 @@ We previously saw in the floorplan about unplaced standard cells.
 Standard cells legally placed:
 
 ![Unplacedstandardcellslegallyplace](https://github.com/user-attachments/assets/1ddb96fd-fad1-43cd-b5ca-85ebb7417504)
-</details>
 
-<details>
-<summary> 
 <h3>Designing library cells using magic and ngspice</h3>
-</summary>
 
 SPICE simulations:
 
@@ -1176,13 +1152,9 @@ Cell rise delay at 50% of output:
 ```math
 Rise\ transition\ time = 2.2114\ - 2.1498\ = 0.0616\ ns\ = 61.6\ ps
 ```
-</details>
 
-
-<details>
-<summary> 
 <h3>Problems in the old magic tech file and DRC rules</h3>
-</summary>
+
 
 Corrupt skywater process magic tech file and performing DRC corrections:
 
@@ -1251,12 +1223,9 @@ Incorrectly implemented `difftap.2` rule:
 ![incorrectly implementeddifftap](https://github.com/user-attachments/assets/4b98bfab-be40-4425-93c8-b0e43f888eeb)
 
 
-</details>
 
-<details>
-<summary> 
 <h3>Timing modelling using delay tables</h3>
-</summary>
+
 Let's revisit the custom inverter layout:
 
 1. `cd Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign`
@@ -1445,11 +1414,9 @@ We notice that the instance of `sky130_vsdinv` is directly connected to the cell
 ![expand](https://github.com/user-attachments/assets/05c831ae-9a8d-45ed-bd01-6e8e4e72c726)
 
 
-</details>
-<details>
-<summary> 
+ 
 <h3>Timing modelling using ideal clocks in OpenSTA and Clock Tree Synthesis</h3>
-</summary>
+
 Performing synthesis and preparing for post-synth STA:
 
 1. `cd Desktop/work/tools/openlane_working_dir/openlane`
@@ -1640,11 +1607,8 @@ Clock Tree Synthesis (CTS):
 
 ![loadingback8](https://github.com/user-attachments/assets/121edbee-d183-4143-bca0-3ffcedf9a3c7)
 
-</details>
-<details>
-<summary> 
+
 <h3>OpenROAD Timing Analysis</h3>
-</summary>
 
 Performing timing analysis of the `picorv32a` design on OpenROAD:
 
@@ -1719,11 +1683,8 @@ Removing 'sky130_fd_sc_hd__clkbuf_1' cell from clock buffer list variable 'CTS_C
 
 ![openroad13](https://github.com/user-attachments/assets/d01c1b45-cacd-437c-acc5-bb430d4b8361)
 
-</details>
-<details>
-<summary> 
+ 
 <h3>Final Steps for RTL2GDS using OpenSTA and tritonRoute </h3>
-</summary>
 
 Power Distribution Network building:
 
@@ -1808,26 +1769,16 @@ Commands to load the routed def in magic:
 
 ![fastroute guide](https://github.com/user-attachments/assets/7f9563a2-cf23-44a5-a6b6-0e06c37a888f)
 
-SPEF extractor parasitic extraction:
-
-1. `cd Desktop/work/tools/SPEF_EXTRACTOR`
-2. `python3 main.py /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/26-03_08-45/tmp/merged.lef /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/26-03_08-45/results/routing/picorv32a.def`
 
 
-</details>
-
-</details>
-<details>
-<summary> 
 <h2>Week 7</h2>
-</summary>
 
 Let's run the same flow for our custom `rv32i` design. 
 
-<details>
-  <summary>
-    <h3>Folders and files</h3>
-  </summary>
+
+  
+<h3>Folders and files</h3>
+
 
 1. Create a `riscv` folder in the `designs` folder.
 
@@ -1845,22 +1796,16 @@ Here's a layout of the folder and the important files in it:
 
 Make sure to edit each of these files to match the design name and module name.
 
-</details>
 
-<details>
-  <summary>
-    <h3>PDN generation</h3>
-  </summary>
+<h3>PDN generation</h3>
+
 
 Since we have incorporated our own custom inverter cell in this design as well, here are the instances of it occuring in our design.
 
 ![extra](https://github.com/user-attachments/assets/934910ba-293a-4f18-9c9c-74641849ded5)
 
-</details>
-<details>
-  <summary>
-    <h3>PDN generation</h3>
-  </summary>
+<h3>PDN generation</h3>
+
 
 1. `prep -design riscv`
 2. `set lefs [glob $::env(DESIGN_DIR)/src/*.lef]`
@@ -1884,18 +1829,15 @@ Viewing it in magic:
 
 ![pdn2](https://github.com/user-attachments/assets/9c2f6d6a-f490-4b03-a5aa-7d07b9060827)
 
-</details>
 
-<details>
-  <summary>
-    <h3>Routing</h3>
-  </summary>
+<h3>Routing</h3>
 
 1. `run_routing`
 
 ![routing](https://github.com/user-attachments/assets/20418cdd-dd4d-426e-8c5f-1a8d8197bf29)
 
 2. `cd Desktop/work/tools/openlane_working_dir/openlane/designs/riscv/runs/16-08_16-40/results/routing/`
+
 3. `magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read rv32i.def &`
 
 ![routing2](https://github.com/user-attachments/assets/7435b627-450f-4388-9799-f09ffbd44582)
@@ -1907,16 +1849,12 @@ Viewing it in magic:
 ![routing5](https://github.com/user-attachments/assets/c86026c9-256a-427f-a57f-04bed540afdb)
 
 4. `cd Desktop/work/tools/openlane_working_dir/openlane/designs/riscv/runs/16-08_16-40/tmp/routing/`
+
 5. `gvim 15-fastroute`
 
 ![routing6](https://github.com/user-attachments/assets/99c8ef39-64b7-480a-a018-314d694121ff)
 
-</details>
-</details>
-<details>
-  <summary>
-    <h2 id = 'week-8'>Week 8</h2>
-  </summary>
+<h2 id = 'week-8'>Week 8</h2>
 
 <h3>Post routing STA</h3>
 
@@ -1965,5 +1903,4 @@ Input `run_magic` after routing:
 ![run_magic](https://github.com/user-attachments/assets/cfa5fc41-a44b-4f1b-b244-c606ac45481a)
 
 
-</details>
 

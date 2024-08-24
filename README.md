@@ -156,12 +156,13 @@ Code:
 
 #### Design Output for Each Submodule
 
-- ![modules design output](https://github.com/siddharthanand3/vsdhdp/assets/171400217/f3e49ebb-87d2-4428-b1f4-94b56407fc3c)
+![modules design output](https://github.com/siddharthanand3/vsdhdp/assets/171400217/f3e49ebb-87d2-4428-b1f4-94b56407fc3c)
 
 #### Hierarchical Design
 
-- The design is constituted of many submodules, and it is preserved.
-- Code:
+The design is constituted of many submodules, and it is preserved.
+
+Code:
     ```sh
     read_liberty -lib <path to the .lib file>
     read_verilog (name of the Verilog file)
@@ -169,9 +170,11 @@ Code:
     abc -liberty (path to the .lib file)
     show (name given)
     ```
-- ![hierarchical design](https://github.com/siddharthanand3/vsdhdp/assets/171400217/418c90a1-3456-4ae4-ab94-c1ea064635ed)
-- ![hierarchy is preserved](https://github.com/siddharthanand3/vsdhdp/assets/171400217/1ab9c081-60cc-4645-ad25-dc90a65bcc7c)
-- Code:
+![hierarchical design](https://github.com/siddharthanand3/vsdhdp/assets/171400217/418c90a1-3456-4ae4-ab94-c1ea064635ed)
+
+![hierarchy is preserved](https://github.com/siddharthanand3/vsdhdp/assets/171400217/1ab9c081-60cc-4645-ad25-dc90a65bcc7c)
+
+Code:
     ```sh
     write_verilog -noattr (name)
     !gvim (name)
@@ -179,61 +182,68 @@ Code:
 
 #### Flattened File
 
-- On using the 'flatten' command in Yosys you can break down the submodules.
-- Code:
+On using the 'flatten' command in Yosys you can break down the submodules.
+  Code:
     ```sh
     flatten
     write_verilog (name of the module)_flat
     !gvim (name of the module)_flat
     ```
-- ![flatten comparision](https://github.com/siddharthanand3/vsdhdp/assets/171400217/1e0cf6cb-1774-4803-822e-6bebfa6ac6f9)
-- ![flattened netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/91ed3a28-ec7f-4065-8f38-928a740bc226)
+![flatten comparision](https://github.com/siddharthanand3/vsdhdp/assets/171400217/1e0cf6cb-1774-4803-822e-6bebfa6ac6f9)
+
+![flattened netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/91ed3a28-ec7f-4065-8f38-928a740bc226)
 
 #### Synthesizing the Submodules Separately
 
-- Doing so helps efficiency and reduces delay.
-- ![synthesising on submodule1](https://github.com/siddharthanand3/vsdhdp/assets/171400217/9e6e37fc-a678-4b4e-af03-b206d3ac4d4b)
+Doing so helps efficiency and reduces delay.
+
+![synthesising on submodule1](https://github.com/siddharthanand3/vsdhdp/assets/171400217/9e6e37fc-a678-4b4e-af03-b206d3ac4d4b)
 
 #### Netlist of Submodule1
 
-- ![netlist submodule1](https://github.com/siddharthanand3/vsdhdp/assets/171400217/4f60bb8c-f38f-4ec9-ae56-eb46b78f4791)
+![netlist submodule1](https://github.com/siddharthanand3/vsdhdp/assets/171400217/4f60bb8c-f38f-4ec9-ae56-eb46b78f4791)
 
 #### Flop Synthesis Simulations
 
-- Code:
-    - To view in GTKWave:
-        ```sh
-        iverilog (name of the verilog file).v tb_(name of the verilog file).v
-        ./a.out
-        gtkwave tb_(name of the verilog file).v
-        ```
-    - For viewing netlist in Yosys:
-        ```sh
-        yosys
-        read_liberty -lib (path to the .lib file)
-        read_verilog (name of the verilog file).v
-        dfflibmap -liberty (path to the .lib file)
-        abc -liberty (path to the .lib file)
-        show
-        ```
+Code:
+  
+To view in GTKWave:
+  ```sh
+  iverilog (name of the verilog file).v tb_(name of the verilog file).v
+  ./a.out
+  gtkwave tb_(name of the verilog file).v
+  ```
+  For viewing netlist in Yosys:
+  ```sh
+  yosys
+  read_liberty -lib (path to the .lib file)
+  read_verilog (name of the verilog file).v
+  dfflibmap -liberty (path to the .lib file)
+  abc -liberty (path to the .lib file)
+  show
+  ```
 
 #### Asynchronous Reset
 
-- ![asyncres](https://github.com/siddharthanand3/vsdhdp/assets/171400217/87a3f977-9398-4950-a24b-ef3cf3877201)
-- ![dff asyncreset netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/a200e916-f8ce-4675-b058-7fb515ab7934)
+![asyncres](https://github.com/siddharthanand3/vsdhdp/assets/171400217/87a3f977-9398-4950-a24b-ef3cf3877201)
+
+![dff asyncreset netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/a200e916-f8ce-4675-b058-7fb515ab7934)
 
 #### Asynchronous Set
 
-- ![async set](https://github.com/siddharthanand3/vsdhdp/assets/171400217/b1caee83-d554-4f2c-b9e9-eb34c6693631)
-- ![asynset flop netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/2903222e-2593-448f-84c5-ae5268412577)
+![async set](https://github.com/siddharthanand3/vsdhdp/assets/171400217/b1caee83-d554-4f2c-b9e9-eb34c6693631)
+
+![asynset flop netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/2903222e-2593-448f-84c5-ae5268412577)
 
 #### Synchronous Set
 
-- ![syncres](https://github.com/siddharthanand3/vsdhdp/assets/171400217/41b5ed2f-f264-4e66-9ad8-81f489941bf2)
-- ![syncres netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/304ea5a9-6cc9-4ef2-b263-fb7dc11a191f)
+![syncres](https://github.com/siddharthanand3/vsdhdp/assets/171400217/41b5ed2f-f264-4e66-9ad8-81f489941bf2)
+
+![syncres netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/304ea5a9-6cc9-4ef2-b263-fb7dc11a191f)
+
 
 <h2 id = 'week-2'>Week 2</h2>
-Logic Optimization
+
     
 #### Logic Optimization
 

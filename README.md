@@ -1,4 +1,4 @@
-# VSDHDP
+# Benchmarking a Synchronous 4-Bit ALU at 130nm Using Open-Source EDA Tools
 
 ## Table of Contents
 - [Week 0](#week-0)

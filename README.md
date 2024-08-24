@@ -202,20 +202,23 @@ Code:
 
 Code:
   
-  ```sh
-  write_verilog -noattr (name)
-  !gvim (name)
-  ```
+```sh
+write_verilog -noattr (name)
+!gvim (name)
+```
 
 #### Flattened File
 
 On using the 'flatten' command in Yosys you can break down the submodules.
-  Code:
-    ```sh
-    flatten
-    write_verilog (name of the module)_flat
-    !gvim (name of the module)_flat
-    ```
+  
+Code:
+    
+```sh
+flatten
+write_verilog (name of the module)_flat
+!gvim (name of the module)_flat
+```
+
 ![flatten comparision](https://github.com/siddharthanand3/vsdhdp/assets/171400217/1e0cf6cb-1774-4803-822e-6bebfa6ac6f9)
 
 ![flattened netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/91ed3a28-ec7f-4065-8f38-928a740bc226)

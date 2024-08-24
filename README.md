@@ -11,10 +11,9 @@
 - [Week 7](#week-7)
 - [Week 8](#week-8)
   
-<details>
-  <summary>
+
     <h2 id = 'week-0'>Week 0</h2>
-  </summary>
+
 
 <p>
   
@@ -58,16 +57,12 @@
   ![GTK Wave Installation Screenshot](https://github.com/siddharthanand3/vsdhdp/assets/171400217/fe3a3ab1-4a81-4a36-a04c-decf631f9ade)
 
 </p>
-</details>
 
 
-<details>
-  <summary>
-    <h2 id = 'week-1'>Week 1</h2>
-  </summary>
 
-<details>
-  <summary>Introduction to Verilog RTL Design</summary>
+<h2 id = 'week-1'>Week 1</h2>
+
+Introduction to Verilog RTL Design
 
 ### ***Viewing the Output After Simulation in GTKWave***
 

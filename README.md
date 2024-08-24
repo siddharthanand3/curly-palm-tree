@@ -1945,4 +1945,13 @@ Graphical view:
 
 ![wns](https://github.com/user-attachments/assets/5c2083c3-71ac-469e-9c03-251fa76b28a3)
 
+
+Input `run_magic` after routing:
+
+`rv32i.gds.png`:
+
+![run_magic](https://github.com/user-attachments/assets/cfa5fc41-a44b-4f1b-b244-c606ac45481a)
+
+
 </details>
+

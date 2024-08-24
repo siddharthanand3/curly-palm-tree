@@ -17,7 +17,7 @@
 
 <p>
   
-  ### **Yosys Installation**
+### **Yosys Installation**
 
   1. Update package list and install dependencies:
 
@@ -26,7 +26,7 @@
       sudo apt-get install build-essential clang bison flex libreadline-dev gawk tcl-dev libffi-dev git graphviz xdot pkg-config python3 libboost-system-dev libboost-python-dev libboost-filesystem-dev zlib1g-dev make
       ```
 
-  3. Clone the Yosys repository and install:
+  2. Clone the Yosys repository and install:
 
      ```sh
       git clone https://github.com/YosysHQ/yosys.git
@@ -483,7 +483,7 @@ In the above example, the Gate Level Simulation failed. This is due to a synthes
   
 <h2 id = 'week-3'>Week 3</h2>
  
-RISC-V: An overview
+### RISC-V: An overview
 
 #### **RISC-V architecture:** 
 
@@ -591,7 +591,7 @@ riscv64-unknown-elf-gcc -ofast -mabi=lp64 -march=rv64i -o (name of the file).o (
 | `-Og` | Optimize debugging experience. -Og enables optimizations that do not interfere with debugging. It should be the optimization level of choice for the standard edit-compile-debug cycle, offering a reasonable level of optimization while maintaining fast compilation and a good debugging experience. |
 | `-Os` | Optimize for size. `Os` enables all `O2` optimizations that do not typically increase code size. It also performs further optimizations designed to reduce code size. `Os` disables the following optimization flags: `-falign-functions -falign-jumps -falign-loops -falign-labels -freorder-blocks -freorder-blocks-and-partition -fprefetch-loop-arrays -ftree-vect-loop-version`. |
 
-RISC-V rv32i
+### RISC-V rv32i
  
 
     
@@ -786,7 +786,7 @@ The above screenshots are proof of the confirmed Gate Level Simulation (GLS), as
 
 <h2 id = 'week-4'>Week 4</h2>
 
-Static timing Analysis (STA)  
+### Static timing Analysis (STA)  
 
 <h3>What is Static Timing Analysis?</h3>  
 
@@ -801,7 +801,7 @@ STA breaks a design down into timing paths, calculates the signal propagation de
 
 OpenSTA is a gate level static timing verifier. As a stand-alone executable it can be used to verify the timing of a design using standard file formats.
 
-Steps to install OpenSTA:
+#### Steps to install OpenSTA:
 ```
 git clone https://github.com/parallaxsw/OpenSTA.git
 cd OpenSTA
@@ -811,7 +811,7 @@ cmake ..
 make
 ```
 
-STA of RISC-V CPU core using OpenSTA:
+#### STA of RISC-V CPU core using OpenSTA:
 
 1. Open a new folder which contains all the required files.
 2. `sta`
@@ -836,7 +836,7 @@ Max path:
 <h2 id = 'week-5'> Week 5 </h2>
   
 
-Configuration of the .tcl file:
+#### Configuration of the .tcl file:
 
 ![Screenshot 2024-07-20 053448](https://github.com/user-attachments/assets/9189bd37-86ea-4cb5-98ff-41077899dbba)
 
@@ -851,7 +851,7 @@ Note: `-filter` is used to input conditions while using `get_*` commands.
 
 2. `report_*` - used to obtain details regarding any specific ports or pins
 
-Configuring the Design constraints:
+#### Configuring the Design constraints:
 
 1. `create_clock -name <name_of_clock:'my_clk'> -per ,period:'5(in ns)'> [clock definition point]`: command to generate a clock
 2. `set_clock_latency <delay> <name of the clock>`: In order to model clock delay in the network.

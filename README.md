@@ -12,7 +12,7 @@
 - [Week 8](#week-8)
   
 
-    <h2 id = 'week-0'>Week 0</h2>
+<h2 id = 'week-0'>Week 0</h2>
 
 
 <p>
@@ -234,17 +234,8 @@ Introduction to Verilog RTL Design
 - ![syncres](https://github.com/siddharthanand3/vsdhdp/assets/171400217/41b5ed2f-f264-4e66-9ad8-81f489941bf2)
 - ![syncres netlist](https://github.com/siddharthanand3/vsdhdp/assets/171400217/304ea5a9-6cc9-4ef2-b263-fb7dc11a191f)
 
-</details>
-
-</details>
-
-
-<details>
-  <summary>
-    <h2 id = 'week-2'>Week 2</h2>
-  </summary>
-  <details>
-    <summary>Logic Optimization</summary>
+<h2 id = 'week-2'>Week 2</h2>
+Logic Optimization
     
 #### Logic Optimization
 
